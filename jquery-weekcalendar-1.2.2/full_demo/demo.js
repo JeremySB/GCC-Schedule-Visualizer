@@ -11,12 +11,13 @@ $(document).ready(function() {
       firstDayOfWeek : 1,
       businessHours :{start: 8, end: 21, limitDisplay: true },
       daysToShow : 5,
+      readonly : true,
       height : function($calendar) {
          return $(window).height() - $("h1").outerHeight() - 1;
       },
       eventRender : function(calEvent, $event) {
          if (calEvent.end.getTime() < new Date().getTime()) {
-            $event.css("backgroundColor", "#aaa");
+            $event.css("backgroundColor", "#faa");
             $event.find(".wc-time").css({
                "backgroundColor" : "#999",
                "border" : "1px solid #888"
@@ -26,110 +27,110 @@ $(document).ready(function() {
       // draggable : function(calEvent, $event) {
       //    return calEvent.readOnly != true;
       // },
-      resizable : function(calEvent, $event) {
-         return calEvent.readOnly != true;
-      },
-      eventNew : function(calEvent, $event) {
-         var $dialogContent = $("#event_edit_container");
-         resetForm($dialogContent);
-         var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
-         var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
-         var titleField = $dialogContent.find("input[name='title']");
-         var bodyField = $dialogContent.find("textarea[name='body']");
-
-
-         $dialogContent.dialog({
-            modal: true,
-            title: "New Calendar Event",
-            close: function() {
-               $dialogContent.dialog("destroy");
-               $dialogContent.hide();
-               $('#calendar').weekCalendar("removeUnsavedEvents");
-            },
-            buttons: {
-               save : function() {
-                  calEvent.id = id;
-                  id++;
-                  calEvent.start = new Date(startField.val());
-                  calEvent.end = new Date(endField.val());
-                  calEvent.title = titleField.val();
-                  calEvent.body = bodyField.val();
-
-                  $calendar.weekCalendar("removeUnsavedEvents");
-                  $calendar.weekCalendar("updateEvent", calEvent);
-                  $dialogContent.dialog("close");
-               },
-               cancel : function() {
-                  $dialogContent.dialog("close");
-               }
-            }
-         }).show();
-
-         $dialogContent.find(".date_holder").text($calendar.weekCalendar("formatDate", calEvent.start));
-         setupStartAndEndTimeFields(startField, endField, calEvent, $calendar.weekCalendar("getTimeslotTimes", calEvent.start));
-
-      },
-      eventDrop : function(calEvent, $event) {
-      },
-      eventResize : function(calEvent, $event) {
-      },
-      eventClick : function(calEvent, $event) {
-
-         if (calEvent.readOnly) {
-            return;
-         }
-
-         var $dialogContent = $("#event_edit_container");
-         resetForm($dialogContent);
-         var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
-         var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
-         var titleField = $dialogContent.find("input[name='title']").val(calEvent.title);
-         var bodyField = $dialogContent.find("textarea[name='body']");
-         bodyField.val(calEvent.body);
-
-         $dialogContent.dialog({
-            modal: true,
-            title: "Edit - " + calEvent.title,
-            close: function() {
-               $dialogContent.dialog("destroy");
-               $dialogContent.hide();
-               $('#calendar').weekCalendar("removeUnsavedEvents");
-            },
-            buttons: {
-               save : function() {
-
-                  calEvent.start = new Date(startField.val());
-                  calEvent.end = new Date(endField.val());
-                  calEvent.title = titleField.val();
-                  calEvent.body = bodyField.val();
-
-                  $calendar.weekCalendar("updateEvent", calEvent);
-                  $dialogContent.dialog("close");
-               },
-               "delete" : function() {
-                  $calendar.weekCalendar("removeEvent", calEvent.id);
-                  $dialogContent.dialog("close");
-               },
-               cancel : function() {
-                  $dialogContent.dialog("close");
-               }
-            }
-         }).show();
-
-         var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
-         var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
-         $dialogContent.find(".date_holder").text($calendar.weekCalendar("formatDate", calEvent.start));
-         setupStartAndEndTimeFields(startField, endField, calEvent, $calendar.weekCalendar("getTimeslotTimes", calEvent.start));
-         $(window).resize().resize(); //fixes a bug in modal overlay size ??
-
-      },
-      eventMouseover : function(calEvent, $event) {
-      },
-      eventMouseout : function(calEvent, $event) {
-      },
-      noEvents : function() {
-
-      },
+      // resizable : function(calEvent, $event) {
+      //    return calEvent.readOnly != true;
+      // },
+      // eventNew : function(calEvent, $event) {
+      //    var $dialogContent = $("#event_edit_container");
+      //    resetForm($dialogContent);
+      //    var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
+      //    var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
+      //    var titleField = $dialogContent.find("input[name='title']");
+      //    var bodyField = $dialogContent.find("textarea[name='body']");
+      //
+      //
+      //    $dialogContent.dialog({
+      //       modal: true,
+      //       title: "New Calendar Event",
+      //       close: function() {
+      //          $dialogContent.dialog("destroy");
+      //          $dialogContent.hide();
+      //          $('#calendar').weekCalendar("removeUnsavedEvents");
+      //       },
+      //       buttons: {
+      //          save : function() {
+      //             calEvent.id = id;
+      //             id++;
+      //             calEvent.start = new Date(startField.val());
+      //             calEvent.end = new Date(endField.val());
+      //             calEvent.title = titleField.val();
+      //             calEvent.body = bodyField.val();
+      //
+      //             $calendar.weekCalendar("removeUnsavedEvents");
+      //             $calendar.weekCalendar("updateEvent", calEvent);
+      //             $dialogContent.dialog("close");
+      //          },
+      //          cancel : function() {
+      //             $dialogContent.dialog("close");
+      //          }
+      //       }
+      //    }).show();
+      //
+      //    $dialogContent.find(".date_holder").text($calendar.weekCalendar("formatDate", calEvent.start));
+      //    setupStartAndEndTimeFields(startField, endField, calEvent, $calendar.weekCalendar("getTimeslotTimes", calEvent.start));
+      //
+      // },
+      // eventDrop : function(calEvent, $event) {
+      // },
+      // eventResize : function(calEvent, $event) {
+      // },
+      // eventClick : function(calEvent, $event) {
+      //
+      //    if (calEvent.readOnly) {
+      //       return;
+      //    }
+      //
+      //    var $dialogContent = $("#event_edit_container");
+      //    resetForm($dialogContent);
+      //    var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
+      //    var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
+      //    var titleField = $dialogContent.find("input[name='title']").val(calEvent.title);
+      //    var bodyField = $dialogContent.find("textarea[name='body']");
+      //    bodyField.val(calEvent.body);
+      //
+      //    $dialogContent.dialog({
+      //       modal: true,
+      //       title: "Edit - " + calEvent.title,
+      //       close: function() {
+      //          $dialogContent.dialog("destroy");
+      //          $dialogContent.hide();
+      //          $('#calendar').weekCalendar("removeUnsavedEvents");
+      //       },
+      //       buttons: {
+      //          save : function() {
+      //
+      //             calEvent.start = new Date(startField.val());
+      //             calEvent.end = new Date(endField.val());
+      //             calEvent.title = titleField.val();
+      //             calEvent.body = bodyField.val();
+      //
+      //             $calendar.weekCalendar("updateEvent", calEvent);
+      //             $dialogContent.dialog("close");
+      //          },
+      //          "delete" : function() {
+      //             $calendar.weekCalendar("removeEvent", calEvent.id);
+      //             $dialogContent.dialog("close");
+      //          },
+      //          cancel : function() {
+      //             $dialogContent.dialog("close");
+      //          }
+      //       }
+      //    }).show();
+      //
+      //    var startField = $dialogContent.find("select[name='start']").val(calEvent.start);
+      //    var endField = $dialogContent.find("select[name='end']").val(calEvent.end);
+      //    $dialogContent.find(".date_holder").text($calendar.weekCalendar("formatDate", calEvent.start));
+      //    setupStartAndEndTimeFields(startField, endField, calEvent, $calendar.weekCalendar("getTimeslotTimes", calEvent.start));
+      //    $(window).resize().resize(); //fixes a bug in modal overlay size ??
+      //
+      // },
+      // eventMouseover : function(calEvent, $event) {
+      // },
+      // eventMouseout : function(calEvent, $event) {
+      // },
+      // noEvents : function() {
+      //
+      // },
       data : function(start, end, callback) {
          callback(getEventData());
       }
@@ -149,32 +150,32 @@ $(document).ready(function() {
          events : [
             {
                "id":1,
-               "start": new Date(year, month, day, 12),
-               "end": new Date(year, month, day, 13, 30),
+               "start": new Date(year, month, day - 2, 12),
+               "end": new Date(year, month, day - 2, 13, 30),
                "title":"Lunch with Mike"
             },
             {
                "id":2,
-               "start": new Date(year, month, day, 14),
-               "end": new Date(year, month, day, 14, 45),
+               "start": new Date(year, month, day - 1, 14),
+               "end": new Date(year, month, day-1, 14, 45),
                "title":"Dev Meeting"
             },
             {
                "id":3,
-               "start": new Date(year, month, day + 1, 17),
-               "end": new Date(year, month, day + 1, 17, 45),
+               "start": new Date(year, month, day, 17),
+               "end": new Date(year, month, day, 17, 45),
                "title":"Hair cut"
             },
             {
                "id":4,
-               "start": new Date(year, month, day - 1, 8),
-               "end": new Date(year, month, day - 1, 9, 30),
+               "start": new Date(year, month, day + 1, 8),
+               "end": new Date(year, month, day + 1, 9, 30),
                "title":"Team breakfast"
             },
             {
                "id":5,
-               "start": new Date(year, month, day + 1, 14),
-               "end": new Date(year, month, day + 1, 15),
+               "start": new Date(year, month, day + 2, 14),
+               "end": new Date(year, month, day + 2, 15),
                "title":"Product showcase"
             },
             {
