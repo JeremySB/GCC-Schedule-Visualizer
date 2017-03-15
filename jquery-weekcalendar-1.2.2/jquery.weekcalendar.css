@@ -41,7 +41,8 @@
 
 .wc-header .wc-day-column-header {
 	text-align: center;
-	padding: 0.4em;
+	font-size: 1.5em;
+	padding: 0.5em;
 }
 .wc-header td {
 	background-color: #eee;
@@ -137,13 +138,13 @@ table.wc-time-slots {
 	padding-right: 10px;
 }
 
-.wc-header .wc-today  {
+/*.wc-header .wc-today  {
 	font-weight: bold;
 }
 
 .wc-time-slots .wc-today {
 	background-color: #ffffcc;
-}
+}*/
 
 
 .wc-cal-event {
