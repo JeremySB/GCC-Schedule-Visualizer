@@ -9,8 +9,8 @@ $(document).ready(function() {
       allowCalEventOverlap : true,
       overlapEventsSeparate: true,
       firstDayOfWeek : 1,
-      businessHours :{start: 8, end: 18, limitDisplay: true },
-      daysToShow : 7,
+      businessHours :{start: 8, end: 21, limitDisplay: true },
+      daysToShow : 5,
       height : function($calendar) {
          return $(window).height() - $("h1").outerHeight() - 1;
       },
@@ -26,9 +26,9 @@ $(document).ready(function() {
       // draggable : function(calEvent, $event) {
       //    return calEvent.readOnly != true;
       // },
-      // resizable : function(calEvent, $event) {
-      //    return calEvent.readOnly != true;
-      // },
+      resizable : function(calEvent, $event) {
+         return calEvent.readOnly != true;
+      },
       eventNew : function(calEvent, $event) {
          var $dialogContent = $("#event_edit_container");
          resetForm($dialogContent);

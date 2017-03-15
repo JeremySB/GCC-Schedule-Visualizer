@@ -6,19 +6,19 @@ body {
 h1 {
 	padding: 0.5em;
 	font-size: 1.6em;
-} 
+}
 
 h2 {
 	margin: 0.5em 0;
-	font-size: 1.4em;	
+	font-size: 1.4em;
 }
 
 p {
-	margin: 0.5em;	
+	margin: 0.5em;
 }
 
 .ui-widget {
-	font-size: 1em;	
+	font-size: 1em;
 }
 
 #event_edit_container, #about {
@@ -27,8 +27,8 @@ p {
 
 #about_button_container {
 	position: absolute;
-	top: 1em;
-	right: 1em;	
+	bottom: 1em;
+	right: 5%;
 	padding: 0.5em 2em;
 	background: #ddf;
 	border: 1px solid #bbd;
@@ -75,4 +75,30 @@ ul.formatted li {
 
 ol.formatted li {
 	list-style-type: decimal;
+}
+
+.formCell {
+	height: 4em;
+	width: 50%;
+}
+
+.dropDown {
+	width: 75%;
+}
+
+.searchCell {
+	height: 4em;
+	width: 100%;
+}
+
+.searchTable {
+	margin-top: 5em;
+	width: 100%;
+}
+
+.myForm {
+	border-radius: 25px;
+	border: 2px solid #73AD21;
+  padding: 20px;
+	background-color: #ddd;
 }

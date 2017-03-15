@@ -11,7 +11,7 @@
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
  *   http://www.gnu.org/licenses/gpl.html
- *   
+ *
  *   If you're after a monthly calendar plugin, check out http://arshaw.com/fullcalendar/
  */
 
@@ -237,18 +237,18 @@
          }).mouseover(function(event) {
             var $target = $(event.target);
 
-            // if (self._isDraggingOrResizing($target)) {
-            //    return;
-            // }
+            if (self._isDraggingOrResizing($target)) {
+               return;
+            }
 
             if ($target.hasClass("wc-cal-event")) {
                options.eventMouseover($target.data("calEvent"), $target, event);
             }
          }).mouseout(function(event) {
             var $target = $(event.target);
-            // if (self._isDraggingOrResizing($target)) {
-            //    return;
-            // }
+            if (self._isDraggingOrResizing($target)) {
+               return;
+            }
             if ($target.hasClass("wc-cal-event")) {
                if ($target.data("sizing")) return;
                options.eventMouseout($target.data("calEvent"), $target, event);
@@ -260,9 +260,9 @@
       /*
        * check if a ui draggable or resizable is currently being dragged or resized
        */
-      // _isDraggingOrResizing : function ($target) {
-      //    return $target.hasClass("ui-draggable-dragging") || $target.hasClass("ui-resizable-resizing");
-      // },
+      _isDraggingOrResizing : function ($target) {
+         return $target.hasClass("ui-draggable-dragging") || $target.hasClass("ui-resizable-resizing");
+      },
 
       /*
        * Render the main calendar layout
@@ -275,31 +275,31 @@
 
          $calendarContainer = $("<div class=\"wc-container\">").appendTo(self.element);
 
-         if (options.buttons) {
-            calendarNavHtml = "<div class=\"wc-nav\">\
-                    <button class=\"wc-today\">" + options.buttonText.today + "</button>\
-                    <button class=\"wc-prev\">" + options.buttonText.lastWeek + "</button>\
-                    <button class=\"wc-next\">" + options.buttonText.nextWeek + "</button>\
-                    </div>";
-
-            $(calendarNavHtml).appendTo($calendarContainer);
-
-            $calendarContainer.find(".wc-nav .wc-today").click(function() {
-               self.element.weekCalendar("today");
-               return false;
-            });
-
-            $calendarContainer.find(".wc-nav .wc-prev").click(function() {
-               self.element.weekCalendar("prevWeek");
-               return false;
-            });
-
-            $calendarContainer.find(".wc-nav .wc-next").click(function() {
-               self.element.weekCalendar("nextWeek");
-               return false;
-            });
-
-         }
+        //  if (options.buttons) {
+        //     calendarNavHtml = "<div class=\"wc-nav\">\
+        //             <button class=\"wc-today\">" + options.buttonText.today + "</button>\
+        //             <button class=\"wc-prev\">" + options.buttonText.lastWeek + "</button>\
+        //             <button class=\"wc-next\">" + options.buttonText.nextWeek + "</button>\
+        //             </div>";
+         //
+        //     $(calendarNavHtml).appendTo($calendarContainer);
+         //
+        //     $calendarContainer.find(".wc-nav .wc-today").click(function() {
+        //        self.element.weekCalendar("today");
+        //        return false;
+        //     });
+         //
+        //     $calendarContainer.find(".wc-nav .wc-prev").click(function() {
+        //        self.element.weekCalendar("prevWeek");
+        //        return false;
+        //     });
+         //
+        //     $calendarContainer.find(".wc-nav .wc-next").click(function() {
+        //        self.element.weekCalendar("nextWeek");
+        //        return false;
+        //     });
+         //
+        //  }
 
          //render calendar header
          calendarHeaderHtml = "<table class=\"wc-header\"><tbody><tr><td class=\"wc-time-column-header\"></td>";
@@ -357,7 +357,7 @@
          $weekDayColumns.each(function(i, val) {
             $(this).height(options.timeslotHeight * options.timeslotsPerDay);
             if (!options.readonly) {
-               //self._addDroppableToWeekDay($(this));
+               self._addDroppableToWeekDay($(this));
                self._setupEventCreationForWeekDay($(this));
             }
          });
@@ -395,7 +395,7 @@
 
                $target.bind("mousemove.newevent", function(event) {
                   $newEvent.show();
-                  //$newEvent.addClass("ui-resizable-resizing");
+                  $newEvent.addClass("ui-resizable-resizing");
                   var height = Math.round(event.pageY - columnOffset - topPosition);
                   var remainder = height % options.timeslotHeight;
                   //snap to closest timeslot
@@ -419,9 +419,9 @@
 
             if ($newEvent.length) {
                //if even created from a single click only, default height
-               // if (!$newEvent.hasClass("ui-resizable-resizing")) {
-               //    $newEvent.css({height: options.timeslotHeight * options.defaultEventLength}).show();
-               // }
+               if (!$newEvent.hasClass("ui-resizable-resizing")) {
+                  $newEvent.css({height: options.timeslotHeight * options.defaultEventLength}).show();
+               }
                var top = parseInt($newEvent.css("top"));
                var eventDuration = self._getEventDurationFromPositionedEventElement($weekDay, $newEvent, top);
 
@@ -612,12 +612,12 @@
          self._positionEvent($weekDay, $calEvent);
          $calEvent.show();
 
-         // if (!options.readonly && options.resizable(calEvent, $calEvent)) {
-         //    self._addResizableToCalEvent(calEvent, $calEvent, $weekDay)
-         // }
-         // if (!options.readonly && options.draggable(calEvent, $calEvent)) {
-         //    self._addDraggableToCalEvent(calEvent, $calEvent);
-         // }
+         if (!options.readonly && options.resizable(calEvent, $calEvent)) {
+            self._addResizableToCalEvent(calEvent, $calEvent, $weekDay)
+         }
+         if (!options.readonly && options.draggable(calEvent, $calEvent)) {
+            self._addDraggableToCalEvent(calEvent, $calEvent);
+         }
 
          options.eventAfterRender(calEvent, $calEvent);
 
@@ -817,13 +817,13 @@
                adjustedEnd = currentCalEvent.start;
             }
             //has been dropped inside existing event with same or larger duration
-            // if (! oldCalEvent.resizable || (newCalEvent.end.getTime() <= currentCalEvent.end.getTime()
-            //       && newCalEvent.start.getTime() >= currentCalEvent.start.getTime())) {
+            if (! oldCalEvent.resizable || (newCalEvent.end.getTime() <= currentCalEvent.end.getTime()
+                  && newCalEvent.start.getTime() >= currentCalEvent.start.getTime())) {
 
-            //    adjustedStart = oldCalEvent.start;
-            //    adjustedEnd = oldCalEvent.end;
-            //    return false;
-            // }
+               adjustedStart = oldCalEvent.start;
+               adjustedEnd = oldCalEvent.end;
+               return false;
+            }
 
          });
 
@@ -850,91 +850,91 @@
       /*
        * Add draggable capabilities to an event
        */
-      // _addDraggableToCalEvent : function(calEvent, $calEvent) {
-      //    var self = this;
-      //    var options = this.options;
-      //    var $weekDay = self._findWeekDayForEvent(calEvent, self.element.find(".wc-time-slots .wc-day-column-inner"));
-      //    $calEvent.draggable({
-      //       handle : ".wc-time",
-      //       containment: ".wc-scrollable-grid",
-      //       revert: 'valid',
-      //       opacity: 0.5,
-      //       grid : [$calEvent.outerWidth() + 1, options.timeslotHeight ],
-      //       start : function(event, ui) {
-      //          var $calEvent = ui.draggable;
-      //          options.eventDrag(calEvent, $calEvent);
-      //       }
-      //    });
+      _addDraggableToCalEvent : function(calEvent, $calEvent) {
+         var self = this;
+         var options = this.options;
+         var $weekDay = self._findWeekDayForEvent(calEvent, self.element.find(".wc-time-slots .wc-day-column-inner"));
+         $calEvent.draggable({
+            handle : ".wc-time",
+            containment: ".wc-scrollable-grid",
+            revert: 'valid',
+            opacity: 0.5,
+            grid : [$calEvent.outerWidth() + 1, options.timeslotHeight ],
+            start : function(event, ui) {
+               var $calEvent = ui.draggable;
+               options.eventDrag(calEvent, $calEvent);
+            }
+         });
 
-      // },
+      },
 
       /*
        * Add droppable capabilites to weekdays to allow dropping of calEvents only
        */
-      // _addDroppableToWeekDay : function($weekDay) {
-      //    var self = this;
-      //    var options = this.options;
-      //    $weekDay.droppable({
-      //       accept: ".wc-cal-event",
-      //       drop: function(event, ui) {
-      //          var $calEvent = ui.draggable;
-      //          var top = Math.round(parseInt(ui.position.top));
-      //          var eventDuration = self._getEventDurationFromPositionedEventElement($weekDay, $calEvent, top);
-      //          var calEvent = $calEvent.data("calEvent");
-      //          var newCalEvent = $.extend(true, {start: eventDuration.start, end: eventDuration.end}, calEvent);
-      //          self._adjustForEventCollisions($weekDay, $calEvent, newCalEvent, calEvent, true);
-      //          var $weekDayColumns = self.element.find(".wc-day-column-inner");
-      //          var $newEvent = self._renderEvent(newCalEvent, self._findWeekDayForEvent(newCalEvent, $weekDayColumns));
-      //          $calEvent.hide();
+      _addDroppableToWeekDay : function($weekDay) {
+         var self = this;
+         var options = this.options;
+         $weekDay.droppable({
+            accept: ".wc-cal-event",
+            drop: function(event, ui) {
+               var $calEvent = ui.draggable;
+               var top = Math.round(parseInt(ui.position.top));
+               var eventDuration = self._getEventDurationFromPositionedEventElement($weekDay, $calEvent, top);
+               var calEvent = $calEvent.data("calEvent");
+               var newCalEvent = $.extend(true, {start: eventDuration.start, end: eventDuration.end}, calEvent);
+               self._adjustForEventCollisions($weekDay, $calEvent, newCalEvent, calEvent, true);
+               var $weekDayColumns = self.element.find(".wc-day-column-inner");
+               var $newEvent = self._renderEvent(newCalEvent, self._findWeekDayForEvent(newCalEvent, $weekDayColumns));
+               $calEvent.hide();
 
-      //          //trigger drop callback
-      //          options.eventDrop(newCalEvent, calEvent, $newEvent);
-      //          $calEvent.data("preventClick", true);
+               //trigger drop callback
+               options.eventDrop(newCalEvent, calEvent, $newEvent);
+               $calEvent.data("preventClick", true);
 
-      //          var $weekDayOld = self._findWeekDayForEvent($calEvent.data("calEvent"), self.element.find(".wc-time-slots .wc-day-column-inner"));
+               var $weekDayOld = self._findWeekDayForEvent($calEvent.data("calEvent"), self.element.find(".wc-time-slots .wc-day-column-inner"));
 
-      //          if ($weekDayOld.data("startDate") != $weekDay.data("startDate")) {
-      //             self._adjustOverlappingEvents($weekDayOld);
-      //          }
-      //          self._adjustOverlappingEvents($weekDay);
+               if ($weekDayOld.data("startDate") != $weekDay.data("startDate")) {
+                  self._adjustOverlappingEvents($weekDayOld);
+               }
+               self._adjustOverlappingEvents($weekDay);
 
-      //          setTimeout(function() {
-      //             $calEvent.remove();
-      //          }, 1000);
+               setTimeout(function() {
+                  $calEvent.remove();
+               }, 1000);
 
-      //       }
-      //    });
-      // },
+            }
+         });
+      },
 
       /*
        * Add resizable capabilities to a calEvent
        */
-      // _addResizableToCalEvent : function(calEvent, $calEvent, $weekDay) {
-      //    var self = this;
-      //    var options = this.options;
-      //    $calEvent.resizable({
-      //       grid: options.timeslotHeight,
-      //       containment : $weekDay,
-      //       handles: "s",
-      //       minHeight: options.timeslotHeight,
-      //       stop :function(event, ui) {
-      //          var $calEvent = ui.element;
-      //          var newEnd = new Date($calEvent.data("calEvent").start.getTime() + ($calEvent.height() / options.timeslotHeight) * options.millisPerTimeslot);
-      //          var newCalEvent = $.extend(true, {start: calEvent.start, end: newEnd}, calEvent);
-      //          self._adjustForEventCollisions($weekDay, $calEvent, newCalEvent, calEvent);
+      _addResizableToCalEvent : function(calEvent, $calEvent, $weekDay) {
+         var self = this;
+         var options = this.options;
+         $calEvent.resizable({
+            grid: options.timeslotHeight,
+            containment : $weekDay,
+            handles: "s",
+            minHeight: options.timeslotHeight,
+            stop :function(event, ui) {
+               var $calEvent = ui.element;
+               var newEnd = new Date($calEvent.data("calEvent").start.getTime() + ($calEvent.height() / options.timeslotHeight) * options.millisPerTimeslot);
+               var newCalEvent = $.extend(true, {start: calEvent.start, end: newEnd}, calEvent);
+               self._adjustForEventCollisions($weekDay, $calEvent, newCalEvent, calEvent);
 
-      //          self._refreshEventDetails(newCalEvent, $calEvent);
-      //          self._positionEvent($weekDay, $calEvent);
-      //          self._adjustOverlappingEvents($weekDay);
-      //          //trigger resize callback
-      //          options.eventResize(newCalEvent, calEvent, $calEvent);
-      //          $calEvent.data("preventClick", true);
-      //          setTimeout(function() {
-      //             $calEvent.removeData("preventClick");
-      //          }, 500);
-      //       }
-      //    });
-      // },
+               self._refreshEventDetails(newCalEvent, $calEvent);
+               self._positionEvent($weekDay, $calEvent);
+               self._adjustOverlappingEvents($weekDay);
+               //trigger resize callback
+               options.eventResize(newCalEvent, calEvent, $calEvent);
+               $calEvent.data("preventClick", true);
+               setTimeout(function() {
+                  $calEvent.removeData("preventClick");
+               }, 500);
+            }
+         });
+      },
 
       /*
        * Refresh the displayed details of a calEvent in the calendar
@@ -971,7 +971,7 @@
             } else {
                slot = hour - self.options.businessHours.start;
             }
-            
+
          }
 
          var $target = this.element.find(".wc-grid-timeslot-header .wc-hour-header:eq(" + slot + ")");
@@ -1319,12 +1319,12 @@
          allowCalEventOverlap : false,
          overlapEventsSeparate: false,
          readonly: false,
-         // draggable : function(calEvent, element) {
-         //    return true;
-         // },
-         // resizable : function(calEvent, element) {
-         //    return true;
-         // },
+         draggable : function(calEvent, element) {
+            return true;
+         },
+         resizable : function(calEvent, element) {
+            return true;
+         },
          eventClick : function() {
          },
          eventRender : function(calEvent, element) {
@@ -1333,12 +1333,12 @@
          eventAfterRender : function(calEvent, element) {
             return element;
          },
-         // eventDrag : function(calEvent, element) {
-         // },
-         // eventDrop : function(calEvent, element) {
-         // },
-         // eventResize : function(calEvent, element) {
-         // },
+         eventDrag : function(calEvent, element) {
+         },
+         eventDrop : function(calEvent, element) {
+         },
+         eventResize : function(calEvent, element) {
+         },
          eventNew : function(calEvent, element) {
          },
          eventMouseover : function(calEvent, $event) {

@@ -7,24 +7,24 @@
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 		margin: 0;
 	}
-	
+
 	h1 {
 		margin: 0;
 		padding: 0.5em;
 	}
-	
+
 	p.description {
 		font-size: 0.8em;
 		padding: 1em;
 		position: absolute;
 		top: 3.2em;
 		margin-right: 400px;
-	} 
-	
+	}
+
 	#message {
 		font-size: 0.7em;
 		position: absolute;
-		top: 1em; 
+		top: 1em;
 		right: 1em;
 		width: 350px;
 		display: none;
@@ -32,7 +32,7 @@
 		background: #ffc;
 		border: 1px solid #dda;
 	}
-	
+
 </style>
 <link rel='stylesheet' type='text/css' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css' />
 <link rel='stylesheet' type='text/css' href='jquery.weekcalendar.css' />
@@ -47,7 +47,7 @@
 	var month = new Date().getMonth();
 	var day = new Date().getDate();
 
-	   
+
 	$(document).ready(function() {
 
 		$('#calendar').weekCalendar({
@@ -55,12 +55,12 @@
 			height: function($calendar){
 				return $(window).height() - $("h1").outerHeight();
 			},
-			eventRender : function(calEvent, $event) {
-				if(calEvent.end.getTime() < new Date().getTime()) {
-					$event.css("backgroundColor", "#aaa");
-					$event.find(".time").css({"backgroundColor": "#999", "border":"1px solid #888"});
-				}
-			},
+			// eventRender : function(calEvent, $event) {
+			// 	if(calEvent.end.getTime() < new Date().getTime()) {
+			// 		$event.css("backgroundColor", "#aaa");
+			// 		$event.find(".time").css({"backgroundColor": "#999", "border":"1px solid #888"});
+			// 	}
+			// },
 			eventNew : function(calEvent, $event) {
 				displayMessage("<strong>Added event</strong><br/>Start: " + calEvent.start + "<br/>End: " + calEvent.end);
 				alert("You've added a new event. You would capture this event, add the logic for creating a new event with your own fields, data and whatever backend persistence you require.");
@@ -91,7 +91,7 @@
 		}
 
 		$("<div id=\"message\" class=\"ui-corner-all\"></div>").prependTo($("body"));
-		
+
 	});
 
 </script>
