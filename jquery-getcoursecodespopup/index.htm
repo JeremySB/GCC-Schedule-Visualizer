@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The best scheduler on the planet</title>
+	<style>
+		#copybox{
+			border: black 2px solid;
+			height: 30px;
+			width: 100%;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#codey{
+			
+		}
+		#codey:hover{
+			text-align: center;
+			padding: 15px; 
+			color: green; 
+			background-color: lightgrey; 
+			border: black 2px solid;
+		}
+		#code{
+			text-align: center;
+			padding: 6px; 
+			color: grey; 
+			background-color: white; 
+			border: black 2px solid;
+		}
+		#code:hover{
+			text-align: center;
+			padding: 6px; 
+			color: green; 
+			background-color: lightgrey; 
+			border: black 2px solid;
+		}
+		#show{
+			position: absolute;
+			top: 90%;
+			left: 85%;
+			height: 45px;
+			width: 150px;
+		}
+		#exit{
+			position: relative;
+			left: 255px;
+			display:inline-block;
+			padding: 2px 5px;
+			background: red;
+		}
+		#exit:hover{
+			position: relative;
+			left: 255px;
+			display:inline-block;
+			padding:2px 5px;
+			background:#ccc;
+			color:#fff;
+		}
+		#window{
+			position: absolute;
+			top: 25%;
+			left: 69%;	
+		}
+	</style>
+</head>
+<body>
+ 
+ 
+<button id = "show">get course codes</button>
+<dialog id="window">  
+	<button id="exit">X</button>
+    <h3>Getch youre free course Codes here:</h3>  
+    <div id="copybox"><span id="codey">HUMA 302: 99666</p></div>
+    <p id="code">HUMA 303: 12345</p>	
+	<p id="code">HUMA 404: 54321</p>
+	<p id="code">HAMU 999: 44544</p>
+	<p id="code">MATH 123: 54445</p>
+</dialog>  
+
+ 
+<script>
+var dialog = document.getElementById('window');  
+    document.getElementById('show').onclick = function() {  
+        dialog.show();  
+    };  
+    document.getElementById('exit').onclick = function() {  
+        dialog.close();  
+    };  
+</script>
+ 
+</body>
+</html>
+
+
+
+
