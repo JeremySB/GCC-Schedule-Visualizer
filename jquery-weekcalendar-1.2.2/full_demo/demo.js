@@ -248,7 +248,7 @@ $(document).ready(function() {
 
    var $about = $("#about");
 
-   $("#about_button").click(function() {
+   $("#course_codes_button").click(function() {
       $about.dialog({
          title: "Copy course codes",
          width: "25%",

@@ -25,7 +25,7 @@ p {
 	display: none;
 }
 
-#about_button_container {
+#course_codes_button_container {
 	position: absolute;
 	bottom: 1em;
 	right: 5%;
@@ -127,6 +127,6 @@ h1.title {
 	text-align: center;
 }
 
-#about_button {
+#course_codes_button {
 	height: 3em;
 }

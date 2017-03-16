@@ -45,5 +45,12 @@ function getSelectedCourseCodes() {
 $(function() {
     $("#add_course_button").click(function(event) {
         addCourse($("#searchfield").val());
-    })
+
+    });
+
+    
+    $("#course_codes_button").click(function (event) {
+        console.log(getSelectedCourseCodes());
+
+    });
 });
