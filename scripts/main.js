@@ -4,6 +4,7 @@ var selectedCourses = {};
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
     // TODO: add checks for errors
+    name = name.toUpperCase();
     if (!selectedCourses[name] && allCourses[name]) {
         selectedCourses[name] = allCourses[name];
     }
@@ -38,3 +39,11 @@ function getSelectedCourseCodes() {
     }
     return courseCodes;
 }
+
+// code to execute on document ready
+
+$(function() {
+    $("#add_course_button").click(function(event) {
+        addCourse($("#searchfield").val());
+    })
+});
