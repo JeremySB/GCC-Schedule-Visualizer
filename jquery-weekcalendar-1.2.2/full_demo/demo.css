@@ -78,27 +78,55 @@ ol.formatted li {
 }
 
 .formCell {
-	height: 4em;
+	height: 3em;
 	width: 50%;
 }
 
 .dropDown {
+	text-align: center;
 	width: 75%;
 }
 
 .searchCell {
 	height: 4em;
-	width: 100%;
 }
 
 .searchTable {
-	margin-top: 5em;
+	/*margin-top: 175%;*/
 	width: 100%;
+}
+
+.leftMenu {
+	width: 25%;
+	background-color: lightGrey;
+	border: 2px solid #335DDF;
+}
+
+.rightMenu {
+	width: 75%;
+	border: 2px solid #335DDF;
 }
 
 .myForm {
 	border-radius: 25px;
-	border: 2px solid #73AD21;
+	/*border: 2px solid #73AD21;*/
   padding: 20px;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
+}
+
+.myTable {
+	margin-top: 1em;
+}
+
+.search {
+	width: inherit;
+	margin-top: 1em;
+}
+
+h1.title {
+	text-align: center;
+}
+
+#about_button {
+	height: 3em;
 }

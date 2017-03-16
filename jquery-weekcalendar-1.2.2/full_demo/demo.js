@@ -13,7 +13,7 @@ $(document).ready(function() {
       daysToShow : 5,
       readonly : true,
       height : function($calendar) {
-         return $(window).height() - $("h1").outerHeight() - 1;
+         return $(window).height()*.95 - $("h1").outerHeight() - 1;
       },
       eventRender : function(calEvent, $event) {
          if (calEvent.end.getTime() < new Date().getTime()) {
@@ -250,8 +250,8 @@ $(document).ready(function() {
 
    $("#about_button").click(function() {
       $about.dialog({
-         title: "About this calendar demo",
-         width: 600,
+         title: "Copy course codes",
+         width: "25%",
          close: function() {
             $about.dialog("destroy");
             $about.hide();
