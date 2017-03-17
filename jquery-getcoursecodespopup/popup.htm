@@ -1,57 +1,51 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!-- CSS for a common object like a button? Is that alright? make a class -->
+	<!-- How do I comment code? -->
+	<!-- How do I get my window to resize properly? -->
+	<!-- Should I make my box draggable? -->
+	<!--  -->
+	<!--  -->
+	
+	
+	
 	<meta charset="utf-8">
 	<title>The best scheduler on the planet</title>
+	<script src="clipboard.js-master/dist/clipboard.min.js"></script>
 	<style>
-		#copybox{
-			border: black 2px solid;
-			height: 30px;
-			width: 100%;
+		div.copy-boxes {
 			text-align: center;
-			vertical-align: middle;
-		}
-		#codey{
-			
-		}
-		#codey:hover{
-			text-align: center;
-			padding: 15px; 
-			color: green; 
-			background-color: lightgrey; 
-			border: black 2px solid;
-		}
-		#code{
-			text-align: center;
-			padding: 6px; 
+			padding: 6px 20px; 
 			color: grey; 
 			background-color: white; 
 			border: black 2px solid;
+		
 		}
-		#code:hover{
+		/*div:hover {
 			text-align: center;
-			padding: 6px; 
+			padding: 6px 20px; 
 			color: green; 
 			background-color: lightgrey; 
 			border: black 2px solid;
-		}
+		*/
 		#show{
 			position: absolute;
 			top: 90%;
 			left: 85%;
-			height: 45px;
-			width: 150px;
+			height: 50px;
+			width: 175px;
 		}
 		#exit{
 			position: relative;
-			left: 255px;
+			left: 175px;
 			display:inline-block;
 			padding: 2px 5px;
 			background: red;
 		}
 		#exit:hover{
 			position: relative;
-			left: 255px;
+			left: 175px;
 			display:inline-block;
 			padding:2px 5px;
 			background:#ccc;
@@ -59,23 +53,51 @@
 		}
 		#window{
 			position: absolute;
-			top: 25%;
-			left: 69%;	
+			top: 30%;
+			left: 79%;	
 		}
 	</style>
 </head>
 <body>
  
  
-<button id = "show">get course codes</button>
+<button id = "show">GET COURSE CODES</button>
 <dialog id="window">  
 	<button id="exit">X</button>
-    <h3>Getch youre free course Codes here:</h3>  
-    <div id="copybox"><span id="codey">HUMA 302: 99666</p></div>
-    <p id="code">HUMA 303: 12345</p>	
-	<p id="code">HUMA 404: 54321</p>
-	<p id="code">HAMU 999: 44544</p>
-	<p id="code">MATH 123: 54445</p>
+    <h3>Course Codes here:</h3>  
+    <table>
+
+	<tr>
+	<td><div class="copy-boxes" id="div-target0">HUMA 302A</div></td>
+	<td><button class="btn0" data-clipboard-action="copy" data-clipboard-target="#div-target0">Copy</button></td>
+	</tr>
+	
+	<tr>
+	<td><div class="copy-boxes" id="div-target1">HUMA 305A</div></td>
+	<td><button class="btn1" data-clipboard-action="copy" data-clipboard-target="#div-target1">Copy</button></td>
+	</tr>
+	
+	<tr>
+	<td><div class="copy-boxes" id="div-target2">HUMA 404G</div></td>
+	<td><button class="btn2" data-clipboard-action="copy" data-clipboard-target="#div-target2">Copy</button></td>
+	</tr>
+	
+	<tr>
+	<td><div class="copy-boxes" id="div-target3">MATH 650C</div></td>
+	<td><button class="btn3" data-clipboard-action="copy" data-clipboard-target="#div-target3">Copy</button></td>
+	</tr>
+	
+	<tr>
+	<td><div class="copy-boxes" id="div-target4">ELEE 151L</div></td>
+	<td><button class="btn4" data-clipboard-action="copy" data-clipboard-target="#div-target4">Copy</button></td>
+	</tr>
+	
+	<tr>
+	<td><div class="copy-boxes" id="div-target5">PHYE 301F</div></td>
+	<td><button class="btn5" data-clipboard-action="copy" data-clipboard-target="#div-target5">Copy</button></td>
+	</tr>
+	
+	</table>
 </dialog>  
 
  
@@ -87,6 +109,15 @@ var dialog = document.getElementById('window');
     document.getElementById('exit').onclick = function() {  
         dialog.close();  
     };  
+</script>
+ 
+ <script>
+	var clipboard = new Clipboard('.btn0');
+	var clipboard = new Clipboard('.btn1');
+	var clipboard = new Clipboard('.btn2');
+	var clipboard = new Clipboard('.btn3');
+	var clipboard = new Clipboard('.btn4');
+	var clipboard = new Clipboard('.btn5');
 </script>
  
 </body>
