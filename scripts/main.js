@@ -1,6 +1,5 @@
 var selectedCourses = {};
 
-
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
     // TODO: add checks for errors

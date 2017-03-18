@@ -130,3 +130,28 @@ h1.title {
 #course_codes_button {
 	height: 3em;
 }
+
+div.copy-boxes {
+	text-align: center;
+	padding: 6px 20px; 
+	color: grey; 
+	background-color: white; 
+	border: black 2px solid;
+
+}
+
+button.btn {
+	width: 75%;
+}
+
+tr.coderows {
+	height: 3em;
+}
+
+#coursecodes {
+	width: 100%;
+}
+
+#space {
+	width: 15%;
+}
