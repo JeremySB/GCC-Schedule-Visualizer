@@ -144,44 +144,52 @@ $(document).ready(function() {
    function getEventData() {
       var year = new Date().getFullYear();
       var month = new Date().getMonth();
-      var day = new Date().getDate();
+      var dayOfMonth = new Date().getDate();
+      var dayOfWeek = new Date().getDay();
+
+      // The relitave day of the week
+      var mon = dayOfMonth - dayOfWeek + 1;
+      var tue = dayOfMonth - dayOfWeek + 2;
+      var wed = dayOfMonth - dayOfWeek + 3;
+      var thr = dayOfMonth - dayOfWeek + 4;
+      var fri = dayOfMonth - dayOfWeek + 5;
 
       return {
          events : [
             {
                "id":1,
-               "start": new Date(year, month, day - 2, 12),
-               "end": new Date(year, month, day - 2, 13, 30),
+               "start": new Date(year, month, mon, 12),
+               "end": new Date(year, month, mon, 13, 30),
                "title":"Lunch with Mike"
             },
             {
                "id":2,
-               "start": new Date(year, month, day - 1, 14),
-               "end": new Date(year, month, day-1, 14, 45),
-               "title":"Dev Meeting"
+               "start": new Date(year, month, tue, 14),
+               "end": new Date(year, month, tue, 14, 45),
+               "title":"Dev Meeting\nWith other stuff"
             },
             {
                "id":3,
-               "start": new Date(year, month, day, 17),
-               "end": new Date(year, month, day, 17, 45),
+               "start": new Date(year, month, wed, 17),
+               "end": new Date(year, month, wed, 17, 45),
                "title":"Hair cut"
             },
             {
                "id":4,
-               "start": new Date(year, month, day + 1, 8),
-               "end": new Date(year, month, day + 1, 9, 30),
+               "start": new Date(year, month, thr, 8),
+               "end": new Date(year, month, thr, 9, 30),
                "title":"Team breakfast"
             },
             {
                "id":5,
-               "start": new Date(year, month, day + 2, 14),
-               "end": new Date(year, month, day + 2, 15),
+               "start": new Date(year, month, fri, 14),
+               "end": new Date(year, month, fri, 15),
                "title":"Product showcase"
             },
             {
                "id":6,
-               "start": new Date(year, month, day, 10),
-               "end": new Date(year, month, day, 11),
+               "start": new Date(year, month, fri, 10),
+               "end": new Date(year, month, fri, 11),
                "title":"I'm read-only",
                readOnly : true
             }
