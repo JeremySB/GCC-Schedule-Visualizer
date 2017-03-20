@@ -1,4 +1,14 @@
+// courses that are added to student's schedule
 var selectedCourses = {};
+
+// courses that match current filters
+var filteredCourses = {};
+
+
+// filter all courses by selected filters and store that
+function filterCourses() {
+
+}
 
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
@@ -53,7 +63,7 @@ $(function() {
 
     });
 
-    
+
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
 
