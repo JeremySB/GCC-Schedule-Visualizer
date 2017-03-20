@@ -26,9 +26,8 @@ p {
 }
 
 #course_codes_button_container {
-	position: absolute;
-	bottom: 1em;
-	right: 5%;
+	float: right;
+	align: right;
 	padding: 0.5em 2em;
 	background: #ddf;
 	border: 1px solid #bbd;
@@ -159,4 +158,9 @@ tr.coderows {
 
 #space {
 	width: 15%;
+}
+
+#getcodescell {
+	text-align: right;
+	height: 100%;
 }
