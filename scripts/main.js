@@ -1,4 +1,14 @@
+// courses that are added to student's schedule
 var selectedCourses = {};
+
+// courses that match current filters
+var filteredCourses = {};
+
+
+// filter all courses by selected filters and store that
+function filterCourses() {
+
+}
 
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
@@ -39,6 +49,12 @@ function getSelectedCourseCodes() {
     return courseCodes;
 }
 
+//search funciton
+function searchBar(query) {
+	//var searchStr = query.split(" ");
+	console.log(query);
+}
+
 // code to execute on document ready
 
 $(function() {
@@ -47,9 +63,15 @@ $(function() {
 
     });
 
-    
+
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
 
     });
+	
+	$("#searchfield").keypress(function(e) {
+		if(e.which == 13) {
+			searchBar($("#searchfield").val());
+		}
+	});
 });
