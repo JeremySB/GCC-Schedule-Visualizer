@@ -27,11 +27,11 @@ p {
 
 #course_codes_button_container {
 	float: right;
-	align: right;
-	padding: 0.5em 2em;
-	background: #ddf;
-	border: 1px solid #bbd;
-	width: 10em;
+	margin-top: 2%;
+	/*padding: 0.5em 2em;*/
+	/*background: #ddf;*/
+	/*border: 1px solid #bbd;*/
+	/*width: 10em;*/
 	text-align: center;
 }
 
@@ -162,5 +162,6 @@ tr.coderows {
 
 #getcodescell {
 	text-align: right;
+	vertical-align: bottom;
 	height: 100%;
 }

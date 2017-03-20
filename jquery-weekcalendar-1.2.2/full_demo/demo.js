@@ -13,7 +13,7 @@ $(document).ready(function() {
       daysToShow : 5,
       readonly : true,
       height : function($calendar) {
-         return $(window).height()*.95 - $("h1").outerHeight() - 1;
+         return $(window).height()*.85 - $("h1").outerHeight() - 1;
       },
       eventRender : function(calEvent, $event) {
          if (calEvent.end.getTime() < new Date().getTime()) {
