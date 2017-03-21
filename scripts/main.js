@@ -51,8 +51,10 @@ function getSelectedCourseCodes() {
 
 //search funciton
 function searchBar(query) {
-	//var searchStr = query.split(" ");
-	console.log(query);
+	var searchStr = query.split(" "), i;
+	for(i = 0; i < searchStr.length; i++){
+		console.log(searchStr[i]);
+	}
 }
 
 // code to execute on document ready
@@ -66,6 +68,11 @@ $(function() {
 
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
+
+    });
+	
+	$("#search_button").click(function (event) {
+        searchBar($("#searchfield").val());
 
     });
 	
