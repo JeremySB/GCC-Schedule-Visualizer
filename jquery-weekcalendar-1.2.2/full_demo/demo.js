@@ -259,7 +259,7 @@ $(document).ready(function() {
    $("#course_codes_button").click(function() {
       $about.dialog({
          title: "Copy course codes",
-         width: "25%",
+         width: "50%",
          close: function() {
             $about.dialog("destroy");
             $about.hide();

@@ -27,8 +27,8 @@ p {
 
 #course_codes_button_container {
 	float: right;
-	margin-top: 2%;
-	/*padding: 0.5em 2em;*/
+	/*margin-top: 2%;*/
+	/*padding: 0 0;*/
 	/*background: #ddf;*/
 	/*border: 1px solid #bbd;*/
 	/*width: 10em;*/
@@ -137,9 +137,9 @@ h1.title {
 
 div.copy-boxes {
 	text-align: center;
-	padding: 6px 20px; 
-	color: grey; 
-	background-color: white; 
+	padding: 6px 20px;
+	color: grey;
+	background-color: white;
 	border: black 2px solid;
 
 }
@@ -162,6 +162,6 @@ tr.coderows {
 
 #getcodescell {
 	text-align: right;
-	vertical-align: bottom;
+	padding: 1em 0;
 	height: 100%;
 }
