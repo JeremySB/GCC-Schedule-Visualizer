@@ -6,51 +6,62 @@ var filteredCourses = {};
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
-    filteredCourses = {};
+	filteredCourses = {};
 
-    var department = $("#department").val();
-    var time = $("#time").val();
-    var course = $("#course").val();
-    var week = $("#week").val();
+	var department = $("#department").val();
+	var time = $("#time").val();
+	var course = $("#course").val();
+	var week = $("#week").val();
 
-    for (var code in allCourses) {
-        for (var section in allCourses[code]) {
-            var cur = allCourses[code][section];
+	for (var code in allCourses) {
+		var selector = 0; // usually the first item is the class, other ones might be labs
+		var cur = allCourses[code][selector];
 
-            // check if section doesn't match a filter, and if so, continue to next
+		// check if section doesn't match a filter, and if so, continue to next
 
-            if (department && department !== code.substr(0, code.indexOf(" "))) {
-                continue; // go to next section
-            }
+		if (department && department !== code.substr(0, code.indexOf(" "))) {
+			continue; // go to next section
+		}
 
-            if (time) {
-                if (!cur["BeginTime"]) continue;
-                var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
+		if (time) {
+			if (!cur["BeginTime"]) continue;
+			var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
 
-                if (time === "Morning" && sectionHour >= 12)
-                    continue;
-                else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-                    continue;
-                else if (time === "Evening" && sectionHour < 18)
-                    continue;
-            }
+			if (time === "Morning" && sectionHour >= 12)
+				continue;
+			else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
+				continue;
+			else if (time === "Evening" && sectionHour < 18)
+				continue;
+		}
 
-            if (course) {
-                var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
-                var courseFilter = course.substr(0, 1);
+		if (course) {
+			var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
+			var courseFilter = course.substr(0, 1);
 
-                if (courseFilter !== courseNumber) continue;
-            }
+			if (courseFilter !== courseNumber) continue;
+		}
 
-            // todo: add week schedule
+		if (week) {
+			if (!cur["Meets"]) continue;
+			// check if every MTWHF letter is in the Meets string of course
+			var meets = cur["Meets"];
+			var failed = false;
+			for (var i in week) {
+				if (meets.indexOf(week[i]) === -1) {
+					failed = true;
+					continue;
+				}
+			}
+			if (failed) continue;
+		}
 
-            // create array if none exists
-            filteredCourses[code] = filteredCourses[code] || [];
-            filteredCourses[code][section] = allCourses[code][section];
-        }
-    }
+		// create array if none exists
+		filteredCourses[code] = filteredCourses[code] || [];
+		filteredCourses[code][selector] = cur;
+	}
 
-    console.log(filteredCourses);
+	console.log(filteredCourses);
 }
 
 // name parameter is in the form "ACCT 202 A"
