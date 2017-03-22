@@ -59,6 +59,10 @@ p {
 	background: url(../images/header-bg.png) repeat-x;
 }
 
+table.wc-header {
+    table-layout: fixed;
+}
+
 label {
 	display: block;
 	margin-top: 1em;
@@ -128,6 +132,7 @@ ol.formatted li {
 .rightMenu {
 	width: 75%;
 	border: 2px solid #335DDF;
+    vertical-align: top;
 }
 
 .searchCell {
