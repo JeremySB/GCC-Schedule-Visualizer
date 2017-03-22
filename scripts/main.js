@@ -16,12 +16,34 @@ function filterCourses() {
 
     for (var code in allCourses) {
         for (var section in allCourses[code]) {
-            // check if section doesn't match a filter
+            var cur = allCourses[code][section];
+
+            // check if section doesn't match a filter, and if so, continue to next
+
             if (department && department !== code.substr(0, code.indexOf(" "))) {
                 continue; // go to next section
             }
 
-            // todo: add time, course range, and week schedule
+            if (time) {
+                if (!cur["BeginTime"]) continue;
+                var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
+
+                if (time === "Morning" && sectionHour >= 12)
+                    continue;
+                else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
+                    continue;
+                else if (time === "Evening" && sectionHour < 18)
+                    continue;
+            }
+
+            if (course) {
+                var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
+                var courseFilter = course.substr(0, 1);
+
+                if (courseFilter !== courseNumber) continue;
+            }
+
+            // todo: add week schedule
 
             // create array if none exists
             filteredCourses[code] = filteredCourses[code] || [];
