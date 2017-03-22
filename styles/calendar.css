@@ -168,3 +168,8 @@ tr.coderows {
 	padding: 1em 0;
 	height: 100%;
 }
+
+.myTableDiv{
+  height: 60%;
+	overflow: auto;
+}
