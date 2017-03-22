@@ -43,9 +43,12 @@ function filterCourses() {
 		}
 
 		if (week) {
-			if (!cur["Meets"]) continue;
+            if (!cur["Meets"]) continue;
+            var meets = cur["Meets"];
+            // get extra letters from other meeting times in this section
+            if (allCourses[code][1]) meets = meets + allCourses[code][1]["Meets"];
 			// check if every MTWTF letter is in the Meets string
-			var meets = cur["Meets"];
+			
 			var failed = false;
 			for (var i in week) {
 				if (meets.indexOf(week[i]) === -1) {
@@ -55,10 +58,8 @@ function filterCourses() {
 			}
 			if (failed) continue;
 		}
-
-		// create array if none exists
-		filteredCourses[code] = filteredCourses[code] || [];
-		filteredCourses[code][selector] = cur;
+        
+        filteredCourses[code] = allCourses[code];
 	}
 
 	console.log(filteredCourses);
