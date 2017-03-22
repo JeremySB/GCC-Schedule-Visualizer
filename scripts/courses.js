@@ -8,8 +8,8 @@ allCourses = {
       "Meets": "",
       "Building": "OFFCP",
       "Room": null,
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "ACCT 202 A": [
@@ -21,8 +21,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 37,
-      "Capacity": 44
+      "Enrollment": "37",
+      "Capacity": "44"
     },
     {
       "ShortTitle": "PRIN OF ACCOUNT",
@@ -32,8 +32,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 37,
-      "Capacity": 37
+      "Enrollment": "37",
+      "Capacity": "37"
     }
   ],
   "ACCT 202 B": [
@@ -45,8 +45,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     },
     {
       "ShortTitle": "PRIN OF ACCOUNT",
@@ -56,8 +56,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "ACCT 202 C": [
@@ -69,8 +69,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 35,
-      "Capacity": 42
+      "Enrollment": "35",
+      "Capacity": "42"
     },
     {
       "ShortTitle": "PRIN OF ACCOUNT",
@@ -80,8 +80,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 35,
-      "Capacity": 42
+      "Enrollment": "35",
+      "Capacity": "42"
     }
   ],
   "ACCT 202 D": [
@@ -93,8 +93,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     },
     {
       "ShortTitle": "PRIN OF ACCOUNT",
@@ -104,8 +104,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "ACCT 302 A": [
@@ -117,8 +117,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     },
     {
       "ShortTitle": "INTERMED ACCTNG",
@@ -128,8 +128,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "ACCT 302 B": [
@@ -141,8 +141,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 26,
-      "Capacity": 26
+      "Enrollment": "26",
+      "Capacity": "26"
     },
     {
       "ShortTitle": "INTERMED ACCTNG",
@@ -152,8 +152,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "ACCT 321 A": [
@@ -165,8 +165,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 31,
-      "Capacity": 31
+      "Enrollment": "31",
+      "Capacity": "31"
     }
   ],
   "ACCT 402 A": [
@@ -178,8 +178,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "ACCT 404 A": [
@@ -191,8 +191,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "ACCT 406 A": [
@@ -204,9 +204,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 7,
-      "Capacity": 7
-    }
+      "Enrollment": "7",
+      "Capacity": "7"
+}
   ],
   "ACCT 410 A": [
     {
@@ -217,8 +217,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "ACCT 460 A": [
@@ -230,9 +230,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "ACCT 480 A": [
     {
@@ -243,9 +243,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "ACCT 480 B": [
     {
@@ -256,9 +258,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "ART 103 A": [
     {
@@ -269,8 +273,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "47",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "ART 104 A": [
@@ -282,8 +286,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "47",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "ART 105 A": [
@@ -295,8 +299,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "ART 106 A": [
@@ -308,8 +312,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "ART 111 A": [
@@ -321,8 +325,8 @@ allCourses = {
       "Meets": "W",
       "Building": "PFAC",
       "Room": "46",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "ART 202 A": [
@@ -334,8 +338,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "ART 207 A": [
@@ -347,9 +351,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "47",
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "ART 210 A": [
     {
@@ -360,8 +364,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "ART 215 A": [
@@ -373,8 +377,8 @@ allCourses = {
       "Meets": "W",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "ART 321 A": [
@@ -386,8 +390,8 @@ allCourses = {
       "Meets": "T",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 25,
-      "Capacity": 25
+      "Enrollment": "25",
+      "Capacity": "25"
     }
   ],
   "ART 390 A": [
@@ -399,8 +403,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "45",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "ASTR 207 A": [
@@ -412,8 +416,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 55,
-      "Capacity": 66
+      "Enrollment": "55",
+      "Capacity": "66"
     }
   ],
   "ASTR 310 A": [
@@ -425,9 +429,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "BIOL 102 A": [
     {
@@ -438,8 +442,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 52,
-      "Capacity": 52
+      "Enrollment": "52",
+      "Capacity": "52"
     }
   ],
   "BIOL 102 B": [
@@ -451,8 +455,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 56,
-      "Capacity": 67
+      "Enrollment": "56",
+      "Capacity": "67"
     }
   ],
   "BIOL 102 L L": [
@@ -464,8 +468,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "145",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "BIOL 102 M L": [
@@ -477,8 +481,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "145",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "BIOL 102 N L": [
@@ -490,8 +494,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "145",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "BIOL 102 O L": [
@@ -503,8 +507,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "145",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "BIOL 102 P L": [
@@ -516,8 +520,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "145",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "BIOL 208 A": [
@@ -529,8 +533,8 @@ allCourses = {
       "Meets": "F",
       "Building": "RO",
       "Room": "124",
-      "Enrollment": 8,
-      "Capacity": 9
+      "Enrollment": "8",
+      "Capacity": "9"
     }
   ],
   "BIOL 234 A": [
@@ -542,8 +546,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "BIOL 234 B": [
@@ -555,8 +559,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 47,
-      "Capacity": 56
+      "Enrollment": "47",
+      "Capacity": "56"
     }
   ],
   "BIOL 234 L L": [
@@ -568,8 +572,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "155",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "BIOL 234 M L": [
@@ -581,8 +585,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "155",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "BIOL 234 N L": [
@@ -594,8 +598,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "155",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "BIOL 234 O L": [
@@ -607,8 +611,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "155",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "BIOL 302 A": [
@@ -620,8 +624,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "BIOL 302 L L": [
@@ -633,8 +637,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "BIOL 310 A": [
@@ -646,8 +650,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 28,
-      "Capacity": 28
+      "Enrollment": "28",
+      "Capacity": "28"
     }
   ],
   "BIOL 310 L L": [
@@ -659,8 +663,8 @@ allCourses = {
       "Meets": "F",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "BIOL 314 A": [
@@ -672,8 +676,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "BIOL 320 A": [
@@ -685,8 +689,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RO",
       "Room": "102",
-      "Enrollment": 27,
-      "Capacity": 32
+      "Enrollment": "27",
+      "Capacity": "32"
     }
   ],
   "BIOL 320 L L": [
@@ -698,8 +702,8 @@ allCourses = {
       "Meets": "M",
       "Building": "RO",
       "Room": "65",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "BIOL 326 A": [
@@ -711,8 +715,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "BIOL 334 A": [
@@ -724,8 +728,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 35,
-      "Capacity": 35
+      "Enrollment": "35",
+      "Capacity": "35"
     }
   ],
   "BIOL 346 A": [
@@ -737,8 +741,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 54,
-      "Capacity": 64
+      "Enrollment": "54",
+      "Capacity": "64"
     }
   ],
   "BIOL 346 L L": [
@@ -750,8 +754,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "BIOL 346 M L": [
@@ -763,8 +767,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "BIOL 346 N L": [
@@ -776,8 +780,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "245",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "BIOL 370 A": [
@@ -789,9 +793,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BIOL 470 A": [
     {
@@ -802,9 +808,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "BIOL 470 B": [
     {
@@ -815,9 +821,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BIOL 470 C": [
     {
@@ -828,9 +836,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BIOL 480 A": [
     {
@@ -841,9 +851,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BIOL 484 A": [
     {
@@ -854,8 +866,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "BIOL 486 A": [
@@ -867,9 +879,9 @@ allCourses = {
       "Meets": "R",
       "Building": "RO",
       "Room": "124",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "BIOL 488 A": [
     {
@@ -880,8 +892,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 16,
-      "Capacity": 16
+      "Enrollment": "16",
+      "Capacity": "16"
     }
   ],
   "BIOL 488 B": [
@@ -893,8 +905,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "160B",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "BUSA 201 A": [
@@ -906,8 +918,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 39,
-      "Capacity": 46
+      "Enrollment": "39",
+      "Capacity": "46"
     }
   ],
   "BUSA 201 B": [
@@ -919,8 +931,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 47,
-      "Capacity": 56
+      "Enrollment": "47",
+      "Capacity": "56"
     }
   ],
   "BUSA 203 A": [
@@ -932,8 +944,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 47,
-      "Capacity": 56
+      "Enrollment": "47",
+      "Capacity": "56"
     }
   ],
   "BUSA 203 B": [
@@ -945,8 +957,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 46,
-      "Capacity": 55
+      "Enrollment": "46",
+      "Capacity": "55"
     }
   ],
   "BUSA 204 A": [
@@ -958,8 +970,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "BUSA 204 B": [
@@ -971,8 +983,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "BUSA 204 C": [
@@ -984,8 +996,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "BUSA 211 A": [
@@ -997,8 +1009,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "BUSA 211 B": [
@@ -1010,8 +1022,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "BUSA 211 C": [
@@ -1023,8 +1035,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "BUSA 214 A": [
@@ -1036,8 +1048,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "BUSA 214 B": [
@@ -1049,8 +1061,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "BUSA 214 C": [
@@ -1062,8 +1074,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 23,
-      "Capacity": 23
+      "Enrollment": "23",
+      "Capacity": "23"
     }
   ],
   "BUSA 301 A": [
@@ -1075,8 +1087,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "BUSA 301 B": [
@@ -1088,8 +1100,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "BUSA 301 C": [
@@ -1101,8 +1113,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "BUSA 302 A": [
@@ -1114,8 +1126,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "BUSA 303 A": [
@@ -1127,8 +1139,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 30,
-      "Capacity": 30
+      "Enrollment": "30",
+      "Capacity": "30"
     }
   ],
   "BUSA 303 B": [
@@ -1140,8 +1152,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 29,
-      "Capacity": 29
+      "Enrollment": "29",
+      "Capacity": "29"
     }
   ],
   "BUSA 304 A": [
@@ -1153,8 +1165,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "BUSA 305 A": [
@@ -1166,8 +1178,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "BUSA 305 B": [
@@ -1179,8 +1191,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "BUSA 315 A": [
@@ -1192,8 +1204,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "BUSA 330 A": [
@@ -1205,8 +1217,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 15,
-      "Capacity": 15
+      "Enrollment": "15",
+      "Capacity": "15"
     }
   ],
   "BUSA 390 A": [
@@ -1218,8 +1230,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "BUSA 390 B": [
@@ -1231,8 +1243,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "BUSA 408 A": [
@@ -1244,9 +1256,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "BUSA 412 A": [
     {
@@ -1257,8 +1269,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "BUSA 415 A": [
@@ -1270,8 +1282,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 19,
-      "Capacity": 19
+      "Enrollment": "19",
+      "Capacity": "19"
     }
   ],
   "BUSA 417 A": [
@@ -1283,8 +1295,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "BUSA 419 A": [
@@ -1296,8 +1308,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "BUSA 419 B": [
@@ -1309,8 +1321,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "BUSA 432 A": [
@@ -1322,8 +1334,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "BUSA 433 A": [
@@ -1335,8 +1347,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "BUSA 435 A": [
@@ -1348,8 +1360,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 19,
-      "Capacity": 19
+      "Enrollment": "19",
+      "Capacity": "19"
     }
   ],
   "BUSA 440 A": [
@@ -1361,9 +1373,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 7,
-      "Capacity": 8
-    },
+      "Enrollment": "7",
+      "Capacity": "8"
+},
     {
       "ShortTitle": "FINANCIAL POLIC",
       "LongTitle": "ADVANCED CORPORATE FINANCE",
@@ -1372,9 +1384,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "BUSA 440 B": [
     {
@@ -1385,9 +1397,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 5,
-      "Capacity": 6
-    },
+      "Enrollment": "5",
+      "Capacity": "6"
+},
     {
       "ShortTitle": "FINANCIAL POLIC",
       "LongTitle": "ADVANCED CORPORATE FINANCE",
@@ -1396,8 +1408,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "BUSA 450 A": [
@@ -1409,8 +1421,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 40,
-      "Capacity": 40
+      "Enrollment": "40",
+      "Capacity": "40"
     }
   ],
   "BUSA 460 A": [
@@ -1422,9 +1434,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BUSA 460 B": [
     {
@@ -1435,9 +1449,11 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1"
+,
+      "Capacity": "1"
+
+}
   ],
   "BUSA 462 A": [
     {
@@ -1448,9 +1464,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "BUSA 462 B": [
     {
@@ -1461,9 +1477,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "BUSA 464 A": [
     {
@@ -1474,8 +1490,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "BUSA 475 A": [
@@ -1487,8 +1503,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 27,
-      "Capacity": 32
+      "Enrollment": "27",
+      "Capacity": "32"
     }
   ],
   "CHEM 102 A": [
@@ -1500,8 +1516,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 50,
-      "Capacity": 50
+      "Enrollment": "50",
+      "Capacity": "50"
     }
   ],
   "CHEM 102 B": [
@@ -1513,8 +1529,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 62,
-      "Capacity": 74
+      "Enrollment": "62",
+      "Capacity": "74"
     }
   ],
   "CHEM 102 L L": [
@@ -1526,8 +1542,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 31,
-      "Capacity": 31
+      "Enrollment": "31",
+      "Capacity": "31"
     }
   ],
   "CHEM 102 M L": [
@@ -1539,8 +1555,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 34,
-      "Capacity": 34
+      "Enrollment": "34",
+      "Capacity": "34"
     }
   ],
   "CHEM 102 N L": [
@@ -1552,8 +1568,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "CHEM 102 O L": [
@@ -1565,8 +1581,8 @@ allCourses = {
       "Meets": "F",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "CHEM 105 A": [
@@ -1578,8 +1594,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 45,
-      "Capacity": 54
+      "Enrollment": "45",
+      "Capacity": "54"
     }
   ],
   "CHEM 105 L L": [
@@ -1591,8 +1607,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "CHEM 105 M L": [
@@ -1604,8 +1620,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "255",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "CHEM 242 A": [
@@ -1617,8 +1633,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "CHEM 242 B": [
@@ -1630,8 +1646,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 29,
-      "Capacity": 34
+      "Enrollment": "29",
+      "Capacity": "34"
     }
   ],
   "CHEM 242 L L": [
@@ -1643,9 +1659,9 @@ allCourses = {
       "Meets": "M",
       "Building": "RO",
       "Room": "105",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "CHEM 242 M L": [
     {
@@ -1656,8 +1672,8 @@ allCourses = {
       "Meets": "W",
       "Building": "RO",
       "Room": "105",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "CHEM 242 N L": [
@@ -1669,9 +1685,9 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "226",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "CHEM 242 O L": [
     {
@@ -1682,8 +1698,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "226",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "CHEM 242 P L": [
@@ -1695,8 +1711,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "226",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "CHEM 242 Q L": [
@@ -1708,8 +1724,8 @@ allCourses = {
       "Meets": "R",
       "Building": "RO",
       "Room": "105",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "CHEM 270 A": [
@@ -1721,9 +1737,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "CHEM 342 A": [
     {
@@ -1734,8 +1750,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "CHEM 342 M L": [
@@ -1747,8 +1763,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "50",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "CHEM 346 A": [
@@ -1760,8 +1776,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "50",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "CHEM 346 L L": [
@@ -1773,8 +1789,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "50",
-      "Enrollment": 16,
-      "Capacity": 16
+      "Enrollment": "16",
+      "Capacity": "16"
     }
   ],
   "CHEM 352 A": [
@@ -1786,8 +1802,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "CHEM 352 M L": [
@@ -1799,8 +1815,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "155",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "CHEM 356 A": [
@@ -1812,8 +1828,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "CHEM 370 A": [
@@ -1825,9 +1841,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "CHEM 406 A": [
     {
@@ -1838,9 +1854,9 @@ allCourses = {
       "Meets": "WF",
       "Building": "STEM",
       "Room": "160B",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "CHEM 406 L L": [
     {
@@ -1851,9 +1867,9 @@ allCourses = {
       "Meets": "W",
       "Building": "RO",
       "Room": "54",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "CHEM 428 A": [
     {
@@ -1864,9 +1880,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RO",
       "Room": "102",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "CHEM 445 A": [
     {
@@ -1877,9 +1893,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "50",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "CHEM 458 A": [
     {
@@ -1890,9 +1906,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "RO",
       "Room": "102",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "CHEM 463 A": [
     {
@@ -1903,9 +1919,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "CHEM 487 A": [
     {
@@ -1916,9 +1932,9 @@ allCourses = {
       "Meets": "F",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 6,
-      "Capacity": 6
-    }
+      "Enrollment": "6",
+      "Capacity": "6"
+}
   ],
   "CHEM 487 B": [
     {
@@ -1929,9 +1945,9 @@ allCourses = {
       "Meets": "F",
       "Building": "STEM",
       "Room": "140B",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "CHEM 499 A": [
     {
@@ -1942,9 +1958,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "CHIN 102 A": [
     {
@@ -1955,9 +1971,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "CHIN 102 B": [
     {
@@ -1968,9 +1984,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "CHIN 202 A": [
     {
@@ -1981,9 +1997,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "CHIN 302 A": [
     {
@@ -1994,9 +2010,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "CHIN 390 A": [
     {
@@ -2007,9 +2023,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "COMM 104 A": [
     {
@@ -2020,8 +2036,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "COMM 110 A": [
@@ -2033,8 +2049,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 25,
-      "Capacity": 25
+      "Enrollment": "25",
+      "Capacity": "25"
     }
   ],
   "COMM 135 A": [
@@ -2046,8 +2062,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "COMM 207 A": [
@@ -2059,8 +2075,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 39,
-      "Capacity": 39
+      "Enrollment": "39",
+      "Capacity": "39"
     }
   ],
   "COMM 212 A": [
@@ -2072,8 +2088,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "COMM 225 A": [
@@ -2085,8 +2101,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "COMM 235 A": [
@@ -2098,8 +2114,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "COMM 303 A": [
@@ -2111,8 +2127,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "COMM 359 A": [
@@ -2124,8 +2140,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "COMM 360 A": [
@@ -2137,9 +2153,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "COMM 362 A": [
     {
@@ -2150,8 +2166,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "COMM 390 A": [
@@ -2163,8 +2179,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "COMM 390 B": [
@@ -2176,8 +2192,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "COMM 427 A": [
@@ -2189,8 +2205,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "COMM 444 A": [
@@ -2202,8 +2218,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "COMP 141 A": [
@@ -2215,8 +2231,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "COMP 141 B": [
@@ -2228,8 +2244,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "COMP 205 A": [
@@ -2241,8 +2257,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "COMP 205 B": [
@@ -2254,9 +2270,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "COMP 220 A": [
     {
@@ -2267,8 +2283,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 16,
-      "Capacity": 16
+      "Enrollment": "16",
+      "Capacity": "16"
     }
   ],
   "COMP 222 A": [
@@ -2280,8 +2296,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 28,
-      "Capacity": 28
+      "Enrollment": "28",
+      "Capacity": "28"
     }
   ],
   "COMP 222 B": [
@@ -2293,8 +2309,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "COMP 252 A": [
@@ -2306,8 +2322,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "COMP 314 A": [
@@ -2319,8 +2335,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "COMP 340 A": [
@@ -2332,8 +2348,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 45,
-      "Capacity": 54
+      "Enrollment": "45",
+      "Capacity": "54"
     }
   ],
   "COMP 361 A": [
@@ -2345,8 +2361,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 30,
-      "Capacity": 30
+      "Enrollment": "30",
+      "Capacity": "30"
     }
   ],
   "COMP 390 A": [
@@ -2358,8 +2374,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "160B",
-      "Enrollment": 12,
-      "Capacity": 12
+      "Enrollment": "12",
+      "Capacity": "12"
     }
   ],
   "COMP 401 A": [
@@ -2371,8 +2387,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "COMP 443 A": [
@@ -2384,8 +2400,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "COMP 446 A": [
@@ -2397,8 +2413,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "326",
-      "Enrollment": 15,
-      "Capacity": 15
+      "Enrollment": "15",
+      "Capacity": "15"
     }
   ],
   "COMP 450 A": [
@@ -2410,8 +2426,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "COMP 450 B": [
@@ -2423,8 +2439,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "COMP 452 A": [
@@ -2436,8 +2452,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "ECON 101 A": [
@@ -2449,8 +2465,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 56,
-      "Capacity": 67
+      "Enrollment": "56",
+      "Capacity": "67"
     }
   ],
   "ECON 101 B": [
@@ -2462,8 +2478,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 56,
-      "Capacity": 67
+      "Enrollment": "56",
+      "Capacity": "67"
     }
   ],
   "ECON 102 A": [
@@ -2475,8 +2491,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "ECON 102 B": [
@@ -2488,8 +2504,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 39,
-      "Capacity": 46
+      "Enrollment": "39",
+      "Capacity": "46"
     }
   ],
   "ECON 120 A": [
@@ -2501,8 +2517,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 44,
-      "Capacity": 52
+      "Enrollment": "44",
+      "Capacity": "52"
     }
   ],
   "ECON 209 A": [
@@ -2514,8 +2530,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "ECON 290 A": [
@@ -2527,8 +2543,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "ECON 290 B": [
@@ -2540,9 +2556,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 6,
-      "Capacity": 6
-    }
+      "Enrollment": "6",
+      "Capacity": "6"
+}
   ],
   "ECON 302 A": [
     {
@@ -2553,8 +2569,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "ECON 306 A": [
@@ -2566,8 +2582,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "ECON 408 A": [
@@ -2579,8 +2595,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "ECON 456 A": [
@@ -2592,8 +2608,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "EDUC 202 A": [
@@ -2605,8 +2621,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "EDUC 202 B": [
@@ -2618,8 +2634,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "EDUC 203 A": [
@@ -2631,8 +2647,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "EDUC 203 B": [
@@ -2644,8 +2660,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "EDUC 204 A": [
@@ -2657,8 +2673,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "EDUC 204 B": [
@@ -2670,8 +2686,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "EDUC 228 A": [
@@ -2683,9 +2699,9 @@ allCourses = {
       "Meets": "MW",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "EDUC 281 A": [
     {
@@ -2696,8 +2712,8 @@ allCourses = {
       "Meets": "",
       "Building": "HAL",
       "Room": "104",
-      "Enrollment": 28,
-      "Capacity": 28
+      "Enrollment": "28",
+      "Capacity": "28"
     }
   ],
   "EDUC 305 A": [
@@ -2709,9 +2725,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "EDUC 305 B": [
     {
@@ -2722,9 +2738,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "EDUC 306 A": [
     {
@@ -2735,9 +2751,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "EDUC 308 A": [
     {
@@ -2748,9 +2764,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "EDUC 309 A": [
     {
@@ -2761,9 +2777,9 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "EDUC 312 A": [
     {
@@ -2774,8 +2790,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "EDUC 324 A": [
@@ -2787,8 +2803,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "EDUC 325 A": [
@@ -2800,8 +2816,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 19,
-      "Capacity": 19
+      "Enrollment": "19",
+      "Capacity": "19"
     }
   ],
   "EDUC 325 B": [
@@ -2813,8 +2829,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "EDUC 326 A": [
@@ -2826,8 +2842,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "EDUC 326 B": [
@@ -2839,8 +2855,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "EDUC 326 C": [
@@ -2852,9 +2868,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "EDUC 327 A": [
     {
@@ -2865,8 +2881,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "EDUC 328 A": [
@@ -2878,8 +2894,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "EDUC 342 A": [
@@ -2891,8 +2907,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "EDUC 343 A": [
@@ -2904,8 +2920,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "EDUC 360 A": [
@@ -2917,9 +2933,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "EDUC 371 A": [
     {
@@ -2930,8 +2946,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "EDUC 372 A": [
@@ -2943,9 +2959,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "EDUC 372 B": [
     {
@@ -2956,9 +2972,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "EDUC 373 A": [
     {
@@ -2969,9 +2985,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "EDUC 373 B": [
     {
@@ -2982,9 +2998,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "EDUC 381 A": [
     {
@@ -2995,8 +3011,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "EDUC 382 A": [
@@ -3008,8 +3024,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "EDUC 383 A": [
@@ -3021,8 +3037,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "EDUC 385 A": [
@@ -3034,9 +3050,9 @@ allCourses = {
       "Meets": "",
       "Building": "HAL",
       "Room": "104",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "EDUC 390 A": [
     {
@@ -3047,8 +3063,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "EDUC 431 A": [
@@ -3060,8 +3076,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "EDUC 435 A": [
@@ -3073,9 +3089,9 @@ allCourses = {
       "Meets": "T",
       "Building": "PFAC",
       "Room": "70",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "EDUC 437 A": [
     {
@@ -3086,9 +3102,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "70",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "EDUC 441 A": [
     {
@@ -3099,8 +3115,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "EDUC 442 A": [
@@ -3112,9 +3128,9 @@ allCourses = {
       "Meets": "",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "EDUC 443 A": [
     {
@@ -3125,9 +3141,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "EDUC 444 A": [
     {
@@ -3138,9 +3154,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "EDUC 488 A": [
     {
@@ -3151,8 +3167,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "EDUC 488 B": [
@@ -3164,8 +3180,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "ELEE 202 A": [
@@ -3177,8 +3193,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "ELEE 204 A": [
@@ -3190,8 +3206,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "ELEE 210 A": [
@@ -3203,8 +3219,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 42,
-      "Capacity": 50
+      "Enrollment": "42",
+      "Capacity": "50"
     }
   ],
   "ELEE 252 L": [
@@ -3216,8 +3232,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HH",
       "Room": "204",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "ELEE 252 M": [
@@ -3229,8 +3245,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "204",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "ELEE 302 A": [
@@ -3242,8 +3258,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "ELEE 304 A": [
@@ -3255,8 +3271,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     },
     {
       "ShortTitle": "ELECTROMAG THEO",
@@ -3266,8 +3282,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "ELEE 306 A": [
@@ -3279,8 +3295,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "ELEE 310 A": [
@@ -3292,8 +3308,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "ELEE 310 L L": [
@@ -3305,8 +3321,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "ELEE 352 L": [
@@ -3318,8 +3334,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HH",
       "Room": "204",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "ELEE 360 A": [
@@ -3331,9 +3347,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "ELEE 390 B": [
     {
@@ -3344,9 +3360,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "ELEE 404 A": [
     {
@@ -3357,9 +3373,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "ELEE 422 A": [
     {
@@ -3370,8 +3386,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "ELEE 432 A": [
@@ -3383,8 +3399,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "376",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "ELEE 441 A": [
@@ -3396,8 +3412,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "ELEE 442 A": [
@@ -3409,8 +3425,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "ELEE 452 L": [
@@ -3422,9 +3438,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HH",
       "Room": "206",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "ELEE 452 M": [
     {
@@ -3435,8 +3451,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "206",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "ELEE 460 A": [
@@ -3448,9 +3464,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "ENGL 202 A": [
     {
@@ -3461,9 +3477,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "ENGL 202 B": [
     {
@@ -3474,8 +3490,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "ENGL 204 A": [
@@ -3487,8 +3503,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "ENGL 204 B": [
@@ -3500,8 +3516,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 29,
-      "Capacity": 29
+      "Enrollment": "29",
+      "Capacity": "29"
     }
   ],
   "ENGL 206 A": [
@@ -3513,8 +3529,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "ENGL 254 A": [
@@ -3526,9 +3542,9 @@ allCourses = {
       "Meets": "",
       "Building": "OFFCP",
       "Room": null,
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "ENGL 271 A": [
     {
@@ -3539,8 +3555,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "305",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "ENGL 290 A": [
@@ -3552,8 +3568,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "ENGL 304 A": [
@@ -3565,8 +3581,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "ENGL 320 A": [
@@ -3578,8 +3594,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "ENGL 324 A": [
@@ -3591,8 +3607,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "ENGL 352 A": [
@@ -3604,8 +3620,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 23,
-      "Capacity": 23
+      "Enrollment": "23",
+      "Capacity": "23"
     },
     {
       "ShortTitle": "SHAKESPEARE II",
@@ -3615,8 +3631,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "ENGL 382 A": [
@@ -3628,8 +3644,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "ENGL 450 A": [
@@ -3641,8 +3657,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "ENGL 488 A": [
@@ -3654,9 +3670,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "305",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "ENGR 156 A": [
     {
@@ -3667,8 +3683,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "ENGR 156 B": [
@@ -3680,8 +3696,8 @@ allCourses = {
       "Meets": "MF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "ENGR 274 A": [
@@ -3693,8 +3709,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "ENGR 402 A": [
@@ -3706,8 +3722,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 30,
-      "Capacity": 30
+      "Enrollment": "30",
+      "Capacity": "30"
     }
   ],
   "ENGR 402 B": [
@@ -3719,8 +3735,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "ENTR 301 A": [
@@ -3732,8 +3748,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "ENTR 302 A": [
@@ -3745,8 +3761,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "ENTR 303 A": [
@@ -3758,8 +3774,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 21,
-      "Capacity": 21
+      "Enrollment": "21",
+      "Capacity": "21"
     }
   ],
   "ENTR 314 A": [
@@ -3771,8 +3787,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "ENTR 330 A": [
@@ -3784,8 +3800,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "ENTR 390 A": [
@@ -3797,9 +3813,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "ENTR 408 A": [
     {
@@ -3810,9 +3826,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "ENTR 409 A": [
     {
@@ -3823,8 +3839,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "ENTR 423 A": [
@@ -3836,8 +3852,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "ENTR 466 A": [
@@ -3849,8 +3865,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "ENTR 467 A": [
@@ -3862,8 +3878,8 @@ allCourses = {
       "Meets": "F",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     },
     {
       "ShortTitle": "CORP HEALTHCARE",
@@ -3873,9 +3889,9 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "EXER 101 A": [
     {
@@ -3886,8 +3902,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "EXER 220 A": [
@@ -3899,8 +3915,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "EXER 221 A": [
@@ -3912,8 +3928,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "EXER 223 A": [
@@ -3925,8 +3941,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PLC",
       "Room": "107",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     },
     {
       "ShortTitle": "RC LIFEGUARD TR",
@@ -3936,8 +3952,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "231",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "EXER 228 A": [
@@ -3949,8 +3965,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "EXER 233 A": [
@@ -3962,9 +3978,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PLC",
       "Room": "231",
-      "Enrollment": 7,
-      "Capacity": 7
-    }
+      "Enrollment": "7",
+      "Capacity": "7"
+}
   ],
   "EXER 235 A": [
     {
@@ -3975,8 +3991,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PLC",
       "Room": "231",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "EXER 251 A": [
@@ -3988,8 +4004,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "231",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "EXER 254 A": [
@@ -4001,8 +4017,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "EXER 256 A": [
@@ -4014,8 +4030,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "EXER 256 L L": [
@@ -4027,9 +4043,9 @@ allCourses = {
       "Meets": "W",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "EXER 256 M L": [
     {
@@ -4040,9 +4056,9 @@ allCourses = {
       "Meets": "F",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "EXER 256 N L": [
     {
@@ -4053,9 +4069,9 @@ allCourses = {
       "Meets": "M",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 6,
-      "Capacity": 6
-    }
+      "Enrollment": "6",
+      "Capacity": "6"
+}
   ],
   "EXER 258 A": [
     {
@@ -4066,8 +4082,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "EXER 258 B": [
@@ -4079,9 +4095,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "EXER 258 L L": [
     {
@@ -4092,8 +4108,8 @@ allCourses = {
       "Meets": "T",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "EXER 258 M L": [
@@ -4105,9 +4121,9 @@ allCourses = {
       "Meets": "R",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "EXER 258 N L": [
     {
@@ -4118,9 +4134,9 @@ allCourses = {
       "Meets": "W",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "EXER 258 O L": [
     {
@@ -4131,9 +4147,9 @@ allCourses = {
       "Meets": "F",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "EXER 303 A": [
     {
@@ -4144,8 +4160,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 29,
-      "Capacity": 34
+      "Enrollment": "29",
+      "Capacity": "34"
     }
   ],
   "EXER 304 A": [
@@ -4157,8 +4173,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PLC",
       "Room": "130A",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "EXER 305 A": [
@@ -4170,8 +4186,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "EXER 306 A": [
@@ -4183,8 +4199,8 @@ allCourses = {
       "Meets": "M",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "EXER 306 B": [
@@ -4196,8 +4212,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "EXER 307 A": [
@@ -4209,8 +4225,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "EXER 309 A": [
@@ -4222,8 +4238,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RH",
       "Room": "SEM",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "EXER 312 A": [
@@ -4235,8 +4251,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 16,
-      "Capacity": 16
+      "Enrollment": "16",
+      "Capacity": "16"
     }
   ],
   "EXER 370 B": [
@@ -4248,9 +4264,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "EXER 377 A": [
     {
@@ -4261,9 +4277,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "EXER 402 A": [
     {
@@ -4274,9 +4290,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PLC",
       "Room": "131A",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "EXER 403 A": [
     {
@@ -4287,9 +4303,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PLC",
       "Room": "231",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "EXER 404 A": [
     {
@@ -4300,8 +4316,8 @@ allCourses = {
       "Meets": "",
       "Building": "BAO",
       "Room": null,
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "EXER 404 B": [
@@ -4313,9 +4329,9 @@ allCourses = {
       "Meets": "",
       "Building": "BAO",
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "EXER 407 A": [
     {
@@ -4326,8 +4342,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "EXER 470 A": [
@@ -4339,9 +4355,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "EXER 480 A": [
     {
@@ -4352,9 +4368,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "EXER 480 B": [
     {
@@ -4365,9 +4381,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "FREN 102 A": [
     {
@@ -4378,9 +4394,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "FREN 102 B": [
     {
@@ -4391,8 +4407,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "FREN 202 A": [
@@ -4404,8 +4420,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "FREN 202 B": [
@@ -4417,8 +4433,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 12,
-      "Capacity": 12
+      "Enrollment": "12",
+      "Capacity": "12"
     }
   ],
   "FREN 308 A": [
@@ -4430,9 +4446,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "FREN 331 A": [
     {
@@ -4443,8 +4459,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "FREN 340 A": [
@@ -4456,9 +4472,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "GEOL 201 A": [
     {
@@ -4469,9 +4485,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "RO",
       "Room": "102",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "GERM 102 A": [
     {
@@ -4482,8 +4498,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "GERM 202 A": [
@@ -4495,8 +4511,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "GOBL 260 A": [
@@ -4508,9 +4524,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "GOBL 300 A": [
     {
@@ -4521,8 +4537,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "GOBL 360 A": [
@@ -4534,9 +4550,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "GREK 102 A": [
     {
@@ -4547,9 +4563,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "GREK 202 A": [
     {
@@ -4560,9 +4576,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "HIST 120 A": [
     {
@@ -4573,8 +4589,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "HIST 201 A": [
@@ -4586,8 +4602,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "307",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "HIST 204 A": [
@@ -4599,8 +4615,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "HIST 212 A": [
@@ -4612,8 +4628,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "HIST 252 A": [
@@ -4625,8 +4641,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 56,
-      "Capacity": 56
+      "Enrollment": "56",
+      "Capacity": "56"
     }
   ],
   "HIST 261 A": [
@@ -4638,8 +4654,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "HIST 285 A": [
@@ -4651,8 +4667,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 32,
-      "Capacity": 32
+      "Enrollment": "32",
+      "Capacity": "32"
     }
   ],
   "HIST 290 A": [
@@ -4664,9 +4680,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "HIST 346 A": [
     {
@@ -4677,8 +4693,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "HIST 350 A": [
@@ -4690,8 +4706,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "HIST 357 A": [
@@ -4703,8 +4719,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "HIST 390 A": [
@@ -4716,8 +4732,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "HIST 400 A": [
@@ -4729,9 +4745,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "307",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "HIST 410 A": [
     {
@@ -4742,8 +4758,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "307",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "HUMA 102 A": [
@@ -4755,8 +4771,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "HUMA 102 B": [
@@ -4768,8 +4784,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 28,
-      "Capacity": 28
+      "Enrollment": "28",
+      "Capacity": "28"
     }
   ],
   "HUMA 102 C": [
@@ -4781,8 +4797,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 22,
-      "Capacity": 22
+      "Enrollment": "22",
+      "Capacity": "22"
     }
   ],
   "HUMA 102 D": [
@@ -4794,8 +4810,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "HUMA 102 E": [
@@ -4807,9 +4823,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "HUMA 102 F": [
     {
@@ -4820,8 +4836,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "HUMA 102 G": [
@@ -4833,8 +4849,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 29,
-      "Capacity": 34
+      "Enrollment": "29",
+      "Capacity": "34"
     }
   ],
   "HUMA 102 H": [
@@ -4846,8 +4862,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 30,
-      "Capacity": 30
+      "Enrollment": "30",
+      "Capacity": "30"
     }
   ],
   "HUMA 102 I": [
@@ -4859,8 +4875,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "HUMA 102 J": [
@@ -4872,8 +4888,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "HUMA 201 A": [
@@ -4885,8 +4901,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "HUMA 201 B": [
@@ -4898,8 +4914,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "HUMA 201 C": [
@@ -4911,8 +4927,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "HUMA 201 D": [
@@ -4924,8 +4940,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "HUMA 201 E": [
@@ -4937,8 +4953,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "HUMA 201 F": [
@@ -4950,8 +4966,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "HUMA 201 G": [
@@ -4963,8 +4979,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "HUMA 201 H": [
@@ -4976,8 +4992,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "HUMA 201 I": [
@@ -4989,8 +5005,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "HUMA 201 J": [
@@ -5002,8 +5018,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "HUMA 201 K": [
@@ -5015,8 +5031,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "HUMA 201 L": [
@@ -5028,8 +5044,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "HUMA 202 A": [
@@ -5041,8 +5057,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "HUMA 202 B": [
@@ -5054,8 +5070,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "HUMA 202 C": [
@@ -5067,8 +5083,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 32,
-      "Capacity": 32
+      "Enrollment": "32",
+      "Capacity": "32"
     }
   ],
   "HUMA 202 D": [
@@ -5080,8 +5096,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "HUMA 202 E": [
@@ -5093,8 +5109,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "69",
-      "Enrollment": 32,
-      "Capacity": 32
+      "Enrollment": "32",
+      "Capacity": "32"
     }
   ],
   "HUMA 202 F": [
@@ -5106,8 +5122,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "HUMA 202 G": [
@@ -5119,8 +5135,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "HUMA 301 A": [
@@ -5132,8 +5148,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 35,
-      "Capacity": 42
+      "Enrollment": "35",
+      "Capacity": "42"
     }
   ],
   "HUMA 301 B": [
@@ -5145,8 +5161,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 37,
-      "Capacity": 44
+      "Enrollment": "37",
+      "Capacity": "44"
     }
   ],
   "HUMA 301 C": [
@@ -5158,8 +5174,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "69",
-      "Enrollment": 40,
-      "Capacity": 48
+      "Enrollment": "40",
+      "Capacity": "48"
     }
   ],
   "HUMA 301 D": [
@@ -5171,8 +5187,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 301 E": [
@@ -5184,8 +5200,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 301 F": [
@@ -5197,8 +5213,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 301 G": [
@@ -5210,8 +5226,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 37,
-      "Capacity": 44
+      "Enrollment": "37",
+      "Capacity": "44"
     }
   ],
   "HUMA 302 A": [
@@ -5223,8 +5239,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 302 B": [
@@ -5236,8 +5252,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 41,
-      "Capacity": 49
+      "Enrollment": "41",
+      "Capacity": "49"
     }
   ],
   "HUMA 302 C": [
@@ -5249,8 +5265,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 55,
-      "Capacity": 66
+      "Enrollment": "55",
+      "Capacity": "66"
     }
   ],
   "HUMA 302 D": [
@@ -5262,8 +5278,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 40,
-      "Capacity": 40
+      "Enrollment": "40",
+      "Capacity": "40"
     }
   ],
   "HUMA 302 E": [
@@ -5275,8 +5291,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 302 F": [
@@ -5288,8 +5304,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 40,
-      "Capacity": 48
+      "Enrollment": "40",
+      "Capacity": "48"
     }
   ],
   "HUMA 302 G": [
@@ -5301,8 +5317,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 38,
-      "Capacity": 45
+      "Enrollment": "38",
+      "Capacity": "45"
     }
   ],
   "HUMA 302 H": [
@@ -5314,8 +5330,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 37,
-      "Capacity": 37
+      "Enrollment": "37",
+      "Capacity": "37"
     }
   ],
   "LATN 102 A": [
@@ -5327,8 +5343,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "305",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "LEGL 322 A": [
@@ -5340,9 +5356,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MATH 111 A": [
     {
@@ -5353,8 +5369,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 22,
-      "Capacity": 22
+      "Enrollment": "22",
+      "Capacity": "22"
     }
   ],
   "MATH 117 A": [
@@ -5366,8 +5382,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 34,
-      "Capacity": 34
+      "Enrollment": "34",
+      "Capacity": "34"
     }
   ],
   "MATH 117 B": [
@@ -5379,8 +5395,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "204",
-      "Enrollment": 35,
-      "Capacity": 35
+      "Enrollment": "35",
+      "Capacity": "35"
     }
   ],
   "MATH 141 A": [
@@ -5392,8 +5408,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 34,
-      "Capacity": 34
+      "Enrollment": "34",
+      "Capacity": "34"
     },
     {
       "ShortTitle": "BUS CALCULUS",
@@ -5403,8 +5419,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "MATH 141 B": [
@@ -5416,8 +5432,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 35,
-      "Capacity": 35
+      "Enrollment": "35",
+      "Capacity": "35"
     },
     {
       "ShortTitle": "BUSINESS CALCUL",
@@ -5427,8 +5443,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 35,
-      "Capacity": 35
+      "Enrollment": "35",
+      "Capacity": "35"
     }
   ],
   "MATH 152 A": [
@@ -5440,8 +5456,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 29,
-      "Capacity": 34
+      "Enrollment": "29",
+      "Capacity": "34"
     }
   ],
   "MATH 152 B": [
@@ -5453,8 +5469,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 25,
-      "Capacity": 25
+      "Enrollment": "25",
+      "Capacity": "25"
     }
   ],
   "MATH 161 A": [
@@ -5466,8 +5482,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     },
     {
       "ShortTitle": "CALCULUS I",
@@ -5477,8 +5493,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "MATH 161 B": [
@@ -5490,8 +5506,8 @@ allCourses = {
       "Meets": "MWRF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "MATH 162 A": [
@@ -5503,8 +5519,8 @@ allCourses = {
       "Meets": "MF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 23,
-      "Capacity": 23
+      "Enrollment": "23",
+      "Capacity": "23"
     },
     {
       "ShortTitle": "CALCULUS II",
@@ -5514,8 +5530,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 23,
-      "Capacity": 23
+      "Enrollment": "23",
+      "Capacity": "23"
     }
   ],
   "MATH 162 B": [
@@ -5527,8 +5543,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "MATH 162 C": [
@@ -5540,8 +5556,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     },
     {
       "ShortTitle": "CALCULUS II",
@@ -5551,8 +5567,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "MATH 162 D": [
@@ -5564,8 +5580,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     },
     {
       "ShortTitle": "CALCULUS II",
@@ -5575,8 +5591,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "MATH 162 E": [
@@ -5588,8 +5604,8 @@ allCourses = {
       "Meets": "MTWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "MATH 214 A": [
@@ -5601,8 +5617,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "MATH 222 A": [
@@ -5614,8 +5630,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     },
     {
       "ShortTitle": "LINEAR ALGEBRA",
@@ -5625,8 +5641,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "MATH 222 B": [
@@ -5638,8 +5654,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     },
     {
       "ShortTitle": "LINEAR ALGEBRA",
@@ -5649,8 +5665,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "MATH 240 A": [
@@ -5662,9 +5678,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MATH 261 A": [
     {
@@ -5675,8 +5691,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     },
     {
       "ShortTitle": "CALCULUS III",
@@ -5686,8 +5702,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "MATH 262 A": [
@@ -5699,8 +5715,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 27,
-      "Capacity": 32
+      "Enrollment": "27",
+      "Capacity": "32"
     }
   ],
   "MATH 262 B": [
@@ -5712,8 +5728,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "216",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "MATH 262 C": [
@@ -5725,8 +5741,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "MATH 262 D": [
@@ -5738,8 +5754,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "MATH 263 A": [
@@ -5751,9 +5767,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MATH 303 A": [
     {
@@ -5764,9 +5780,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 7,
-      "Capacity": 7
-    }
+      "Enrollment": "7",
+      "Capacity": "7"
+}
   ],
   "MATH 306 A": [
     {
@@ -5777,9 +5793,9 @@ allCourses = {
       "Meets": "",
       "Building": "TBA",
       "Room": null,
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MATH 332 A": [
     {
@@ -5790,8 +5806,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MATH 360 A": [
@@ -5803,9 +5819,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MATH 421 A": [
     {
@@ -5816,9 +5832,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "305",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "MATH 422 A": [
     {
@@ -5829,9 +5845,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MATH 465 A": [
     {
@@ -5842,9 +5858,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "209",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "MATH 466 A": [
     {
@@ -5855,9 +5871,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "MATH 488 A": [
     {
@@ -5868,9 +5884,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "305",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MECE 120 A": [
     {
@@ -5881,8 +5897,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "MECE 120 B": [
@@ -5894,8 +5910,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "MECE 210 A": [
@@ -5907,8 +5923,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 59,
-      "Capacity": 70
+      "Enrollment": "59",
+      "Capacity": "70"
     },
     {
       "ShortTitle": "DSGN FOR MANUFA",
@@ -5918,8 +5934,8 @@ allCourses = {
       "Meets": "R",
       "Building": null,
       "Room": null,
-      "Enrollment": 59,
-      "Capacity": 59
+      "Enrollment": "59",
+      "Capacity": "59"
     }
   ],
   "MECE 212 A": [
@@ -5931,8 +5947,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "MECE 212 B": [
@@ -5944,8 +5960,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "MECE 212 C": [
@@ -5957,8 +5973,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "MECE 214 A": [
@@ -5970,8 +5986,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "MECE 214 B": [
@@ -5983,8 +5999,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 29,
-      "Capacity": 29
+      "Enrollment": "29",
+      "Capacity": "29"
     }
   ],
   "MECE 252 L": [
@@ -5996,8 +6012,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HH",
       "Room": "112",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "MECE 252 M": [
@@ -6009,8 +6025,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "112",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "MECE 252 N": [
@@ -6022,8 +6038,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HH",
       "Room": "112",
-      "Enrollment": 15,
-      "Capacity": 15
+      "Enrollment": "15",
+      "Capacity": "15"
     }
   ],
   "MECE 270 A": [
@@ -6035,9 +6051,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MECE 312 A": [
     {
@@ -6048,8 +6064,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 41,
-      "Capacity": 41
+      "Enrollment": "41",
+      "Capacity": "41"
     }
   ],
   "MECE 316 A": [
@@ -6061,8 +6077,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "MECE 316 B": [
@@ -6074,8 +6090,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "MECE 326 A": [
@@ -6087,8 +6103,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "MECE 326 B": [
@@ -6100,8 +6116,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "MECE 328 A": [
@@ -6113,8 +6129,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "MECE 352 L": [
@@ -6126,8 +6142,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "201",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "MECE 352 M": [
@@ -6139,8 +6155,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "201",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "MECE 352 N": [
@@ -6152,8 +6168,8 @@ allCourses = {
       "Meets": "R",
       "Building": "HH",
       "Room": "201",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "MECE 352 O": [
@@ -6165,9 +6181,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HH",
       "Room": "201",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MECE 402 A": [
     {
@@ -6178,8 +6194,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 40,
-      "Capacity": 40
+      "Enrollment": "40",
+      "Capacity": "40"
     }
   ],
   "MECE 416 A": [
@@ -6191,8 +6207,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "MECE 452 L": [
@@ -6204,9 +6220,9 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "160B",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "MECE 452 M": [
     {
@@ -6217,9 +6233,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 8,
-      "Capacity": 9
-    },
+      "Enrollment": "8",
+      "Capacity": "9"
+},
     {
       "ShortTitle": "CAP DSGN LAB II",
       "LongTitle": "CAPSTONE DESIGN LABORATORY II",
@@ -6228,9 +6244,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HH",
       "Room": "215",
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "MECE 452 N": [
     {
@@ -6241,9 +6257,9 @@ allCourses = {
       "Meets": "T",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MECE 452 O": [
     {
@@ -6254,9 +6270,9 @@ allCourses = {
       "Meets": "M",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 8,
-      "Capacity": 9
-    },
+      "Enrollment": "8",
+      "Capacity": "9"
+},
     {
       "ShortTitle": "CAP DES LAB II",
       "LongTitle": "CAPSTONE DESIGN LABORATORY II",
@@ -6265,9 +6281,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HH",
       "Room": "113",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MECE 452 P": [
     {
@@ -6278,8 +6294,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "HH",
       "Room": "218",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MECE 470 A": [
@@ -6291,9 +6307,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MECE 498 A": [
     {
@@ -6304,9 +6320,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MECE 498 B": [
     {
@@ -6317,9 +6333,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 100 A": [
     {
@@ -6330,8 +6346,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "MUSI 100 B": [
@@ -6343,8 +6359,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 55,
-      "Capacity": 55
+      "Enrollment": "55",
+      "Capacity": "55"
     }
   ],
   "MUSI 101 A": [
@@ -6356,8 +6372,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     },
     {
       "ShortTitle": "CHOIR for AUDIT",
@@ -6367,8 +6383,8 @@ allCourses = {
       "Meets": "F",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 101 C": [
@@ -6380,8 +6396,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 44,
-      "Capacity": 52
+      "Enrollment": "44",
+      "Capacity": "52"
     },
     {
       "ShortTitle": "CHOIR for CRED",
@@ -6391,8 +6407,8 @@ allCourses = {
       "Meets": "F",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 44,
-      "Capacity": 52
+      "Enrollment": "44",
+      "Capacity": "52"
     }
   ],
   "MUSI 102 A": [
@@ -6404,8 +6420,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "MUSI 102 O": [
@@ -6417,8 +6433,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 70,
-      "Capacity": 70
+      "Enrollment": "70",
+      "Capacity": "70"
     }
   ],
   "MUSI 103 A": [
@@ -6430,8 +6446,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "MUSI 104 A": [
@@ -6443,9 +6459,9 @@ allCourses = {
       "Meets": "MF",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "MUSI 104 B": [
     {
@@ -6456,8 +6472,8 @@ allCourses = {
       "Meets": "MF",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "MUSI 106 A": [
@@ -6469,8 +6485,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "MUSI 107 A": [
@@ -6482,9 +6498,9 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 111 A": [
     {
@@ -6495,8 +6511,8 @@ allCourses = {
       "Meets": "M",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "MUSI 111 B": [
@@ -6508,8 +6524,8 @@ allCourses = {
       "Meets": "T",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 117 A": [
@@ -6521,8 +6537,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "MUSI 118 A": [
@@ -6534,8 +6550,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "MUSI 121 A": [
@@ -6547,9 +6563,9 @@ allCourses = {
       "Meets": "W",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 125 A": [
     {
@@ -6560,9 +6576,9 @@ allCourses = {
       "Meets": "R",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 131 A": [
     {
@@ -6573,9 +6589,9 @@ allCourses = {
       "Meets": "R",
       "Building": "PFAC",
       "Room": "138",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MUSI 135 A": [
     {
@@ -6586,8 +6602,8 @@ allCourses = {
       "Meets": "M",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "MUSI 135 B": [
@@ -6599,9 +6615,9 @@ allCourses = {
       "Meets": "M",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MUSI 137 A": [
     {
@@ -6612,9 +6628,9 @@ allCourses = {
       "Meets": "W",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 8,
-      "Capacity": 8
-    }
+      "Enrollment": "8",
+      "Capacity": "8"
+}
   ],
   "MUSI 151 A": [
     {
@@ -6625,8 +6641,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 151 B": [
@@ -6638,9 +6654,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "MUSI 151 C": [
     {
@@ -6651,8 +6667,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "MUSI 151 D": [
@@ -6664,9 +6680,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 151 F": [
     {
@@ -6677,9 +6693,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "MUSI 152 A": [
     {
@@ -6690,9 +6706,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MUSI 152 C": [
     {
@@ -6703,9 +6719,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 152 F": [
     {
@@ -6716,9 +6732,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 155 A": [
     {
@@ -6729,9 +6745,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "138",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 156 A": [
     {
@@ -6742,9 +6758,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "138",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 161 A": [
     {
@@ -6755,9 +6771,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "137",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 161 B": [
     {
@@ -6768,9 +6784,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "64",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MUSI 161 C": [
     {
@@ -6781,8 +6797,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "MUSI 161 D": [
@@ -6794,8 +6810,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "MUSI 161 E": [
@@ -6807,9 +6823,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 161 F": [
     {
@@ -6820,9 +6836,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 162 B": [
     {
@@ -6833,9 +6849,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "64",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "MUSI 162 C": [
     {
@@ -6846,9 +6862,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "MUSI 162 D": [
     {
@@ -6859,9 +6875,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 162 E": [
     {
@@ -6872,9 +6888,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 163 A": [
     {
@@ -6885,9 +6901,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MUSI 165 A": [
     {
@@ -6898,9 +6914,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "MUSI 165 B": [
     {
@@ -6911,9 +6927,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 166 A": [
     {
@@ -6924,9 +6940,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 167 A": [
     {
@@ -6937,9 +6953,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "66",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 169 A": [
     {
@@ -6950,9 +6966,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 170 A": [
     {
@@ -6963,9 +6979,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "65",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 171 A": [
     {
@@ -6976,9 +6992,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 172 A": [
     {
@@ -6989,9 +7005,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 173 A": [
     {
@@ -7002,9 +7018,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "64",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 175 A": [
     {
@@ -7015,9 +7031,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "63",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 177 A": [
     {
@@ -7028,9 +7044,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 179 A": [
     {
@@ -7041,9 +7057,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "43",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 181 A": [
     {
@@ -7054,9 +7070,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "23",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 182 A": [
     {
@@ -7067,9 +7083,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "23",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 183 A": [
     {
@@ -7080,9 +7096,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "43",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 183 B": [
     {
@@ -7093,9 +7109,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 184 A": [
     {
@@ -7106,9 +7122,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "43",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 185 A": [
     {
@@ -7119,9 +7135,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "43",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 186 A": [
     {
@@ -7132,9 +7148,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "43",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "MUSI 187 A": [
     {
@@ -7145,9 +7161,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "31",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "MUSI 188 A": [
     {
@@ -7158,9 +7174,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "31",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 191 A": [
     {
@@ -7171,9 +7187,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 192 A": [
     {
@@ -7184,9 +7200,9 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "67",
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 199 A": [
     {
@@ -7197,8 +7213,8 @@ allCourses = {
       "Meets": "F",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 63,
-      "Capacity": 75
+      "Enrollment": "63",
+      "Capacity": "75"
     }
   ],
   "MUSI 199 B": [
@@ -7210,8 +7226,8 @@ allCourses = {
       "Meets": "F",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "MUSI 204 A": [
@@ -7223,8 +7239,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "MUSI 206 A": [
@@ -7236,8 +7252,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "MUSI 209 A": [
@@ -7249,8 +7265,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 219 A": [
@@ -7262,9 +7278,9 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "MUSI 223 A": [
     {
@@ -7275,8 +7291,8 @@ allCourses = {
       "Meets": "M",
       "Building": "PFAC",
       "Room": "21",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 290 A": [
@@ -7288,9 +7304,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MUSI 303 A": [
     {
@@ -7301,9 +7317,9 @@ allCourses = {
       "Meets": "F",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 2,
-      "Capacity": 2
-    }
+      "Enrollment": "2",
+      "Capacity": "2"
+}
   ],
   "MUSI 304 A": [
     {
@@ -7314,9 +7330,9 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "119",
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "MUSI 307 A": [
     {
@@ -7327,8 +7343,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "25",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "MUSI 315 A": [
@@ -7340,8 +7356,8 @@ allCourses = {
       "Meets": "M",
       "Building": "PFAC",
       "Room": "69",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "MUSI 318 A": [
@@ -7353,8 +7369,8 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "106",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "MUSI 325 A": [
@@ -7366,9 +7382,9 @@ allCourses = {
       "Meets": "MW",
       "Building": "PFAC",
       "Room": "69",
-      "Enrollment": 8,
-      "Capacity": 9
-    }
+      "Enrollment": "8",
+      "Capacity": "9"
+}
   ],
   "MUSI 330 A": [
     {
@@ -7379,9 +7395,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "MUSI 332 A": [
     {
@@ -7392,8 +7408,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "68",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "MUSI 332 B": [
@@ -7405,8 +7421,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": "69",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "MUSI 460 A": [
@@ -7418,9 +7434,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 460 B": [
     {
@@ -7431,9 +7447,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "MUSI 476 A": [
     {
@@ -7444,8 +7460,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "112",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "MUSI 477 A": [
@@ -7457,9 +7473,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "PHIL 161 A": [
     {
@@ -7470,8 +7486,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "PHIL 201 A": [
@@ -7483,8 +7499,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "PHIL 312 A": [
@@ -7496,8 +7512,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "PHIL 336 A": [
@@ -7509,8 +7525,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "PHIL 339 A": [
@@ -7522,8 +7538,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "PHIL 360 A": [
@@ -7535,9 +7551,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "PHYE 102 A": [
     {
@@ -7548,8 +7564,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 113,
-      "Capacity": 135
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "PHYE 102 B": [
@@ -7561,8 +7577,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 63,
-      "Capacity": 75
+      "Enrollment": "63",
+      "Capacity": "75"
     }
   ],
   "PHYE 102 C": [
@@ -7574,8 +7590,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 112,
-      "Capacity": 112
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "PHYE 112 A": [
@@ -7587,8 +7603,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 113,
-      "Capacity": 135
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "PHYE 112 B": [
@@ -7600,8 +7616,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 113,
-      "Capacity": 113
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "PHYE 112 C": [
@@ -7613,8 +7629,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "HAL",
       "Room": "108",
-      "Enrollment": 74,
-      "Capacity": 88
+      "Enrollment": "74",
+      "Capacity": "88"
     }
   ],
   "PHYE 201 A": [
@@ -7626,8 +7642,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "141",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "PHYE 205 A": [
@@ -7639,8 +7655,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "100",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "PHYE 207 B": [
@@ -7652,8 +7668,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "10",
-      "Enrollment": 20,
-      "Capacity": 24
+      "Enrollment": "20",
+      "Capacity": "24"
     }
   ],
   "PHYE 209 A": [
@@ -7665,8 +7681,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "103",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "PHYE 216 A": [
@@ -7678,9 +7694,9 @@ allCourses = {
       "Meets": "F",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "PHYE 216 B": [
     {
@@ -7691,9 +7707,9 @@ allCourses = {
       "Meets": "F",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "PHYE 217 A": [
     {
@@ -7704,8 +7720,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "106",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "PHYE 220 A": [
@@ -7717,8 +7733,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "PHYE 221 A": [
@@ -7730,8 +7746,8 @@ allCourses = {
       "Meets": "WF",
       "Building": "PLC",
       "Room": "130A",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "PHYE 290 B": [
@@ -7743,8 +7759,8 @@ allCourses = {
       "Meets": "F",
       "Building": "PLC",
       "Room": "233",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "PHYS 102 A": [
@@ -7756,8 +7772,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 41,
-      "Capacity": 49
+      "Enrollment": "41",
+      "Capacity": "49"
     }
   ],
   "PHYS 102 B": [
@@ -7769,8 +7785,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 46,
-      "Capacity": 55
+      "Enrollment": "46",
+      "Capacity": "55"
     }
   ],
   "PHYS 102 L L": [
@@ -7782,8 +7798,8 @@ allCourses = {
       "Meets": "W",
       "Building": "RO",
       "Room": "216",
-      "Enrollment": 33,
-      "Capacity": 33
+      "Enrollment": "33",
+      "Capacity": "33"
     }
   ],
   "PHYS 102 M L": [
@@ -7795,8 +7811,8 @@ allCourses = {
       "Meets": "F",
       "Building": "RO",
       "Room": "216",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "PHYS 102 N L": [
@@ -7808,8 +7824,8 @@ allCourses = {
       "Meets": "R",
       "Building": "RO",
       "Room": "216",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "PHYS 122 A": [
@@ -7821,8 +7837,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 22,
-      "Capacity": 26
+      "Enrollment": "22",
+      "Capacity": "26"
     }
   ],
   "PHYS 122 B": [
@@ -7834,8 +7850,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "PHYS 122 L L": [
@@ -7847,8 +7863,8 @@ allCourses = {
       "Meets": "M",
       "Building": "RO",
       "Room": "218",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "PHYS 122 M L": [
@@ -7860,8 +7876,8 @@ allCourses = {
       "Meets": "T",
       "Building": "RO",
       "Room": "218",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "PHYS 234 A": [
@@ -7873,8 +7889,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RO",
       "Room": "220",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "PHYS 242 A": [
@@ -7886,8 +7902,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RO",
       "Room": "220",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "PHYS 321 A": [
@@ -7899,8 +7915,8 @@ allCourses = {
       "Meets": "R",
       "Building": "RO",
       "Room": "301",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "PHYS 431 A": [
@@ -7912,9 +7928,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "RO",
       "Room": "220",
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "POLS 101 A": [
     {
@@ -7925,8 +7941,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "POLS 104 A": [
@@ -7938,8 +7954,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "POLS 204 A": [
@@ -7951,8 +7967,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "POLS 256 A": [
@@ -7964,8 +7980,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "POLS 277 A": [
@@ -7977,8 +7993,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     },
     {
       "ShortTitle": "RSRCH MTH POLS",
@@ -7988,8 +8004,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "POLS 290 A": [
@@ -8001,8 +8017,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 32,
-      "Capacity": 38
+      "Enrollment": "32",
+      "Capacity": "38"
     }
   ],
   "POLS 303 A": [
@@ -8014,8 +8030,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "POLS 308 A": [
@@ -8027,8 +8043,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 19,
-      "Capacity": 22
+      "Enrollment": "19",
+      "Capacity": "22"
     }
   ],
   "POLS 318 A": [
@@ -8040,9 +8056,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "307",
-      "Enrollment": 5,
-      "Capacity": 5
-    }
+      "Enrollment": "5",
+      "Capacity": "5"
+}
   ],
   "POLS 342 A": [
     {
@@ -8053,8 +8069,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 42,
-      "Capacity": 50
+      "Enrollment": "42",
+      "Capacity": "50"
     }
   ],
   "POLS 344 A": [
@@ -8066,9 +8082,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "312",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "POLS 350 A": [
     {
@@ -8079,8 +8095,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "307",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "POLS 390 A": [
@@ -8092,8 +8108,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 37,
-      "Capacity": 44
+      "Enrollment": "37",
+      "Capacity": "44"
     }
   ],
   "POLS 481 A": [
@@ -8105,9 +8121,9 @@ allCourses = {
       "Meets": "",
       "Building": "OFFCP",
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "PSYC 101 A": [
     {
@@ -8118,8 +8134,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 51,
-      "Capacity": 61
+      "Enrollment": "51",
+      "Capacity": "61"
     }
   ],
   "PSYC 101 B": [
@@ -8131,8 +8147,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 41,
-      "Capacity": 49
+      "Enrollment": "41",
+      "Capacity": "49"
     }
   ],
   "PSYC 102 A": [
@@ -8144,8 +8160,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "PSYC 102 B": [
@@ -8157,8 +8173,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "PSYC 105 A": [
@@ -8170,8 +8186,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "PSYC 200 A": [
@@ -8183,8 +8199,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 24,
-      "Capacity": 24
+      "Enrollment": "24",
+      "Capacity": "24"
     }
   ],
   "PSYC 201 A": [
@@ -8196,8 +8212,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 58,
-      "Capacity": 58
+      "Enrollment": "58",
+      "Capacity": "58"
     }
   ],
   "PSYC 202 A": [
@@ -8209,8 +8225,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "PSYC 204 A": [
@@ -8222,8 +8238,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "PSYC 204 L L": [
@@ -8235,8 +8251,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "PSYC 204 M L": [
@@ -8248,9 +8264,9 @@ allCourses = {
       "Meets": "R",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 9,
-      "Capacity": 9
-    }
+      "Enrollment": "9",
+      "Capacity": "9"
+}
   ],
   "PSYC 206 A": [
     {
@@ -8261,8 +8277,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "309",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "PSYC 208 A": [
@@ -8274,8 +8290,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "PSYC 208 B": [
@@ -8287,8 +8303,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "214",
-      "Enrollment": 35,
-      "Capacity": 42
+      "Enrollment": "35",
+      "Capacity": "42"
     }
   ],
   "PSYC 209 A": [
@@ -8300,8 +8316,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 40,
-      "Capacity": 48
+      "Enrollment": "40",
+      "Capacity": "48"
     }
   ],
   "PSYC 209 B": [
@@ -8313,8 +8329,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "PSYC 211 A": [
@@ -8326,8 +8342,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "PSYC 211 B": [
@@ -8339,8 +8355,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 29,
-      "Capacity": 29
+      "Enrollment": "29",
+      "Capacity": "29"
     }
   ],
   "PSYC 214 A": [
@@ -8352,8 +8368,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "PSYC 306 A": [
@@ -8365,8 +8381,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "PSYC 310 A": [
@@ -8378,8 +8394,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 33,
-      "Capacity": 33
+      "Enrollment": "33",
+      "Capacity": "33"
     }
   ],
   "PSYC 390 A": [
@@ -8391,9 +8407,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "PSYC 404 A": [
     {
@@ -8404,8 +8420,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     },
     {
       "ShortTitle": "ADV RESEARCH",
@@ -8415,8 +8431,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "PSYC 404 B": [
@@ -8428,8 +8444,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "215",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     },
     {
       "ShortTitle": "ADV RESEARCH",
@@ -8439,8 +8455,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "212",
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "PSYC 480 A": [
@@ -8452,9 +8468,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "RELI 212 A": [
     {
@@ -8465,8 +8481,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 39,
-      "Capacity": 46
+      "Enrollment": "39",
+      "Capacity": "46"
     }
   ],
   "RELI 212 B": [
@@ -8478,8 +8494,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "RELI 212 C": [
@@ -8491,8 +8507,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "RELI 214 A": [
@@ -8504,8 +8520,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 50,
-      "Capacity": 60
+      "Enrollment": "50",
+      "Capacity": "60"
     }
   ],
   "RELI 237 A": [
@@ -8517,8 +8533,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "RELI 237 B": [
@@ -8530,8 +8546,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "RELI 237 C": [
@@ -8543,8 +8559,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 41,
-      "Capacity": 49
+      "Enrollment": "41",
+      "Capacity": "49"
     }
   ],
   "RELI 237 D": [
@@ -8556,8 +8572,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "113",
-      "Enrollment": 27,
-      "Capacity": 32
+      "Enrollment": "27",
+      "Capacity": "32"
     }
   ],
   "RELI 237 E": [
@@ -8569,8 +8585,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 25,
-      "Capacity": 30
+      "Enrollment": "25",
+      "Capacity": "30"
     }
   ],
   "RELI 251 A": [
@@ -8582,8 +8598,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 25,
-      "Capacity": 25
+      "Enrollment": "25",
+      "Capacity": "25"
     }
   ],
   "RELI 261 A": [
@@ -8595,8 +8611,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 61,
-      "Capacity": 73
+      "Enrollment": "61",
+      "Capacity": "73"
     }
   ],
   "RELI 290 A": [
@@ -8608,8 +8624,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "RELI 343 A": [
@@ -8621,8 +8637,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "RELI 390 A": [
@@ -8634,8 +8650,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "314",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "RELI 460 A": [
@@ -8647,9 +8663,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "RELI 460 C": [
     {
@@ -8660,9 +8676,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "RELI 470 A": [
     {
@@ -8673,9 +8689,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "RELI 480 A": [
     {
@@ -8686,9 +8702,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "RELI 480 B": [
     {
@@ -8699,9 +8715,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "SCIC 201 A": [
     {
@@ -8712,8 +8728,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 58,
-      "Capacity": 69
+      "Enrollment": "58",
+      "Capacity": "69"
     }
   ],
   "SCIC 201 L L": [
@@ -8725,8 +8741,8 @@ allCourses = {
       "Meets": "T",
       "Building": "RO",
       "Room": "300",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "SCIC 201 M L": [
@@ -8738,8 +8754,8 @@ allCourses = {
       "Meets": "T",
       "Building": "RO",
       "Room": "300",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "SCIC 202 A": [
@@ -8751,8 +8767,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 45,
-      "Capacity": 54
+      "Enrollment": "45",
+      "Capacity": "54"
     }
   ],
   "SCIC 202 B": [
@@ -8764,8 +8780,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 43,
-      "Capacity": 43
+      "Enrollment": "43",
+      "Capacity": "43"
     }
   ],
   "SCIC 202 L L": [
@@ -8777,8 +8793,8 @@ allCourses = {
       "Meets": "W",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 29,
-      "Capacity": 34
+      "Enrollment": "29",
+      "Capacity": "34"
     }
   ],
   "SCIC 202 M L": [
@@ -8790,8 +8806,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 31,
-      "Capacity": 37
+      "Enrollment": "31",
+      "Capacity": "37"
     }
   ],
   "SCIC 202 N L": [
@@ -8803,8 +8819,8 @@ allCourses = {
       "Meets": "R",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 28,
-      "Capacity": 33
+      "Enrollment": "28",
+      "Capacity": "33"
     }
   ],
   "SCIC 203 A": [
@@ -8816,8 +8832,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "RO",
       "Room": "218",
-      "Enrollment": 47,
-      "Capacity": 56
+      "Enrollment": "47",
+      "Capacity": "56"
     }
   ],
   "SCIC 203 L L": [
@@ -8829,8 +8845,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 23,
-      "Capacity": 27
+      "Enrollment": "23",
+      "Capacity": "27"
     }
   ],
   "SCIC 203 M L": [
@@ -8842,8 +8858,8 @@ allCourses = {
       "Meets": "M",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 24,
-      "Capacity": 28
+      "Enrollment": "24",
+      "Capacity": "28"
     }
   ],
   "SCIC 204 A": [
@@ -8855,8 +8871,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "STEM",
       "Room": "51",
-      "Enrollment": 60,
-      "Capacity": 60
+      "Enrollment": "60",
+      "Capacity": "60"
     }
   ],
   "SCIC 204 L L": [
@@ -8868,8 +8884,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "SCIC 204 M L": [
@@ -8881,8 +8897,8 @@ allCourses = {
       "Meets": "T",
       "Building": "STEM",
       "Room": "126",
-      "Enrollment": 30,
-      "Capacity": 30
+      "Enrollment": "30",
+      "Capacity": "30"
     }
   ],
   "SEDU 101 A": [
@@ -8894,8 +8910,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 26,
-      "Capacity": 31
+      "Enrollment": "26",
+      "Capacity": "31"
     }
   ],
   "SEDU 101 B": [
@@ -8907,8 +8923,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "110",
-      "Enrollment": 34,
-      "Capacity": 40
+      "Enrollment": "34",
+      "Capacity": "40"
     }
   ],
   "SEDU 204 A": [
@@ -8920,8 +8936,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "112",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "SEDU 205 A": [
@@ -8933,8 +8949,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "SEDU 309 A": [
@@ -8946,8 +8962,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "SEDU 310 A": [
@@ -8959,8 +8975,8 @@ allCourses = {
       "Meets": "",
       "Building": "TBA",
       "Room": null,
-      "Enrollment": 20,
-      "Capacity": 20
+      "Enrollment": "20",
+      "Capacity": "20"
     }
   ],
   "SEDU 411 A": [
@@ -8972,8 +8988,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "SEDU 412 A": [
@@ -8985,8 +9001,8 @@ allCourses = {
       "Meets": "M",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 12,
-      "Capacity": 12
+      "Enrollment": "12",
+      "Capacity": "12"
     }
   ],
   "SOCI 101 A": [
@@ -8998,8 +9014,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 36,
-      "Capacity": 43
+      "Enrollment": "36",
+      "Capacity": "43"
     }
   ],
   "SOCI 101 B": [
@@ -9011,8 +9027,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 37,
-      "Capacity": 37
+      "Enrollment": "37",
+      "Capacity": "37"
     }
   ],
   "SOCI 105 A": [
@@ -9024,8 +9040,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "302",
-      "Enrollment": 10,
-      "Capacity": 10
+      "Enrollment": "10",
+      "Capacity": "10"
     }
   ],
   "SOCI 201 A": [
@@ -9037,8 +9053,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "208",
-      "Enrollment": 30,
-      "Capacity": 36
+      "Enrollment": "30",
+      "Capacity": "36"
     }
   ],
   "SOCI 203 A": [
@@ -9050,8 +9066,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 28,
-      "Capacity": 28
+      "Enrollment": "28",
+      "Capacity": "28"
     }
   ],
   "SOCI 221 A": [
@@ -9063,8 +9079,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 34,
-      "Capacity": 34
+      "Enrollment": "34",
+      "Capacity": "34"
     }
   ],
   "SOCI 241 A": [
@@ -9076,8 +9092,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "308",
-      "Enrollment": 36,
-      "Capacity": 36
+      "Enrollment": "36",
+      "Capacity": "36"
     }
   ],
   "SOCI 251 A": [
@@ -9089,8 +9105,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 33,
-      "Capacity": 39
+      "Enrollment": "33",
+      "Capacity": "39"
     }
   ],
   "SOCI 251 B": [
@@ -9102,8 +9118,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "316",
-      "Enrollment": 41,
-      "Capacity": 41
+      "Enrollment": "41",
+      "Capacity": "41"
     }
   ],
   "SOCI 290 A": [
@@ -9115,8 +9131,8 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 13,
-      "Capacity": 15
+      "Enrollment": "13",
+      "Capacity": "15"
     }
   ],
   "SOCI 290 B": [
@@ -9128,8 +9144,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "SOCI 356 A": [
@@ -9141,8 +9157,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "306",
-      "Enrollment": 16,
-      "Capacity": 16
+      "Enrollment": "16",
+      "Capacity": "16"
     }
   ],
   "SOCI 452 A": [
@@ -9154,8 +9170,8 @@ allCourses = {
       "Meets": "W",
       "Building": "HAL",
       "Room": "210",
-      "Enrollment": 12,
-      "Capacity": 14
+      "Enrollment": "12",
+      "Capacity": "14"
     }
   ],
   "SOCI 471 A": [
@@ -9167,8 +9183,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HH",
       "Room": "118",
-      "Enrollment": 27,
-      "Capacity": 27
+      "Enrollment": "27",
+      "Capacity": "27"
     }
   ],
   "SOCW 209 A": [
@@ -9180,8 +9196,8 @@ allCourses = {
       "Meets": "T",
       "Building": "HAL",
       "Room": "114",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "SOCW 272 A": [
@@ -9193,9 +9209,9 @@ allCourses = {
       "Meets": "",
       "Building": "TBA",
       "Room": null,
-      "Enrollment": 3,
-      "Capacity": 3
-    }
+      "Enrollment": "3",
+      "Capacity": "3"
+}
   ],
   "SOCW 305 A": [
     {
@@ -9206,8 +9222,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "323",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "SOCW 382 A": [
@@ -9219,8 +9235,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "105",
-      "Enrollment": 10,
-      "Capacity": 12
+      "Enrollment": "10",
+      "Capacity": "12"
     }
   ],
   "SPAN 102 A": [
@@ -9232,8 +9248,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "SPAN 102 B": [
@@ -9245,8 +9261,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 12,
-      "Capacity": 12
+      "Enrollment": "12",
+      "Capacity": "12"
     }
   ],
   "SPAN 102 C": [
@@ -9258,8 +9274,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "SPAN 102 D": [
@@ -9271,8 +9287,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 11,
-      "Capacity": 11
+      "Enrollment": "11",
+      "Capacity": "11"
     }
   ],
   "SPAN 202 A": [
@@ -9284,9 +9300,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 7,
-      "Capacity": 7
-    }
+      "Enrollment": "7",
+      "Capacity": "7"
+}
   ],
   "SPAN 202 B": [
     {
@@ -9297,8 +9313,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "SPAN 202 C": [
@@ -9310,8 +9326,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "111",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "SPAN 202 D": [
@@ -9323,8 +9339,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "SPAN 202 E": [
@@ -9336,8 +9352,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ],
   "SPAN 295 A": [
@@ -9349,8 +9365,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 11,
-      "Capacity": 13
+      "Enrollment": "11",
+      "Capacity": "13"
     }
   ],
   "SPAN 305 A": [
@@ -9362,8 +9378,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 15,
-      "Capacity": 18
+      "Enrollment": "15",
+      "Capacity": "18"
     }
   ],
   "SPAN 306 A": [
@@ -9375,8 +9391,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 12,
-      "Capacity": 12
+      "Enrollment": "12",
+      "Capacity": "12"
     }
   ],
   "SPAN 306 B": [
@@ -9388,8 +9404,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 21,
-      "Capacity": 25
+      "Enrollment": "21",
+      "Capacity": "25"
     }
   ],
   "SPAN 320 A": [
@@ -9401,8 +9417,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "SPAN 323 A": [
@@ -9414,8 +9430,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 17,
-      "Capacity": 17
+      "Enrollment": "17",
+      "Capacity": "17"
     }
   ],
   "SPAN 333 A": [
@@ -9427,9 +9443,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 6,
-      "Capacity": 7
-    }
+      "Enrollment": "6",
+      "Capacity": "7"
+}
   ],
   "SPAN 341 A": [
     {
@@ -9440,9 +9456,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "206",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "SPAN 362 A": [
     {
@@ -9453,9 +9469,9 @@ allCourses = {
       "Meets": "WF",
       "Building": "HAL",
       "Room": "109",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "SPAN 460 A": [
     {
@@ -9466,9 +9482,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "SPAN 460 B": [
     {
@@ -9479,9 +9495,9 @@ allCourses = {
       "Meets": "",
       "Building": null,
       "Room": null,
-      "Enrollment": 1,
-      "Capacity": 1
-    }
+      "Enrollment": "1",
+      "Capacity": "1"
+}
   ],
   "SSFT 212 A": [
     {
@@ -9492,8 +9508,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 39,
-      "Capacity": 46
+      "Enrollment": "39",
+      "Capacity": "46"
     }
   ],
   "SSFT 212 B": [
@@ -9505,8 +9521,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "116",
-      "Enrollment": 40,
-      "Capacity": 48
+      "Enrollment": "40",
+      "Capacity": "48"
     }
   ],
   "SSFT 212 C": [
@@ -9518,8 +9534,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 40,
-      "Capacity": 48
+      "Enrollment": "40",
+      "Capacity": "48"
     }
   ],
   "SSFT 212 D": [
@@ -9531,8 +9547,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 39,
-      "Capacity": 39
+      "Enrollment": "39",
+      "Capacity": "39"
     }
   ],
   "SSFT 212 F": [
@@ -9544,8 +9560,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "304",
-      "Enrollment": 32,
-      "Capacity": 32
+      "Enrollment": "32",
+      "Capacity": "32"
     }
   ],
   "SSFT 212 G": [
@@ -9557,8 +9573,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 49,
-      "Capacity": 58
+      "Enrollment": "49",
+      "Capacity": "58"
     }
   ],
   "SSFT 212 H": [
@@ -9570,8 +9586,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "310",
-      "Enrollment": 42,
-      "Capacity": 50
+      "Enrollment": "42",
+      "Capacity": "50"
     }
   ],
   "THEA 259 A": [
@@ -9583,8 +9599,8 @@ allCourses = {
       "Meets": "",
       "Building": "PFAC",
       "Room": "AUD",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "THEA 261 A": [
@@ -9596,9 +9612,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "PFAC",
       "Room": "AUD",
-      "Enrollment": 7,
-      "Capacity": 8
-    }
+      "Enrollment": "7",
+      "Capacity": "8"
+}
   ],
   "THEA 262 A": [
     {
@@ -9609,9 +9625,9 @@ allCourses = {
       "Meets": "MWF",
       "Building": "PFAC",
       "Room": null,
-      "Enrollment": 5,
-      "Capacity": 6
-    }
+      "Enrollment": "5",
+      "Capacity": "6"
+}
   ],
   "THEA 290 A": [
     {
@@ -9622,9 +9638,9 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 4,
-      "Capacity": 4
-    }
+      "Enrollment": "4",
+      "Capacity": "4"
+}
   ],
   "THEA 351 A": [
     {
@@ -9635,8 +9651,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 13,
-      "Capacity": 13
+      "Enrollment": "13",
+      "Capacity": "13"
     }
   ],
   "WRIT 101 A": [
@@ -9648,8 +9664,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "115",
-      "Enrollment": 14,
-      "Capacity": 16
+      "Enrollment": "14",
+      "Capacity": "16"
     }
   ],
   "WRIT 101 B": [
@@ -9661,8 +9677,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "WRIT 101 C": [
@@ -9674,8 +9690,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "301",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "WRIT 101 D": [
@@ -9687,8 +9703,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "WRIT 101 E": [
@@ -9700,8 +9716,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "WRIT 101 F": [
@@ -9713,8 +9729,8 @@ allCourses = {
       "Meets": "MWF",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 9,
-      "Capacity": 10
+      "Enrollment": "9",
+      "Capacity": "10"
     }
   ],
   "WRIT 101 G": [
@@ -9726,8 +9742,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "101",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "WRIT 101 H": [
@@ -9739,8 +9755,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "WRIT 101 I": [
@@ -9752,8 +9768,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "RH",
       "Room": "SEM",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "WRIT 101 J": [
@@ -9765,8 +9781,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "207",
-      "Enrollment": 18,
-      "Capacity": 21
+      "Enrollment": "18",
+      "Capacity": "21"
     }
   ],
   "WRIT 101 K": [
@@ -9778,8 +9794,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "RH",
       "Room": "SEM",
-      "Enrollment": 16,
-      "Capacity": 19
+      "Enrollment": "16",
+      "Capacity": "19"
     }
   ],
   "WRIT 101 L": [
@@ -9791,8 +9807,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 17,
-      "Capacity": 20
+      "Enrollment": "17",
+      "Capacity": "20"
     }
   ],
   "WRIT 101 M": [
@@ -9804,8 +9820,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "201",
-      "Enrollment": 15,
-      "Capacity": 15
+      "Enrollment": "15",
+      "Capacity": "15"
     }
   ],
   "WRIT 101 N": [
@@ -9817,8 +9833,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 14,
-      "Capacity": 14
+      "Enrollment": "14",
+      "Capacity": "14"
     }
   ],
   "WRIT 101 O": [
@@ -9830,8 +9846,8 @@ allCourses = {
       "Meets": "TR",
       "Building": "HAL",
       "Room": "103",
-      "Enrollment": 18,
-      "Capacity": 18
+      "Enrollment": "18",
+      "Capacity": "18"
     }
   ]
 };

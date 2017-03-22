@@ -54,7 +54,37 @@ function searchBar(query) {
 	var searchStr = query.split(" "), i;
 	for(i = 0; i < searchStr.length; i++){
 		console.log(searchStr[i]);
+
+    console.log('Blue Whale'.indexOf('Blue'));
 	}
+  var size = Object.keys(allCourses).length;
+  // Go through all the words that were searched
+  for(i=0;i<searchStr.length;i++){
+    // Go through all of the classes
+    Object.keys(allCourses).forEach(function(currentClass) {
+      Object.keys(currentClass).forEach(function(currentClassSection) {
+        if(currentClassSection === "0"){
+          Object.keys(allCourses[currentClass][currentClassSection]).forEach(function(currentClassElement) {
+            var myString = allCourses[currentClass][currentClassSection][currentClassElement];
+            //myString = toString(myString);
+            var search = searchStr[i];
+            search = search.toUpperCase();
+            //console.log("doing domething");
+            if(myString !== null){
+              var strArray = myString.split(" "),j;
+
+              for(j=0;j<strArray.length;j++){
+                if(myString != null && strArray[j] == search){
+                  console.log(myString);
+                  //console.log("Test");
+                }
+              }
+            }
+          });
+        }
+      });
+    });
+  }
 }
 
 // code to execute on document ready
@@ -70,12 +100,12 @@ $(function() {
         console.log(getSelectedCourseCodes());
 
     });
-	
+
 	$("#search_button").click(function (event) {
         searchBar($("#searchfield").val());
 
     });
-	
+
 	$("#searchfield").keypress(function(e) {
 		if(e.which == 13) {
 			searchBar($("#searchfield").val());

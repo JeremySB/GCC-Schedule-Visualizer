@@ -92,8 +92,11 @@ ol.formatted li {
 }
 
 .searchTable {
-	/*margin-top: 175%;*/
 	width: 100%;
+}
+
+.formCell {
+	border: 1px solid green;
 }
 
 .leftMenu {

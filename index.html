@@ -16,7 +16,7 @@
     <script type="text/javascript" src="jquery-weekcalendar-1.2.2/full_demo/demo.js"></script>
     <script type="text/javascript" src="scripts/courses.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
-	<script type="text/javascript" src="clipboard.js-master/dist/clipboard.min.js"></script>
+	  <script type="text/javascript" src="clipboard.js-master/dist/clipboard.min.js"></script>
 
 </head>
 <body>
@@ -72,24 +72,65 @@
                     </table>
                     <div class="searchCell">
                         <input style="width:88%" type="search" name="searchfield" class="search" id="searchfield" placeholder="Search">
-						<input type="button" id="search_button" value="Search">
-                    </div>
+              						<input type="button" id="search_button" value="Search">
+                                  </div>
                     <!-- Currently attempts to add a course that exactly matches a course code from search cell -->
                     <button type="button" id="add_course_button">Add course</button>
                 </div>
+
+                <!-- You will insert into this table one row at a time
+                Each row will have a td for each section of the course information  -->
+                <table class="courseListDisplay" width="100%">
+                  <!-- Sample contents  -->
+                  <tr>
+                    <td>
+                      <center>
+                        Cell 1
+                      </center>
+                    </td>
+                    <td>
+                      <center>
+                        Cell 2
+                      </center>
+                    </td>
+
+                    <td>
+                      <center>
+                        Cell 3
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <center>
+                        Cell 4
+                      </center>
+                    </td>
+                    <td>
+                      <center>
+                        Cell 5
+                      </center>
+                    </td>
+                    <td>
+                      <center>
+                        Cell 6
+                      </center>
+                    </td>
+                  </tr>
+                </table>
             </td>
             <td class="rightMenu">
                 <div id="calendar"></div>
             </td>
         </tr>
-		<tr>
-			<td></td>
-			<td id="getcodescell">
-				<div id="course_codes_button_container">
-					<button type="button" id="course_codes_button">Get course codes</button>
-				</div>
-			</td>
-		</tr>
+  		<tr>
+  			<td></td>
+  			<td id="getcodescell">
+  				<div id="course_codes_button_container">
+  					<button type="button" id="course_codes_button">Get course codes</button>
+  				</div>
+  			</td>
+  		</tr>
     </table>
 
     <div id="event_edit_container">
@@ -118,11 +159,11 @@
 
     <div id="about">
         <h2>Instructions:</h2>
-        
-			Navigate to the academics page on myGCC and find the "add courses" form. 
+
+			Navigate to the academics page on myGCC and find the "add courses" form.
 			Make sure you're on the form for course codes, and not reference codes.
 			One by one, click the copy button next to the courses below and paste them into the form on myGCC.
-        
+
         <h2>Course Codes</h2>
         <p>
           <h3>Course Codes here:</h3>
