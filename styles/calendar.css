@@ -25,6 +25,26 @@ p {
 	display: none;
 }
 
+#tutorial_button_container {
+	float: left;
+	/*margin-top: 2%;*/
+	/*padding: 0 0;*/
+	/*background: #ddf;*/
+	/*border: 1px solid #bbd;*/
+	/*width: 10em;*/
+	text-align: center;
+}
+
+#tips_button_container {
+	float: center;
+	/*margin-top: 2%;*/
+	/*padding: 0 0;*/
+	/*background: #ddf;*/
+	/*border: 1px solid #bbd;*/
+	/*width: 10em;*/
+	text-align: center;
+}
+
 #course_codes_button_container {
 	float: right;
 	/*margin-top: 2%;*/
@@ -134,8 +154,21 @@ h1.title {
 	text-align: center;
 }
 
+#tutorial_button {
+	height: 3em;
+	width: 9em;
+	color: lightGrey;
+}
+
+#tips_button {
+	height: 3em;
+	width: 9em;
+	color: lightGrey;
+}
+
 #course_codes_button {
 	height: 3em;
+	width: 9em;
 }
 
 div.copy-boxes {
@@ -163,8 +196,8 @@ tr.coderows {
 	width: 15%;
 }
 
-#getcodescell {
-	text-align: right;
+#bottommenu {
+	/*text-align: right;*/
 	padding: 1em 0;
 	height: 100%;
 }
