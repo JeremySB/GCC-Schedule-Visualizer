@@ -5,9 +5,31 @@ var selectedCourses = {};
 var filteredCourses = {};
 
 
-// filter all courses by selected filters and store that
+// filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
+    filteredCourses = {};
 
+    var department = $("#department").val();
+    var time = $("#time").val();
+    var course = $("#course").val();
+    var week = $("#week").val();
+
+    for (var code in allCourses) {
+        for (var section in allCourses[code]) {
+            // check if section doesn't match a filter
+            if (department && department !== code.substr(0, code.indexOf(" "))) {
+                continue; // go to next section
+            }
+
+            // todo: add time, course range, and week schedule
+
+            // create array if none exists
+            filteredCourses[code] = filteredCourses[code] || [];
+            filteredCourses[code][section] = allCourses[code][section];
+        }
+    }
+
+    console.log(filteredCourses);
 }
 
 // name parameter is in the form "ACCT 202 A"
