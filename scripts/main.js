@@ -4,7 +4,6 @@ var selectedCourses = {};
 // courses that match current filters
 var filteredCourses = {};
 
-
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
     filteredCourses = {};
