@@ -44,7 +44,7 @@ function filterCourses() {
 
 		if (week) {
 			if (!cur["Meets"]) continue;
-			// check if every MTWHF letter is in the Meets string of course
+			// check if every MTWTF letter is in the Meets string
 			var meets = cur["Meets"];
 			var failed = false;
 			for (var i in week) {
@@ -107,54 +107,54 @@ function getSelectedCourseCodes() {
 
 //search funciton
 function searchBar(query) {
-  var courseTable = document.getElementById("courseListDisplay");
-  // Clear the table
-  $("#courseListDisplay tr").remove();
-  var tableRow = 0;
+	var courseTable = document.getElementById("courseListDisplay");
+	// Clear the table
+	$("#courseListDisplay tr").remove();
+	var tableRow = 0;
 
 	var searchStr = query.split(" "), i;
 
-	for(i = 0; i < searchStr.length; i++){
+	for (i = 0; i < searchStr.length; i++) {
 		console.log(searchStr[i]);
 	}
 
-  // Gets the total number of classes in the Object
-  var size = Object.keys(allCourses).length;
-  // Go through all the search words
-  for(i=0;i<searchStr.length;i++){
-    // Go through all of the classes
-    Object.keys(allCourses).forEach(function(currentClass) {
-      Object.keys(currentClass).forEach(function(currentClassSection) {
-        // Only check the first list because the second would just be repetitive information
-        if(currentClassSection === "0"){
-          // Go through the indevidual class object
-          Object.keys(allCourses[currentClass][currentClassSection]).forEach(function(currentClassElement) {
-            var currentString = allCourses[currentClass][currentClassSection][currentClassElement];
-            //currentString = toString(currentString);
-            var search = searchStr[i];
-            search = search.toUpperCase();
-            //console.log("doing domething");
-            if(currentString !== null){
-              var strArray = currentString.split(" "),j;
+	// Gets the total number of classes in the Object
+	var size = Object.keys(filteredCourses).length;
+	// Go through all the search words
+	for (i = 0; i < searchStr.length; i++) {
+		// Go through all of the classes
+		Object.keys(filteredCourses).forEach(function (currentClass) {
+			Object.keys(currentClass).forEach(function (currentClassSection) {
+				// Only check the first list because the second would just be repetitive information
+				if (currentClassSection === "0") {
+					// Go through the indevidual class object
+					Object.keys(filteredCourses[currentClass][currentClassSection]).forEach(function (currentClassElement) {
+						var currentString = filteredCourses[currentClass][currentClassSection][currentClassElement];
+						//currentString = toString(currentString);
+						var search = searchStr[i];
+						search = search.toUpperCase();
+						//console.log("doing domething");
+						if (currentString !== null) {
+							var strArray = currentString.split(" "), j;
 
-              for(j=0;j<strArray.length;j++){
-                // strArray[j].indexOf(search) !== -1 checks if the search string is contained in the current strings
-                // search.trim().length > 0 ignores whitespace
-                if(currentString != null && strArray[j].indexOf(search) !== -1 && search.trim().length > 0){
-                  var row = courseTable.insertRow(tableRow);
-                  var cell = row.insertCell(0);
-                  cell.innerHTML = currentClass;
-                  tableRow++;
-                  addCourse(currentClass);
-                  //console.log(currentClass);
-                }
-              }
-            }
-          });
-        }
-      });
-    });
-  }
+							for (j = 0; j < strArray.length; j++) {
+								// strArray[j].indexOf(search) !== -1 checks if the search string is contained in the current strings
+								// search.trim().length > 0 ignores whitespace
+								if (currentString != null && strArray[j].indexOf(search) !== -1 && search.trim().length > 0) {
+									var row = courseTable.insertRow(tableRow);
+									var cell = row.insertCell(0);
+									cell.innerHTML = currentClass;
+									tableRow++;
+									addCourse(currentClass);
+									//console.log(currentClass);
+								}
+							}
+						}
+					});
+				}
+			});
+		});
+	}
 }
 
 $(window).load(function(){
@@ -168,7 +168,9 @@ $(window).resize(function() {
 
 // code to execute on document ready
 
-$(function() {
+$(function () {
+	filteredCourses = allCourses;
+
     $("#add_course_button").click(function(event) {
         addCourse($("#searchfield").val());
 
@@ -189,4 +191,6 @@ $(function() {
 			searchBar($("#searchfield").val());
 		}
 	});
+
+	$(".dropDown").change(filterCourses);
 });
