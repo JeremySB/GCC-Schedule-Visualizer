@@ -4,6 +4,9 @@ var selectedCourses = {};
 // courses that match current filters
 var filteredCourses = {};
 
+// courses that match current search values
+var searchedCourses = {};
+
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
 	filteredCourses = {};
@@ -48,7 +51,7 @@ function filterCourses() {
             // get extra letters from other meeting times in this section
             if (allCourses[code][1]) meets = meets + allCourses[code][1]["Meets"];
 			// check if every MTWTF letter is in the Meets string
-			
+
 			var failed = false;
 			for (var i in week) {
 				if (meets.indexOf(week[i]) === -1) {
@@ -58,7 +61,7 @@ function filterCourses() {
 			}
 			if (failed) continue;
 		}
-        
+
         filteredCourses[code] = allCourses[code];
 	}
 
@@ -108,12 +111,8 @@ function getSelectedCourseCodes() {
 
 //search funciton
 function searchBar(query) {
-	var courseTable = document.getElementById("courseListDisplay");
-	// Clear the table
-	$("#courseListDisplay tr").remove();
-	var tableRow = 0;
-
 	var searchStr = query.split(" "), i;
+	searchedCourses = {};
 
 	// Go through all the search words
 	for (i = 0; i < searchStr.length; i++) {
@@ -131,16 +130,31 @@ function searchBar(query) {
 					for (j = 0; j < courseSubString.length; j++) {
 						if (filteredCourses[courseCode][selector][currentString] != null && courseSubString[j].indexOf(wordSearched) !== -1 && wordSearched.trim().length > 0) {
 							// This is where we will add all of the HTML for the courses on the left menu
-							var row = courseTable.insertRow(tableRow);
-							var cell = row.insertCell(0);
-							cell.innerHTML = courseCode;
-							tableRow++;
-							addCourse(courseCode);
+							if(!searchedCourses[courseCode]){
+								searchedCourses[courseCode] = allCourses[courseCode];
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+	addToTable();
+}
+
+function addToTable(){
+	var courseTable = document.getElementById("courseListDisplay");
+	// Clear the table
+	$("#courseListDisplay tr").remove();
+	var tableRow = 0;
+
+	for(var code in searchedCourses){
+		var row = courseTable.insertRow(tableRow);
+		var codeCell = row.insertCell(0);
+		var buttonCell = row.insertCell(1);
+		codeCell.innerHTML = "<center>"+code+"</center>";
+		buttonCell.innerHTML = '<center><!-- Currently attempts to add a course that exactly matches a course code from search cell --> <button type="button" id="add_course_button">Add course</button></center>';
+		tableRow++;
 	}
 }
 
