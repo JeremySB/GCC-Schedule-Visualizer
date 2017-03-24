@@ -36,3 +36,8 @@ body {
     margin: 5px 0px 5px 0px;
 }
 
+#bottom-buttons {
+    float: right;
+    margin: 10px 0px 5px 0px;
+}
+
