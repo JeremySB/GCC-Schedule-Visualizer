@@ -23,7 +23,7 @@ body {
 }
 
 .results-table-container {
-    height: 361px;
+    max-height: 361px;
     overflow-y: scroll;
     overflow-x: visible;
 }
