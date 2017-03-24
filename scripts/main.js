@@ -7,6 +7,10 @@ var filteredCourses = {};
 // courses that match current search values
 var searchedCourses = {};
 
+var calendar;
+
+function pad(num, size) { return ('000000000' + num).substr(-size); }
+
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
 	filteredCourses = {};
@@ -71,15 +75,50 @@ function filterCourses() {
 function addCourse(name) {
     // TODO: add checks for errors
     name = name.toUpperCase();
-    if(selectedCourses[name]){
+    if (selectedCourses[name]){
         console.log("Course already in list")
-    }else if (!selectedCourses[name] && allCourses[name]) {
+    } else if (!selectedCourses[name] && allCourses[name]) {
         selectedCourses[name] = allCourses[name];
-        console.log(getSelectedCourseCodes());
+        updateCalendar();
     }
     else {
         // error
         console.log("Error adding '" + name + "' to selected courses");
+    }
+}
+
+function updateCalendar() {
+    calendar.fullCalendar('removeEvents');
+
+    for (var code in selectedCourses) {
+        for (var part in selectedCourses[code]) {
+            var meets = selectedCourses[code][part]["Meets"];
+            // new event for each day
+            for (var i = 0; i < meets.length; i++) {
+                var day = 1;
+                var letter = meets[i];
+                switch (letter) {
+                    case 'M':
+                        break;
+                    case 'T':
+                        day += 1; break;
+                    case 'W':
+                        day += 2; break;
+                    case 'R':
+                        day += 3; break;
+                    case 'F':
+                        day += 4; break;
+                }
+                var beginTime, endTime
+                    
+                var event = {
+                    title: code,
+                    start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
+                    end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
+                }
+                calendar.fullCalendar('renderEvent', event, true);
+            }
+        }
     }
 }
 
@@ -137,29 +176,35 @@ function addToTable(){
 		var codeCell = row.insertCell(0);
 		var buttonCell = row.insertCell(1);
 		codeCell.innerHTML = "<center>"+code+"</center>";
-		buttonCell.innerHTML = '<center><button type="button" id="add_course_button">Add course</button></center>';
+		buttonCell.innerHTML = '<center><button type="button" data-code="'+code+'" class="add_course_button">Add course</button></center>';
 		tableRow++;
 	}
     $(".add_course_button").click(function (event) {
         addCourse(event.target.getAttribute("data-code"));
     });
 }
-
-$(window).load(function(){
-  $('div.myTableDiv').css('height', $(window).height()*'0.60');
-})
-
-$(window).resize(function() {
-  //resize just happened, pixels changed
-  $('div.myTableDiv').css('height', $(window).height()*'0.60');
-});
-
 // code to execute on document ready
 
 $(function () {
 	filteredCourses = allCourses;
 
+    calendar = $('#calendar');
     
+    calendar.fullCalendar({
+        header: false,
+        contentHeight: "auto",
+        allDaySlot: false,
+        minTime: "08:00:00",
+        maxTime: "23:00:00",
+        defaultDate: '2016-08-01',
+        defaultView: 'agendaWeek',
+        columnFormat: 'dddd',
+        navLinks: false, // can click day/week names to navigate views
+        editable: false,
+        eventLimit: true, // allow "more" link when too many events
+        weekends: false,
+        weekNumbers: false,
+    });
 
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
@@ -177,5 +222,5 @@ $(function () {
 		}
 	});
 
-	$(".dropDown").change(filterCourses);
+    $(".filter-item").change(filterCourses);
 });
