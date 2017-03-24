@@ -22,6 +22,13 @@ body {
     margin-top: 0px;
 }
 
+.results-table {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
 #search_button {
     margin: 5px 0px 5px 0px;
 }
+
