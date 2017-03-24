@@ -23,7 +23,7 @@ body {
 }
 
 .results-table-container {
-    height: 300px;
+    height: 361px;
     overflow-y: scroll;
     overflow-x: visible;
 }
@@ -40,4 +40,3 @@ body {
     float: right;
     margin: 10px 0px 5px 0px;
 }
-
