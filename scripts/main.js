@@ -64,8 +64,7 @@ function filterCourses() {
 
         filteredCourses[code] = allCourses[code];
 	}
-
-	console.log(filteredCourses);
+    
 }
 
 // name parameter is in the form "ACCT 202 A"
@@ -76,6 +75,7 @@ function addCourse(name) {
         console.log("Course already in list")
     }else if (!selectedCourses[name] && allCourses[name]) {
         selectedCourses[name] = allCourses[name];
+        console.log(getSelectedCourseCodes());
     }
     else {
         // error
@@ -140,6 +140,9 @@ function addToTable(){
 		buttonCell.innerHTML = '<center><button type="button" id="add_course_button">Add course</button></center>';
 		tableRow++;
 	}
+    $(".add_course_button").click(function (event) {
+        addCourse(event.target.getAttribute("data-code"));
+    });
 }
 
 $(window).load(function(){
@@ -156,10 +159,7 @@ $(window).resize(function() {
 $(function () {
 	filteredCourses = allCourses;
 
-    $("#add_course_button").click(function(event) {
-        addCourse($("#searchfield").val());
-
-    });
+    
 
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
