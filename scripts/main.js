@@ -71,6 +71,8 @@ function filterCourses() {
         filteredCourses[code] = allCourses[code];
     }
 
+    searchBar($("#searchfield").val());
+
 }
 
 // name parameter is in the form "ACCT 202 A"
@@ -175,7 +177,7 @@ function searchBar(query) {
     query = query.toUpperCase().trim();
 
     if (!query) {
-        searchedCourses = allCourses;
+        searchedCourses = filteredCourses;
         addToTable();
         return;
     }
@@ -197,12 +199,6 @@ function addToTable() {
     $("#results-table a").remove();
 
     for (var code in searchedCourses) {
-        //var row = courseTable.insertRow(tableRow);
-        //var codeCell = row.insertCell(0);
-        //var buttonCell = row.insertCell(1);
-        //codeCell.innerHTML = "<center>"+code+"</center>";
-        //buttonCell.innerHTML = '<center><button type="button" data-code="'+code+'" class="add_course_button">Add course</button></center>';
-        //tableRow++;
         var link = $("<a>")
             .addClass('list-group-item course_link')
             .attr({ 'href': 'javascript:void(0);', 'data-code': code })
