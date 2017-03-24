@@ -11,6 +11,8 @@ var calendar;
 
 function pad(num, size) { return ('000000000' + num).substr(-size); }
 
+var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta"]
+
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
 	filteredCourses = {};
@@ -93,6 +95,8 @@ function updateCalendar() {
 
     var events = [];
 
+    var colorSelector = 0;
+
     for (var code in selectedCourses) {
         for (var part in selectedCourses[code]) {
             var meets = selectedCourses[code][part]["Meets"];
@@ -117,6 +121,7 @@ function updateCalendar() {
                 var event = {
                     id: code,
                     title: code,
+                    color: colors[colorSelector],
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
@@ -125,6 +130,9 @@ function updateCalendar() {
                 events.push(event);
             }
         }
+
+        colorSelector++;
+        if (colorSelector >= colors.length) colorSelector = 0;
     }
 
     calendar.fullCalendar('renderEvents', events, true);
