@@ -111,34 +111,18 @@ function getSelectedCourseCodes() {
 
 //search funciton
 function searchBar(query) {
-	var searchStr = query.split(" "), i;
 	searchedCourses = {};
-
-	// Go through all the search words
-	for (i = 0; i < searchStr.length; i++) {
-		for (var courseCode in filteredCourses) {
-			var selector = 0; // usually the first item is the class, other ones might be labs
-
-			for(var currentString in filteredCourses[courseCode][selector]){
-				var wordSearched = searchStr[i];
-				wordSearched = wordSearched.toUpperCase();
-
-				if (filteredCourses[courseCode][selector][currentString] !== null) {
-					var courseSubString = filteredCourses[courseCode][selector][currentString].split(" "), j;
-
-					// Look through each section of the course information
-					for (j = 0; j < courseSubString.length; j++) {
-						if (filteredCourses[courseCode][selector][currentString] != null && courseSubString[j].indexOf(wordSearched) !== -1 && wordSearched.trim().length > 0) {
-							// This is where we will add all of the HTML for the courses on the left menu
-							if(!searchedCourses[courseCode]){
-								searchedCourses[courseCode] = allCourses[courseCode];
-							}
-						}
-					}
-				}
+	var selector = 0;
+	query = query.toUpperCase();
+	
+	for (var courseCode in filteredCourses) {
+		if(courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1){
+			if(!searchedCourses[courseCode]){
+				searchedCourses[courseCode] = allCourses[courseCode];
 			}
 		}
 	}
+
 	addToTable();
 }
 
@@ -153,7 +137,7 @@ function addToTable(){
 		var codeCell = row.insertCell(0);
 		var buttonCell = row.insertCell(1);
 		codeCell.innerHTML = "<center>"+code+"</center>";
-		buttonCell.innerHTML = '<center><!-- Currently attempts to add a course that exactly matches a course code from search cell --> <button type="button" id="add_course_button">Add course</button></center>';
+		buttonCell.innerHTML = '<center><button type="button" id="add_course_button">Add course</button></center>';
 		tableRow++;
 	}
 }
