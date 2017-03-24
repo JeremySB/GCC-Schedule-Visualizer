@@ -11,65 +11,65 @@ var calendar;
 
 function pad(num, size) { return ('000000000' + num).substr(-size); }
 
-var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta"]
+var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo"]
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
-	filteredCourses = {};
+    filteredCourses = {};
 
-	var department = $("#department").val();
-	var time = $("#time").val();
-	var course = $("#course").val();
-	var week = $("#week").val();
+    var department = $("#department").val();
+    var time = $("#time").val();
+    var course = $("#course").val();
+    var week = $("#week").val();
 
-	for (var code in allCourses) {
-		var selector = 0; // usually the first item is the class, other ones might be labs
-		var cur = allCourses[code][selector];
+    for (var code in allCourses) {
+        var selector = 0; // usually the first item is the class, other ones might be labs
+        var cur = allCourses[code][selector];
 
-		// check if section doesn't match a filter, and if so, continue to next
+        // check if section doesn't match a filter, and if so, continue to next
 
-		if (department && department !== code.substr(0, code.indexOf(" "))) {
-			continue; // go to next section
-		}
+        if (department && department !== code.substr(0, code.indexOf(" "))) {
+            continue; // go to next section
+        }
 
-		if (time) {
-			if (!cur["BeginTime"]) continue;
-			var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
+        if (time) {
+            if (!cur["BeginTime"]) continue;
+            var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
 
-			if (time === "Morning" && sectionHour >= 12)
-				continue;
-			else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-				continue;
-			else if (time === "Evening" && sectionHour < 18)
-				continue;
-		}
+            if (time === "Morning" && sectionHour >= 12)
+                continue;
+            else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
+                continue;
+            else if (time === "Evening" && sectionHour < 18)
+                continue;
+        }
 
-		if (course) {
-			var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
-			var courseFilter = course.substr(0, 1);
+        if (course) {
+            var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
+            var courseFilter = course.substr(0, 1);
 
-			if (courseFilter !== courseNumber) continue;
-		}
+            if (courseFilter !== courseNumber) continue;
+        }
 
-		if (week) {
+        if (week) {
             if (!cur["Meets"]) continue;
             var meets = cur["Meets"];
             // get extra letters from other meeting times in this section
             if (allCourses[code][1]) meets = meets + allCourses[code][1]["Meets"];
-			// check if every MTWTF letter is in the Meets string
+            // check if every MTWTF letter is in the Meets string
 
-			var failed = false;
-			for (var i in week) {
-				if (meets.indexOf(week[i]) === -1) {
-					failed = true;
-					continue;
-				}
-			}
-			if (failed) continue;
-		}
+            var failed = false;
+            for (var i in week) {
+                if (meets.indexOf(week[i]) === -1) {
+                    failed = true;
+                    continue;
+                }
+            }
+            if (failed) continue;
+        }
 
         filteredCourses[code] = allCourses[code];
-	}
+    }
 
 }
 
@@ -77,7 +77,7 @@ function filterCourses() {
 function addCourse(name) {
     // TODO: add checks for errors
     name = name.toUpperCase();
-    if (selectedCourses[name]){
+    if (selectedCourses[name]) {
         console.log("Course already in list")
     } else if (!selectedCourses[name] && allCourses[name]) {
         selectedCourses[name] = allCourses[name];
@@ -168,35 +168,45 @@ function getSelectedCourseCodes() {
 
 //search function
 function searchBar(query) {
-	searchedCourses = {};
-	var selector = 0;
-	query = query.toUpperCase();
+    searchedCourses = {};
+    var selector = 0;
+    query = query.toUpperCase();
 
-	for (var courseCode in filteredCourses) {
-		if(courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1){
-			if(!searchedCourses[courseCode]){
-				searchedCourses[courseCode] = allCourses[courseCode];
-			}
-		}
-	}
+    for (var courseCode in filteredCourses) {
+        if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
+            if (!searchedCourses[courseCode]) {
+                searchedCourses[courseCode] = allCourses[courseCode];
+            }
+        }
+    }
 
-	addToTable();
+    addToTable();
 }
 
-function addToTable(){
-	var courseTable = document.getElementById("courseListDisplay");
-	// Clear the table
-	$("#courseListDisplay tr").remove();
-	var tableRow = 0;
+function addToTable() {
+    var courseTable = $(".results-table");
+    // Clear the table
+    $("#results-table a").remove();
 
-	for(var code in searchedCourses){
-		var row = courseTable.insertRow(tableRow);
-		var codeCell = row.insertCell(0);
-		var buttonCell = row.insertCell(1);
-		codeCell.innerHTML = "<center>"+code+"</center>";
-		buttonCell.innerHTML = '<center><button type="button" data-code="'+code+'" class="add_course_button">Add course</button></center>';
-		tableRow++;
-	}
+    for (var code in searchedCourses) {
+        //var row = courseTable.insertRow(tableRow);
+        //var codeCell = row.insertCell(0);
+        //var buttonCell = row.insertCell(1);
+        //codeCell.innerHTML = "<center>"+code+"</center>";
+        //buttonCell.innerHTML = '<center><button type="button" data-code="'+code+'" class="add_course_button">Add course</button></center>';
+        //tableRow++;
+
+        (function (code) {
+            $("<a>")
+                .addClass('list-group-item')
+                .attr('href', 'javascript:void(0);')
+                .click(function () {
+                    addCourse(code);
+                })
+                .text(code)
+                .appendTo(courseTable);
+        })(code);
+    }
     $(".add_course_button").click(function (event) {
         addCourse(event.target.getAttribute("data-code"));
     });
@@ -204,7 +214,7 @@ function addToTable(){
 // code to execute on document ready
 
 $(function () {
-	filteredCourses = allCourses;
+    filteredCourses = allCourses;
 
     calendar = $('#calendar');
 
@@ -229,16 +239,16 @@ $(function () {
 
     });
 
-	$("#search_button").click(function (event) {
+    $("#search_button").click(function (event) {
         searchBar($("#searchfield").val());
 
     });
 
-	$("#searchfield").keypress(function(e) {
-		if(e.which == 13) {
-			searchBar($("#searchfield").val());
-		}
-	});
+    $("#searchfield").keypress(function (e) {
+        if (e.which == 13) {
+            searchBar($("#searchfield").val());
+        }
+    });
 
     $(".filter-item").change(filterCourses);
 });

@@ -22,9 +22,9 @@ body {
     margin-top: 0px;
 }
 
-.results-table-container {
-    max-height: 361px;
-    overflow-y: scroll;
+.results-table {
+    max-height: 283px;
+    overflow-y: auto;
     overflow-x: visible;
 }
 
