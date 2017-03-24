@@ -115,6 +115,7 @@ function updateCalendar() {
                 var beginTime, endTime
 
                 var event = {
+                    id: code,
                     title: code,
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
@@ -134,12 +135,14 @@ function updateCalendar() {
 function removeCourse(name) {
     // This shouldn't cause errors if course doesn't exist
     delete selectedCourses[name];
+    calendar.fullCalendar('removeEvents', name);
 }
 
 
 // clear all selected courses
 function clearCourses() {
     selectedCourses = {};
+    calendar.fullCalendar('removeEvents');
 }
 
 
@@ -155,7 +158,7 @@ function getSelectedCourseCodes() {
     return courseCodes;
 }
 
-//search funciton
+//search function
 function searchBar(query) {
 	searchedCourses = {};
 	var selector = 0;
