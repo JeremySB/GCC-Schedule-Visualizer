@@ -149,7 +149,21 @@ function addToTable(){
 $(function () {
 	filteredCourses = allCourses;
 
-    
+    $('#calendar').fullCalendar({
+        header: false,
+        contentHeight: "auto",
+        allDaySlot: false,
+        minTime: "08:00:00",
+        maxTime: "23:00:00",
+        defaultDate: '2017-03-12',
+        defaultView: 'agendaWeek',
+        columnFormat: 'dddd',
+        navLinks: false, // can click day/week names to navigate views
+        editable: false,
+        eventLimit: true, // allow "more" link when too many events
+        weekends: false,
+        weekNumbers: false
+    });
 
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
