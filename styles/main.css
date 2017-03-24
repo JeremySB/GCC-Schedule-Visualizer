@@ -17,3 +17,11 @@ body {
 .search-row {
     padding: 3px;
 }
+
+.results-row {
+    margin-top: 0px;
+}
+
+#search_button {
+    margin: 5px 0px 5px 0px;
+}

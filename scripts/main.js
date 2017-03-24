@@ -144,16 +144,6 @@ function addToTable(){
         addCourse(event.target.getAttribute("data-code"));
     });
 }
-
-$(window).load(function(){
-  $('div.myTableDiv').css('height', $(window).height()*'0.60');
-})
-
-$(window).resize(function() {
-  //resize just happened, pixels changed
-  $('div.myTableDiv').css('height', $(window).height()*'0.60');
-});
-
 // code to execute on document ready
 
 $(function () {
