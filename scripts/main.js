@@ -172,6 +172,12 @@ function searchBar(query) {
     var selector = 0;
     query = query.toUpperCase();
 
+    if (!query) {
+        searchedCourses = allCourses;
+        addToTable();
+        return;
+    }
+
     for (var courseCode in filteredCourses) {
         if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
             if (!searchedCourses[courseCode]) {
@@ -195,26 +201,38 @@ function addToTable() {
         //codeCell.innerHTML = "<center>"+code+"</center>";
         //buttonCell.innerHTML = '<center><button type="button" data-code="'+code+'" class="add_course_button">Add course</button></center>';
         //tableRow++;
+        var link = $("<a>")
+            .addClass('list-group-item course_link')
+            .attr({ 'href': 'javascript:void(0);', 'data-code': code })
+            .text(code)
+            .appendTo(courseTable);
 
-        (function (code) {
-            $("<a>")
-                .addClass('list-group-item')
-                .attr('href', 'javascript:void(0);')
-                .click(function () {
-                    addCourse(code);
-                })
-                .text(code)
-                .appendTo(courseTable);
-        })(code);
+        if (selectedCourses[code])
+            link.addClass("active");
     }
-    $(".add_course_button").click(function (event) {
-        addCourse(event.target.getAttribute("data-code"));
+
+    $(".course_link").click(function (event) {
+        var link = $(event.target);
+        var code = link.attr("data-code");
+        if (selectedCourses[code]) {
+            // remove course
+            removeCourse(code);
+            link.removeClass("active");
+        } else {
+            // add course
+            addCourse(code);
+            link.addClass("active");
+        }
+        
     });
 }
 // code to execute on document ready
 
 $(function () {
     filteredCourses = allCourses;
+    searchedCourses = filteredCourses;
+
+    addToTable();
 
     calendar = $('#calendar');
 
@@ -239,16 +257,15 @@ $(function () {
 
     });
 
-    $("#search_button").click(function (event) {
+    $("#searchfield").on("input", function (event) {
         searchBar($("#searchfield").val());
-
     });
 
-    $("#searchfield").keypress(function (e) {
-        if (e.which == 13) {
-            searchBar($("#searchfield").val());
-        }
-    });
+    //$("#searchfield").keypress(function (e) {
+    //    if (e.which == 13) {
+    //        searchBar($("#searchfield").val());
+    //    }
+    //});
 
     $(".filter-item").change(filterCourses);
 });
