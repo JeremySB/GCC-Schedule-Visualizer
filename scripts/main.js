@@ -68,7 +68,7 @@ function filterCourses() {
 
         filteredCourses[code] = allCourses[code];
 	}
-    
+
 }
 
 // name parameter is in the form "ACCT 202 A"
@@ -87,8 +87,11 @@ function addCourse(name) {
     }
 }
 
+// refreshs all calendar courses
 function updateCalendar() {
     calendar.fullCalendar('removeEvents');
+
+    var events = [];
 
     for (var code in selectedCourses) {
         for (var part in selectedCourses[code]) {
@@ -110,16 +113,20 @@ function updateCalendar() {
                         day += 4; break;
                 }
                 var beginTime, endTime
-                    
+
                 var event = {
                     title: code,
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
-                calendar.fullCalendar('renderEvent', event, true);
+                //calendar.fullCalendar('renderEvent', event, true);
+
+                events.push(event);
             }
         }
     }
+
+    calendar.fullCalendar('renderEvents', events, true);
 }
 
 
@@ -153,7 +160,7 @@ function searchBar(query) {
 	searchedCourses = {};
 	var selector = 0;
 	query = query.toUpperCase();
-	
+
 	for (var courseCode in filteredCourses) {
 		if(courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1){
 			if(!searchedCourses[courseCode]){
@@ -189,7 +196,7 @@ $(function () {
 	filteredCourses = allCourses;
 
     calendar = $('#calendar');
-    
+
     calendar.fullCalendar({
         header: false,
         contentHeight: "auto",
