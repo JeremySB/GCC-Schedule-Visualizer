@@ -181,5 +181,5 @@ $(function () {
 		}
 	});
 
-	$(".dropDown").change(filterCourses);
+    $(".filter-item").change(filterCourses);
 });

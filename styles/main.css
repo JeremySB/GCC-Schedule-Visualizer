@@ -22,10 +22,14 @@ body {
     margin-top: 0px;
 }
 
-.results-table {
+.results-table-container {
     height: 300px;
     overflow-y: scroll;
     overflow-x: visible;
+}
+
+#courseListDisplay {
+    width: 100%;
 }
 
 #search_button {
