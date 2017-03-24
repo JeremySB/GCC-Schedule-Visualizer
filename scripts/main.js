@@ -9,6 +9,8 @@ var searchedCourses = {};
 
 var calendar;
 
+function pad(num, size) { return ('000000000' + num).substr(-size); }
+
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
 	filteredCourses = {};
@@ -107,11 +109,12 @@ function updateCalendar() {
                     case 'F':
                         day += 4; break;
                 }
+                var beginTime, endTime
                     
                 var event = {
                     title: code,
-                    start: '2016-08-0' + day.toString() + 'T' + selectedCourses[code][part]["BeginTime"],
-                    end: '2016-08-0' + day.toString() + 'T' + selectedCourses[code][part]["EndTime"]
+                    start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
+                    end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
                 calendar.fullCalendar('renderEvent', event, true);
             }
