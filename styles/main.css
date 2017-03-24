@@ -23,13 +23,9 @@ body {
 }
 
 .results-table {
-    max-height: 283px;
+    max-height: 325px;
     overflow-y: auto;
     overflow-x: visible;
-}
-
-#courseListDisplay {
-    width: 100%;
 }
 
 #search_button {
@@ -39,4 +35,12 @@ body {
 #bottom-buttons {
     float: right;
     margin: 10px 0px 5px 0px;
+}
+
+.course-list-text {
+    padding: 0px 0px 0px 0px;
+}
+
+.course-list-row {
+    margin: 0px;
 }

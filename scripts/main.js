@@ -75,6 +75,7 @@ function filterCourses() {
 
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
+    console.log(name);
     // TODO: add checks for errors
     name = name.toUpperCase();
     if (selectedCourses[name]) {
@@ -151,6 +152,7 @@ function removeCourse(name) {
 function clearCourses() {
     selectedCourses = {};
     calendar.fullCalendar('removeEvents');
+    addToTable();
 }
 
 
@@ -170,7 +172,7 @@ function getSelectedCourseCodes() {
 function searchBar(query) {
     searchedCourses = {};
     var selector = 0;
-    query = query.toUpperCase();
+    query = query.toUpperCase().trim();
 
     if (!query) {
         searchedCourses = allCourses;
@@ -204,15 +206,30 @@ function addToTable() {
         var link = $("<a>")
             .addClass('list-group-item course_link')
             .attr({ 'href': 'javascript:void(0);', 'data-code': code })
-            .text(code)
             .appendTo(courseTable);
+
+        var inside = $("<div>")
+            .addClass('row course-list-row')
+            .appendTo(link);
+
+        $("<div>")
+            .addClass("col-xs-6 course-list-text")
+            .text(code)
+            .appendTo(inside);
+
+        $("<div>")
+            .addClass("col-xs-6 course-list-text")
+            .text(searchedCourses[code][0]["ShortTitle"])
+            .appendTo(inside);
 
         if (selectedCourses[code])
             link.addClass("active");
     }
 
+    // click handler
+
     $(".course_link").click(function (event) {
-        var link = $(event.target);
+        var link = $(event.delegateTarget);
         var code = link.attr("data-code");
         if (selectedCourses[code]) {
             // remove course
@@ -225,6 +242,8 @@ function addToTable() {
         }
         
     });
+
+    courseTable.scrollTop(0);
 }
 // code to execute on document ready
 
@@ -255,6 +274,10 @@ $(function () {
     $("#course_codes_button").click(function (event) {
         console.log(getSelectedCourseCodes());
 
+    });
+
+    $("#reset_button").click(function () {
+        clearCourses();
     });
 
     $("#searchfield").on("input", function (event) {
