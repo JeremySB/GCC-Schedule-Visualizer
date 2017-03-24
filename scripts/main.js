@@ -205,7 +205,7 @@ $(function () {
         contentHeight: "auto",
         allDaySlot: false,
         minTime: "08:00:00",
-        maxTime: "23:00:00",
+        maxTime: "21:00:00",
         defaultDate: '2016-08-01',
         defaultView: 'agendaWeek',
         columnFormat: 'dddd',
