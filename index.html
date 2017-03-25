@@ -145,48 +145,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
                 </div>
-                <div class="modal-body">
-                    <div id="copycodes">
-                        <table id="coursecodes">
+                <div class="modal-body coursePopup">
+                  
+                  <div class="col-xs-6 col-xs-offset-3">
+                    <div class="copy-boxes col-xs-6" id="div-target0">HUMA 302 A</div>
+                    <button class="btn0 btn col-xs-6" data-clipboard-action="copy" data-clipboard-target="#div-target0">Copy</button>
+                  </div>
 
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target0">HUMA 302 A</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn0 btn" data-clipboard-action="copy" data-clipboard-target="#div-target0">Copy</button></td>
-                            </tr>
-
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target1">HUMA 305 A</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn1 btn" data-clipboard-action="copy" data-clipboard-target="#div-target1">Copy</button></td>
-                            </tr>-
-
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target2">HUMA 404 G</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn2 btn" data-clipboard-action="copy" data-clipboard-target="#div-target2">Copy</button></td>
-                            </tr>
-
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target3">MATH 650 C</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn3 btn" data-clipboard-action="copy" data-clipboard-target="#div-target3">Copy</button></td>
-                            </tr>
-
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target4">ELEE 151 L</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn4 btn" data-clipboard-action="copy" data-clipboard-target="#div-target4">Copy</button></td>
-                            </tr>
-
-                            <tr class="coderows">
-                                <td><div class="copy-boxes" id="div-target5">PHYE 301 F</div></td>
-                                <td id="space"></td>
-                                <td><button class="btn5 btn" data-clipboard-action="copy" data-clipboard-target="#div-target5">Copy</button></td>
-                            </tr>
-
-                        </table>
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -196,13 +161,8 @@
     </div>
 
     <!-- Script stuff for copying course codes -->
-    <script>
+    <script class="copyScript">
         var clipboard = new Clipboard('.btn0');
-        var clipboard = new Clipboard('.btn1');
-        var clipboard = new Clipboard('.btn2');
-        var clipboard = new Clipboard('.btn3');
-        var clipboard = new Clipboard('.btn4');
-        var clipboard = new Clipboard('.btn5');
     </script>
 
 </body>
