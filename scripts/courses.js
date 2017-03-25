@@ -7764,7 +7764,7 @@ allCourses = {
 	"PHYS 102 A": [
 		{
 			"ShortTitle": "GEN PHYSICS II",
-			"LongTitle": "GEN PHYSICS II-ENGINEERING",
+			"LongTitle": "GEN PHYSICS II-ENGINEERING MCDONALDS",
 			"BeginTime": "8:00:00",
 			"EndTime": "8:50:00",
 			"Meets": "MWF",
@@ -7777,7 +7777,7 @@ allCourses = {
 	"PHYS 102 B": [
 		{
 			"ShortTitle": "GEN PHYSICS II",
-			"LongTitle": "GEN PHYSICS II-ENGINEERING",
+			"LongTitle": "GEN PHYSICS II-ENGINEERING MCDONALDS",
 			"BeginTime": "9:00:00",
 			"EndTime": "9:50:00",
 			"Meets": "MWF",
@@ -7790,7 +7790,7 @@ allCourses = {
 	"PHYS 102 L L": [
 		{
 			"ShortTitle": "LAB WORKSHOP",
-			"LongTitle": "LABORATORY WORKSHOP",
+			"LongTitle": "LABORATORY WORKSHOP MCDONALDS",
 			"BeginTime": "14:00:00",
 			"EndTime": "16:00:00",
 			"Meets": "W",
@@ -7803,7 +7803,7 @@ allCourses = {
 	"PHYS 102 M L": [
 		{
 			"ShortTitle": "LAB WORKSHOP",
-			"LongTitle": "LABORATORY WORKSHOP",
+			"LongTitle": "LABORATORY WORKSHOP MCDONALDS",
 			"BeginTime": "14:00:00",
 			"EndTime": "16:00:00",
 			"Meets": "F",
@@ -7816,7 +7816,7 @@ allCourses = {
 	"PHYS 102 N L": [
 		{
 			"ShortTitle": "LAB WORKSHOP",
-			"LongTitle": "LABORATORY WORKSHOP",
+			"LongTitle": "LABORATORY WORKSHOP MCDONALDS",
 			"BeginTime": "14:30:00",
 			"EndTime": "16:29:00",
 			"Meets": "R",
@@ -7829,7 +7829,7 @@ allCourses = {
 	"PHYS 122 A": [
 		{
 			"ShortTitle": "COLLEGE PHYSICS",
-			"LongTitle": "COLLEGE PHYSICS II",
+			"LongTitle": "COLLEGE PHYSICS II MCDONALDS",
 			"BeginTime": "8:00:00",
 			"EndTime": "8:50:00",
 			"Meets": "MWF",
@@ -7842,7 +7842,7 @@ allCourses = {
 	"PHYS 122 B": [
 		{
 			"ShortTitle": "COLLEGE PHYSICS",
-			"LongTitle": "COLLEGE PHYSICS II",
+			"LongTitle": "COLLEGE PHYSICS II MCDONALDS",
 			"BeginTime": "9:00:00",
 			"EndTime": "9:50:00",
 			"Meets": "MWF",
@@ -7855,7 +7855,7 @@ allCourses = {
 	"PHYS 122 L L": [
 		{
 			"ShortTitle": "LAB WORKSHOP",
-			"LongTitle": "LABORATORY WORKSHOP",
+			"LongTitle": "LABORATORY WORKSHOP MCDONALDS",
 			"BeginTime": "14:00:00",
 			"EndTime": "16:00:00",
 			"Meets": "M",
@@ -7868,7 +7868,7 @@ allCourses = {
 	"PHYS 122 M L": [
 		{
 			"ShortTitle": "LABRATORY",
-			"LongTitle": "LABORATORY WORKSHOP",
+			"LongTitle": "LABORATORY WORKSHOP MCDONALDS",
 			"BeginTime": "15:00:00",
 			"EndTime": "17:00:00",
 			"Meets": "T",
@@ -7881,7 +7881,7 @@ allCourses = {
 	"PHYS 234 A": [
 		{
 			"ShortTitle": "MODERN PHYSICS",
-			"LongTitle": "MODERN PHYSICS",
+			"LongTitle": "MODERN PHYSICS MCDONALDS",
 			"BeginTime": "10:00:00",
 			"EndTime": "10:50:00",
 			"Meets": "MWF",
@@ -7894,7 +7894,7 @@ allCourses = {
 	"PHYS 242 A": [
 		{
 			"ShortTitle": "THEORETIC PHYS",
-			"LongTitle": "INTRO TO THEORETICAL PHYSICS",
+			"LongTitle": "INTRO TO THEORETICAL PHYSICS MCDONALDS",
 			"BeginTime": "13:00:00",
 			"EndTime": "13:50:00",
 			"Meets": "MWF",
@@ -7907,7 +7907,7 @@ allCourses = {
 	"PHYS 321 A": [
 		{
 			"ShortTitle": "RADIATION LAB",
-			"LongTitle": "RADIATION LAB",
+			"LongTitle": "RADIATION LAB MCDONALDS",
 			"BeginTime": "14:30:00",
 			"EndTime": "18:00:00",
 			"Meets": "R",
@@ -7920,7 +7920,7 @@ allCourses = {
 	"PHYS 431 A": [
 		{
 			"ShortTitle": "QUANTUM MECHANI",
-			"LongTitle": "QUANTUM MECHANICS",
+			"LongTitle": "QUANTUM MECHANICS MCDONALDS",
 			"BeginTime": "10:05:00",
 			"EndTime": "11:20:00",
 			"Meets": "TR",
