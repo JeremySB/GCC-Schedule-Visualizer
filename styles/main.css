@@ -44,3 +44,11 @@ body {
 .course-list-row {
     margin: 0px;
 }
+
+.copy-entry {
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+	
+	text-align: center;
+}
