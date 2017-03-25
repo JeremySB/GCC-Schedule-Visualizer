@@ -8,6 +8,7 @@
     <link href='lib/fullcalendar.css' rel='stylesheet' />
     <link href='lib/bootstrap.css' rel='stylesheet' />
     <link href='styles/main.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src='lib/moment.min.js'></script>
     <script src='lib/jquery.min.js'></script>
@@ -132,6 +133,7 @@
                 <button type="button" id="course_codes_button" class="btn btn-primary"
                         data-toggle="modal" data-target="#courseCodesModal">
                     Get Course Codes
+                    <i class="material-icons">content_copy</i>
                 </button>
             </div>
         </div>
@@ -145,14 +147,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
                 </div>
-                <div class="modal-body coursePopup">
-                  
-                  <div class="col-xs-6 col-xs-offset-3">
-                    <div class="copy-boxes col-xs-6" id="div-target0">HUMA 302 A</div>
-                    <button class="btn0 btn col-xs-6" data-clipboard-action="copy" data-clipboard-target="#div-target0">Copy</button>
-                  </div>
-
-                </div>
+                <div class="modal-body" id="coursePopup"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -161,9 +156,8 @@
     </div>
 
     <!-- Script stuff for copying course codes -->
-    <script class="copyScript">
-        var clipboard = new Clipboard('.btn0');
-    </script>
+    <div id="copyScriptDiv"></div>
+
 
 </body>
 </html>

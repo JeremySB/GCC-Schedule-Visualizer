@@ -170,6 +170,33 @@ function getSelectedCourseCodes() {
     return courseCodes;
 }
 
+function printCourseCodes(){
+  var coursePopup = $("#coursePopup");
+  var popupScript = $("#copyScriptDiv");
+
+  coursePopup.empty();
+  popupScript.empty();
+
+  var count = 0;
+
+  for (var code in selectedCourses) {
+    var divtarget = "div-target" + count.toString();
+    var btn = "btn" + count.toString();
+
+    var inside = $("<div>")
+        .addClass('col-xs-6 col-xs-offset-3')
+        .html('<div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="'+ btn +' btn col-xs-6" data-clipboard-action="copy" data-clipboard-target="#'+ divtarget +'">Copy</button>')
+        .appendTo(coursePopup);
+
+    var btnInside = $("<div>")
+        .addClass('copyScript')
+        .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
+        .appendTo(popupScript);
+
+    count++;
+  }
+}
+
 //search function
 function searchBar(query) {
     searchedCourses = {};
@@ -236,7 +263,7 @@ function addToTable() {
             addCourse(code);
             link.addClass("active");
         }
-        
+
     });
 
     courseTable.scrollTop(0);
@@ -278,6 +305,10 @@ $(function () {
 
     $("#searchfield").on("input", function (event) {
         searchBar($("#searchfield").val());
+    });
+
+    $("#course_codes_button").click(function () {
+      printCourseCodes();
     });
 
     //$("#searchfield").keypress(function (e) {
