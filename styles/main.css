@@ -49,6 +49,12 @@ body {
 	display: inline-block;
     vertical-align: middle;
     float: none;
-	
+
 	text-align: center;
 }
+
+.copy-boxes {
+  vertical-align: text-top;
+}
+
+.top-buffer { margin-top:12px; }
