@@ -7,11 +7,15 @@ var filteredCourses = {};
 // courses that match current search values
 var searchedCourses = {};
 
+// points to full calendar DOM element
 var calendar;
 
+// quick utility function to pad numbers with 0's on the left
 function pad(num, size) { return ('000000000' + num).substr(-size); }
 
-var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo"]
+// preset colors that courses can have
+var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo", "LightSeaGreen", "RoyalBlue", "Teal"]
+
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
@@ -28,14 +32,20 @@ function filterCourses() {
 
         // check if section doesn't match a filter, and if so, continue to next
 
+        // department filtering
         if (department && department !== code.substr(0, code.indexOf(" "))) {
             continue; // go to next section
         }
 
+        // time of day filtering
         if (time) {
+            // if course does not have a time (e.g. internship) don't show it
             if (!cur["BeginTime"]) continue;
+
+            // get only the hour from the time string, and parse to int
             var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
 
+            // check if hour time matches filter and skip adding this course if so
             if (time === "Morning" && sectionHour >= 12)
                 continue;
             else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
@@ -44,6 +54,7 @@ function filterCourses() {
                 continue;
         }
 
+        // Filter by course number
         if (course) {
             var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
             var courseFilter = course.substr(0, 1);
@@ -51,11 +62,16 @@ function filterCourses() {
             if (courseFilter !== courseNumber) continue;
         }
 
+        // filter by which days the class meets
         if (week) {
+            // don't add this course if it doesn't meet
             if (!cur["Meets"]) continue;
+
             var meets = cur["Meets"];
+
             // get extra letters from other meeting times in this section
             if (allCourses[code][1]) meets = meets + allCourses[code][1]["Meets"];
+
             // check if every MTWTF letter is in the Meets string
 
             var failed = false;
@@ -71,19 +87,21 @@ function filterCourses() {
         filteredCourses[code] = allCourses[code];
     }
 
-    searchBar($("#searchfield").val());
-
+    // now update the search results
+    searchCourses($("#searchfield").val());
 }
 
+
+// add course by course code to selected courses and calendar display
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
-    console.log(name);
-    // TODO: add checks for errors
     name = name.toUpperCase();
     if (selectedCourses[name]) {
         console.log("Course already in list")
     } else if (!selectedCourses[name] && allCourses[name]) {
+        // course seems good, so add it
         selectedCourses[name] = allCourses[name];
+        // update all calendar objects
         updateCalendar();
     }
     else {
@@ -92,19 +110,23 @@ function addCourse(name) {
     }
 }
 
-// refreshs all calendar courses
+
+// refreshs all calendar events so they match selectedCourses
 function updateCalendar() {
+    // clear everything from calendar
     calendar.fullCalendar('removeEvents');
 
     var events = [];
 
     var colorSelector = 0;
 
+    // go through every course and every meeting time within it
     for (var code in selectedCourses) {
         for (var part in selectedCourses[code]) {
             var meets = selectedCourses[code][part]["Meets"];
             // new event for each day
             for (var i = 0; i < meets.length; i++) {
+                // Monday is 1, Tuesday is 2, etc. Figure out which day of the week this event will be
                 var day = 1;
                 var letter = meets[i];
                 switch (letter) {
@@ -119,7 +141,6 @@ function updateCalendar() {
                     case 'F':
                         day += 4; break;
                 }
-                var beginTime, endTime
 
                 var event = {
                     id: code,
@@ -128,20 +149,22 @@ function updateCalendar() {
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
-                //calendar.fullCalendar('renderEvent', event, true);
-
+                // add Event Source Object to containing object
                 events.push(event);
             }
         }
 
+        // Now increment the color for the next course
         colorSelector++;
         if (colorSelector >= colors.length) colorSelector = 0;
     }
 
+    // push the list of events to the calendar module
     calendar.fullCalendar('renderEvents', events, true);
 }
 
 
+// remove course from selectedCourses and from calendar display
 // name parameter is in the form "ACCT 202 A"
 function removeCourse(name) {
     // This shouldn't cause errors if course doesn't exist
@@ -154,65 +177,55 @@ function removeCourse(name) {
 function clearCourses() {
     selectedCourses = {};
     calendar.fullCalendar('removeEvents');
-    addToTable();
+    displaySearchResults();
 }
 
 
-// returns an array of strings containing the course codes of currently selected courses
-function getSelectedCourseCodes() {
-    // TODO: actually test this
-    courseCodes = [];
-    for (var course in selectedCourses) {
-        if (selectedCourses.hasOwnProperty(course)) {
-            courseCodes.push(course);
-        }
+// print out course codes and copy buttons to the copy course codes modal
+function printCourseCodes() {
+    var coursePopup = $("#coursePopup");
+    var popupScript = $("#copyScriptDiv");
+
+    coursePopup.empty();
+    popupScript.empty();
+
+    var count = 0;
+
+    for (var code in selectedCourses) {
+        var divtarget = "div-target" + count.toString();
+        var btn = "btn" + count.toString();
+
+        var inside = $("<div>")
+            .addClass('row top-buffer')
+            .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="' + btn + ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
+            .appendTo(coursePopup);
+
+        var btnInside = $("<div>")
+            .addClass('copyScript')
+            .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
+            .appendTo(popupScript);
+
+        count++;
     }
-    return courseCodes;
-}
-
-function printCourseCodes(){
-  var coursePopup = $("#coursePopup");
-  var popupScript = $("#copyScriptDiv");
-
-  coursePopup.empty();
-  popupScript.empty();
-
-  var count = 0;
-
-  for (var code in selectedCourses) {
-    var divtarget = "div-target" + count.toString();
-    var btn = "btn" + count.toString();
-
-    var inside = $("<div>")
-        .addClass('row top-buffer')
-        .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="'+ btn +' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#'+ divtarget +'"> Copy </button></div>')
-        .appendTo(coursePopup);
-
-    var btnInside = $("<div>")
-        .addClass('copyScript')
-        .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
-        .appendTo(popupScript);
-
-    count++;
-  }
 
     //if no selected courses
-  if (Object.keys(selectedCourses).length === 0) {
-      var inside = $("<div>")
-          .text('Select some courses first!')
-          .appendTo(coursePopup);
-  }
+    if (Object.keys(selectedCourses).length === 0) {
+        var inside = $("<div>")
+            .text('Select some courses first!')
+            .appendTo(coursePopup);
+    }
 }
 
-//search function
-function searchBar(query) {
+
+// search list of filtered courses for query and add to searchedCourses
+function searchCourses(query) {
     searchedCourses = {};
     var selector = 0;
     query = query.toUpperCase().trim();
 
     if (!query) {
         searchedCourses = filteredCourses;
-        addToTable();
+        displaySearchResults();
         return;
     }
 
@@ -224,10 +237,12 @@ function searchBar(query) {
         }
     }
 
-    addToTable();
+    // update results section
+    displaySearchResults();
 }
 
-function addToTable() {
+
+function displaySearchResults() {
     var courseTable = $(".results-table");
     // Clear the table
     $("#results-table a").remove();
@@ -275,13 +290,15 @@ function addToTable() {
 
     courseTable.scrollTop(0);
 }
-// code to execute on document ready
 
+
+// code to execute on document ready
+// event listeners created here
 $(function () {
     filteredCourses = allCourses;
     searchedCourses = filteredCourses;
 
-    addToTable();
+    displaySearchResults();
 
     calendar = $('#calendar');
 
@@ -301,28 +318,17 @@ $(function () {
         weekNumbers: false,
     });
 
-    $("#course_codes_button").click(function (event) {
-        console.log(getSelectedCourseCodes());
-
-    });
-
     $("#reset_button").click(function () {
         clearCourses();
     });
 
     $("#searchfield").on("input", function (event) {
-        searchBar($("#searchfield").val());
+        searchCourses($("#searchfield").val());
     });
 
     $("#course_codes_button").click(function () {
-      printCourseCodes();
+        printCourseCodes();
     });
-
-    //$("#searchfield").keypress(function (e) {
-    //    if (e.which == 13) {
-    //        searchBar($("#searchfield").val());
-    //    }
-    //});
 
     $(".filter-item").change(filterCourses);
 });
