@@ -195,6 +195,13 @@ function printCourseCodes(){
 
     count++;
   }
+
+    //if no selected courses
+  if (Object.keys(selectedCourses).length === 0) {
+      var inside = $("<div>")
+          .text('Select some courses first!')
+          .appendTo(coursePopup);
+  }
 }
 
 //search function
