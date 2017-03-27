@@ -1,0 +1,7 @@
+Installation instructions:
+ * Unzip all files to a folder
+ * Open index.html in supported web browser
+
+All necessary libraries are included locally in the lib folder.
+
+All backlog items are completed, asside from "Sort results based on number of matching queries" which we decided not to implement.
