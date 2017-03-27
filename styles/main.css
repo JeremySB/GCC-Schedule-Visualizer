@@ -58,3 +58,8 @@ body {
 }
 
 .top-buffer { margin-top:12px; }
+
+.container-center {
+    display: flex;
+    align-items: center;
+}

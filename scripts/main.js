@@ -185,7 +185,7 @@ function printCourseCodes(){
 
     var inside = $("<div>")
         .addClass('row top-buffer')
-        .html('<div class="col-xs-6 col-xs-offset-3"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="'+ btn +' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#'+ divtarget +'"> Copy </button></div>')
+        .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="'+ btn +' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#'+ divtarget +'"> Copy </button></div>')
         .appendTo(coursePopup);
 
     var btnInside = $("<div>")
