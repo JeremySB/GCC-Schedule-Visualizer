@@ -191,15 +191,18 @@ function printCourseCodes() {
 
     var count = 0;
 
+    // Add the HTML code for each course that is in the selected courses
     for (var code in selectedCourses) {
         var divtarget = "div-target" + count.toString();
         var btn = "btn" + count.toString();
 
+        // The button itself
         var inside = $("<div>")
             .addClass('row top-buffer')
             .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="' + btn + ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
             .appendTo(coursePopup);
 
+        // The code to copy the buttons 
         var btnInside = $("<div>")
             .addClass('copyScript')
             .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
@@ -223,12 +226,14 @@ function searchCourses(query) {
     var selector = 0;
     query = query.toUpperCase().trim();
 
+    // return everything if there is no query
     if (!query) {
         searchedCourses = filteredCourses;
         displaySearchResults();
         return;
     }
 
+    // Go through the list of courses that match the filters and check for matches with the search query
     for (var courseCode in filteredCourses) {
         if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
             if (!searchedCourses[courseCode]) {
