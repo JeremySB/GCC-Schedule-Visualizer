@@ -1,4 +1,4 @@
-allCourses = {
+const allCourses = Object.freeze({
 	"ABRD 300 A": [
 		{
 			"ShortTitle": "STUDY ABROAD",
@@ -9848,4 +9848,4 @@ allCourses = {
 			"Capacity": "18"
 		}
 	]
-};
+});
