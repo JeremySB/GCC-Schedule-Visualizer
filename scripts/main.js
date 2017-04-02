@@ -202,7 +202,7 @@ function printCourseCodes() {
             .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="' + btn + ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
             .appendTo(coursePopup);
 
-        // The code to copy the buttons 
+        // The code to copy the buttons
         var btnInside = $("<div>")
             .addClass('copyScript')
             .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
@@ -250,13 +250,15 @@ function searchCourses(query) {
 function displaySearchResults() {
     var courseTable = $(".results-table");
     // Clear the table
-    $("#results-table a").remove();
+    $("#results-table").empty();
+
+    // use document fragment to avoid reflowing the page constantly
+    var fragment = $(document.createDocumentFragment());
 
     for (var code in searchedCourses) {
         var link = $("<a>")
             .addClass('list-group-item course_link')
-            .attr({ 'href': 'javascript:void(0);', 'data-code': code })
-            .appendTo(courseTable);
+            .attr({ 'href': 'javascript:void(0);', 'data-code': code });
 
         var inside = $("<div>")
             .addClass('row course-list-row')
@@ -274,7 +276,11 @@ function displaySearchResults() {
 
         if (selectedCourses[code])
             link.addClass("active");
+
+        fragment.append(link);
     }
+
+    courseTable.append(fragment);
 
     // click handler
 
