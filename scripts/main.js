@@ -302,6 +302,59 @@ function displaySearchResults() {
     courseTable.scrollTop(0);
 }
 
+function updateSelectedCourses(){
+  var selectedTable = $(".selected-table");
+  // Clear the table
+  $("#selected-table").empty();
+
+  // use document fragment to avoid reflowing the page constantly
+  var fragment = $(document.createDocumentFragment());
+
+  for (var code in selectedCourses) {
+      var link = $("<a>")
+          .addClass('list-group-item course_link')
+          .attr({ 'href': 'javascript:void(0);', 'data-code': code });
+
+      var inside = $("<div>")
+          .addClass('row course-list-row')
+          .appendTo(link);
+
+      $("<div>")
+          .addClass("col-xs-6 course-list-text")
+          .text(code)
+          .appendTo(inside);
+
+      $("<div>")
+          .addClass("col-xs-6 course-list-text")
+          .text(selectedCourses[code][0]["ShortTitle"])
+          .appendTo(inside);
+
+      if (selectedCourses[code])
+          link.addClass("active");
+
+      fragment.append(link);
+  }
+
+  selectedTable.append(fragment);
+
+  // click handler
+
+  $(".course_link").click(function (event) {
+      var link = $(event.delegateTarget);
+      var code = link.attr("data-code");
+      if (selectedCourses[code]) {
+          // remove course
+          removeCourse(code);
+          link.removeClass("active");
+      } else {
+          // add course
+          addCourse(code);
+          link.addClass("active");
+      }
+  });
+
+  selectedTable.scrollTop(0);
+}
 
 // code to execute on document ready
 // event listeners created here
@@ -331,6 +384,7 @@ $(function () {
 
     $("#reset_button").click(function () {
         clearCourses();
+        updateSelectedCourses();
     });
 
     $("#searchfield").on("input", function (event) {
@@ -342,4 +396,13 @@ $(function () {
     });
 
     $(".filter-item").change(filterCourses);
+
+    $(".searchResultsTab").click(function(){
+      displaySearchResults();
+    });
+
+    $(".selectedCoursesTab").click(function(){
+      updateSelectedCourses();
+    });
+
 });

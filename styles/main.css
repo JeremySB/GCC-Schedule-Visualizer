@@ -28,6 +28,12 @@ body {
     overflow-x: visible;
 }
 
+.selected-table {
+    max-height: 325px;
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
 #search_button {
     margin: 5px 0px 5px 0px;
 }
