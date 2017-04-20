@@ -1,5 +1,7 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>GCC Class Schedule Visualizer</title>
@@ -18,10 +20,16 @@
     <script src='scripts/main.js'></script>
     <script src="lib/clipboard.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div id='sidebar' class="col-sm-4">
-
+            <div class="row search-row">
+                <h4> Search</h4>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="searchfield" id="searchfield" placeholder="Search for a course">
+                </div>
+            </div>
             <div class="form-group row">
                 <h4>Filter Options</h4>
                 <div class="col-xs-6 filter-item">
@@ -108,30 +116,25 @@
                     </select>
                 </div>
             </div>
-
-
-            <div class="row search-row">
-                <h4>Search</h4>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="searchfield" id="searchfield" placeholder="Search for a course">
-                </div>
-
-            </div>
-
+            <hr />
             <div class="row results-row">
-              <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" class="searchResultsTab" href="#searchResults">Search Results</a></li>
-                <li class="pull-right"><a data-toggle="tab" class="selectedCoursesTab" href="#selectedCourses">Selected Courses</a></li>
-              </ul>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" class="searchResultsTab" href="#searchResults">Search Results</a></li>
+                    <li class="pull-right"><a data-toggle="tab" class="selectedCoursesTab" href="#selectedCourses">Selected Courses</a></li>
+                </ul>
 
-              <div class="tab-content">
-                <div id="searchResults" class="tab-pane fade in active">
-                  <div class="panel panel-default"><div class="list-group results-table" id="results-table"></div></div>
+                <div class="tab-content">
+                    <div id="searchResults" class="tab-pane fade in active">
+                        <div class="panel panel-default">
+                            <div class="list-group results-table" id="results-table"></div>
+                        </div>
+                    </div>
+                    <div id="selectedCourses" class="tab-pane fade">
+                        <div class="pane1 panel-default">
+                            <div class="list-group selected-table" id="selected-table"></div>
+                        </div>
+                    </div>
                 </div>
-                <div id="selectedCourses" class="tab-pane fade">
-                  <div class="pane1 panel-default"><div class="list-group selected-table" id="selected-table"></div></div>
-                </div>
-              </div>
             </div>
 
 
@@ -142,8 +145,7 @@
                 <button type="button" disabled id="tutorial_button" class="btn btn-primary">Tutorial</button>
                 <button type="button" disabled id="tips_button" class="btn btn-primary">Scheduling Tips!</button>
                 <button type="button" id="reset_button" class="btn btn-warning">Reset</button>
-                <button type="button" id="course_codes_button" class="btn btn-primary"
-                        data-toggle="modal" data-target="#courseCodesModal">
+                <button type="button" id="course_codes_button" class="btn btn-primary" data-toggle="modal" data-target="#courseCodesModal">
                     Get Course Codes
                 </button>
             </div>
@@ -157,10 +159,9 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
-          					<p></p>
-          					<p><b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form
-                      for course codes, and not reference codes. One by one, click the copy button next to the courses below and paste them into
-                      the form on myGCC.</p>
+                    <p></p>
+                    <p><b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form for course codes, and not reference codes. One by one, click the copy button next to the courses below and paste
+                        them into the form on myGCC.</p>
                 </div>
                 <div class="modal-body" id="coursePopup"></div>
                 <div class="modal-footer">
@@ -175,4 +176,5 @@
 
 
 </body>
+
 </html>
