@@ -275,13 +275,23 @@ function displaySearchResults() {
                 .appendTo(link);
 
             $("<div>")
-                .addClass("col-xs-6 course-list-text")
+                .addClass("col-xs-3 course-list-text")
                 .text(code)
                 .appendTo(inside);
 
             $("<div>")
-                .addClass("col-xs-6 course-list-text")
+                .addClass("col-xs-5 course-list-text-name")
                 .text(searchedCourses[code][0]["ShortTitle"])
+                .appendTo(inside);
+
+            $("<div>")
+                .addClass("col-xs-1 course-list-text")
+                .text(getmeeting(code))
+                .appendTo(inside);
+
+            $("<div>")
+                .addClass("col-xs-3 course-list-text-time")
+                .text(getTime(code))
                 .appendTo(inside);
 
             if (selectedCourses[code])
@@ -316,6 +326,51 @@ function displaySearchResults() {
     }
 }
 
+function getTime(code) {
+    var BeginTime = searchedCourses[code][0]["BeginTime"];
+    var EndTime = searchedCourses[code][0]["EndTime"];
+
+    if (BeginTime != null && EndTime != null) {
+        BeginHour = BeginTime.split(':')[0];
+        BeginMin = BeginTime.split(':')[1];
+        EndHour = EndTime.split(':')[0];
+        EndMin = EndTime.split(':')[1];
+
+        if (BeginHour > 12) {
+            BeginHour = BeginHour - 12;
+        }
+        if (EndHour > 12) {
+            EndHour = EndHour - 12;
+        }
+
+        var time = BeginHour + ":" + BeginMin + "-" + EndHour + ":" + EndMin;
+        return time;
+    } else {
+        return "N/A";
+    }
+}
+
+function getmeeting(code) {
+    if (Object.keys(searchedCourses[code]).length > 1) {
+        var days = searchedCourses[code][0]["Meets"] + searchedCourses[code][1]["Meets"];
+        if (days == "MWFR") {
+            return "MWRF";
+        } else if (days == "MWFT") {
+            return "MTWF";
+        } else if (days == "MFTR") {
+            return "MTRF";
+        } else {
+            return searchedCourses[code][0]["Meets"];
+        }
+    } else {
+        if (searchedCourses[code][0]["Meets"] == "") {
+            return "N/A";
+        } else {
+            return searchedCourses[code][0]["Meets"];
+        }
+    }
+}
+
 function updateSelectedCourses() {
     var selectedTable = $(".selected-table");
     // Clear the table
@@ -339,13 +394,23 @@ function updateSelectedCourses() {
                 .appendTo(link);
 
             $("<div>")
-                .addClass("col-xs-6 course-list-text")
+                .addClass("col-xs-3 course-list-text")
                 .text(code)
                 .appendTo(inside);
 
             $("<div>")
-                .addClass("col-xs-6 course-list-text")
-                .text(selectedCourses[code][0]["ShortTitle"])
+                .addClass("col-xs-5 course-list-text-name")
+                .text(searchedCourses[code][0]["ShortTitle"])
+                .appendTo(inside);
+
+            $("<div>")
+                .addClass("col-xs-1 course-list-text")
+                .text(getmeeting(code))
+                .appendTo(inside);
+
+            $("<div>")
+                .addClass("col-xs-3 course-list-text-time")
+                .text(getTime(code))
                 .appendTo(inside);
 
             if (selectedCourses[code])
