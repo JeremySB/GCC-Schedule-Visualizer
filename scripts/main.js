@@ -263,39 +263,7 @@ function displaySearchResults() {
 
     if (Object.keys(searchedCourses).length != 0) {
         for (var code in searchedCourses) {
-            var link = $("<a>")
-                .addClass('list-group-item course_link')
-                .attr({
-                    'href': 'javascript:void(0);',
-                    'data-code': code
-                });
-
-            var inside = $("<div>")
-                .addClass('row course-list-row')
-                .appendTo(link);
-
-            $("<div>")
-                .addClass("col-xs-3 course-list-text")
-                .text(code)
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-5 course-list-text-name")
-                .text(searchedCourses[code][0]["ShortTitle"])
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-1 course-list-text")
-                .text(getmeeting(code))
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-3 course-list-text-time")
-                .text(getTime(code))
-                .appendTo(inside);
-
-            if (selectedCourses[code])
-                link.addClass("active");
+            var link = getResultLink(code);
 
             fragment.append(link);
         }
@@ -353,13 +321,15 @@ function getTime(code) {
 function getmeeting(code) {
     if (Object.keys(searchedCourses[code]).length > 1) {
         var days = searchedCourses[code][0]["Meets"] + searchedCourses[code][1]["Meets"];
-        if (days == "MWFR") {
+        if (days == "MWFR" || days == "RMWF") {
             return "MWRF";
-        } else if (days == "MWFT") {
+        } else if (days == "MWFT" || days == "TMWF") {
             return "MTWF";
-        } else if (days == "MFTR") {
+        } else if (days == "MFTR" || days == "TRMF") {
             return "MTRF";
-        } else {
+        } else if(days == "RT" || days == "TR"){
+            return "TR";
+        }else{
             return searchedCourses[code][0]["Meets"];
         }
     } else {
@@ -369,6 +339,44 @@ function getmeeting(code) {
             return searchedCourses[code][0]["Meets"];
         }
     }
+}
+
+function getResultLink(code){
+  var link = $("<a>")
+      .addClass('list-group-item course_link')
+      .attr({
+          'href': 'javascript:void(0);',
+          'data-code': code
+      });
+
+  var inside = $("<div>")
+      .addClass('row course-list-row')
+      .appendTo(link);
+
+  $("<div>")
+      .addClass("col-xs-3 course-list-text")
+      .text(code)
+      .appendTo(inside);
+
+  $("<div>")
+      .addClass("col-xs-5 course-list-text-name")
+      .text(searchedCourses[code][0]["ShortTitle"])
+      .appendTo(inside);
+
+  $("<div>")
+      .addClass("col-xs-1 course-list-text")
+      .text(getmeeting(code))
+      .appendTo(inside);
+
+  $("<div>")
+      .addClass("col-xs-3 course-list-text-time")
+      .text(getTime(code))
+      .appendTo(inside);
+
+  if (selectedCourses[code])
+      link.addClass("active");
+
+  return link;
 }
 
 function updateSelectedCourses() {
@@ -382,39 +390,7 @@ function updateSelectedCourses() {
 
     if (Object.keys(selectedCourses).length != 0) {
         for (var code in selectedCourses) {
-            var link = $("<a>")
-                .addClass('list-group-item course_link')
-                .attr({
-                    'href': 'javascript:void(0);',
-                    'data-code': code
-                });
-
-            var inside = $("<div>")
-                .addClass('row course-list-row')
-                .appendTo(link);
-
-            $("<div>")
-                .addClass("col-xs-3 course-list-text")
-                .text(code)
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-5 course-list-text-name")
-                .text(searchedCourses[code][0]["ShortTitle"])
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-1 course-list-text")
-                .text(getmeeting(code))
-                .appendTo(inside);
-
-            $("<div>")
-                .addClass("col-xs-3 course-list-text-time")
-                .text(getTime(code))
-                .appendTo(inside);
-
-            if (selectedCourses[code])
-                link.addClass("active");
+            var link = getResultLink(code);
 
             fragment.append(link);
         }
