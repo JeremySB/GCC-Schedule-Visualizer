@@ -11,7 +11,9 @@ var searchedCourses = {};
 var calendar;
 
 // quick utility function to pad numbers with 0's on the left
-function pad(num, size) { return ('000000000' + num).substr(-size); }
+function pad(num, size) {
+    return ('000000000' + num).substr(-size);
+}
 
 // preset colors that courses can have
 var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo", "LightSeaGreen", "RoyalBlue", "Teal"]
@@ -103,8 +105,7 @@ function addCourse(name) {
         selectedCourses[name] = allCourses[name];
         // update all calendar objects
         updateCalendar();
-    }
-    else {
+    } else {
         // error
         console.log("Error adding '" + name + "' to selected courses");
     }
@@ -133,13 +134,17 @@ function updateCalendar() {
                     case 'M':
                         break;
                     case 'T':
-                        day += 1; break;
+                        day += 1;
+                        break;
                     case 'W':
-                        day += 2; break;
+                        day += 2;
+                        break;
                     case 'R':
-                        day += 3; break;
+                        day += 3;
+                        break;
                     case 'F':
-                        day += 4; break;
+                        day += 4;
+                        break;
                 }
 
                 var event = {
@@ -251,114 +256,132 @@ function displaySearchResults() {
     var courseTable = $(".results-table");
     // Clear the table
     $("#results-table").empty();
+    courseTable.removeClass("noneMatching");
 
     // use document fragment to avoid reflowing the page constantly
     var fragment = $(document.createDocumentFragment());
 
-    for (var code in searchedCourses) {
-        var link = $("<a>")
-            .addClass('list-group-item course_link')
-            .attr({ 'href': 'javascript:void(0);', 'data-code': code });
+    if (Object.keys(searchedCourses).length != 0) {
+        for (var code in searchedCourses) {
+            var link = $("<a>")
+                .addClass('list-group-item course_link')
+                .attr({
+                    'href': 'javascript:void(0);',
+                    'data-code': code
+                });
 
-        var inside = $("<div>")
-            .addClass('row course-list-row')
-            .appendTo(link);
+            var inside = $("<div>")
+                .addClass('row course-list-row')
+                .appendTo(link);
 
-        $("<div>")
-            .addClass("col-xs-6 course-list-text")
-            .text(code)
-            .appendTo(inside);
+            $("<div>")
+                .addClass("col-xs-6 course-list-text")
+                .text(code)
+                .appendTo(inside);
 
-        $("<div>")
-            .addClass("col-xs-6 course-list-text")
-            .text(searchedCourses[code][0]["ShortTitle"])
-            .appendTo(inside);
+            $("<div>")
+                .addClass("col-xs-6 course-list-text")
+                .text(searchedCourses[code][0]["ShortTitle"])
+                .appendTo(inside);
 
-        if (selectedCourses[code])
-            link.addClass("active");
+            if (selectedCourses[code])
+                link.addClass("active");
 
-        fragment.append(link);
-    }
-
-    courseTable.append(fragment);
-
-    // click handler
-
-    $(".course_link").click(function (event) {
-        var link = $(event.delegateTarget);
-        var code = link.attr("data-code");
-        if (selectedCourses[code]) {
-            // remove course
-            removeCourse(code);
-            link.removeClass("active");
-        } else {
-            // add course
-            addCourse(code);
-            link.addClass("active");
+            fragment.append(link);
         }
 
-    });
+        courseTable.append(fragment);
 
-    courseTable.scrollTop(0);
+        // click handler
+
+        $(".course_link").click(function(event) {
+            var link = $(event.delegateTarget);
+            var code = link.attr("data-code");
+            if (selectedCourses[code]) {
+                // remove course
+                removeCourse(code);
+                link.removeClass("active");
+            } else {
+                // add course
+                addCourse(code);
+                link.addClass("active");
+            }
+
+        });
+
+        courseTable.scrollTop(0);
+    } else {
+        courseTable.append("No Matching Courses...")
+            .addClass("noneMatching");
+    }
 }
 
-function updateSelectedCourses(){
-  var selectedTable = $(".selected-table");
-  // Clear the table
-  $("#selected-table").empty();
+function updateSelectedCourses() {
+    var selectedTable = $(".selected-table");
+    // Clear the table
+    $("#selected-table").empty();
+    selectedTable.removeClass("noneMatching");
 
-  // use document fragment to avoid reflowing the page constantly
-  var fragment = $(document.createDocumentFragment());
+    // use document fragment to avoid reflowing the page constantly
+    var fragment = $(document.createDocumentFragment());
 
-  for (var code in selectedCourses) {
-      var link = $("<a>")
-          .addClass('list-group-item course_link')
-          .attr({ 'href': 'javascript:void(0);', 'data-code': code });
+    if (Object.keys(selectedCourses).length != 0) {
+        for (var code in selectedCourses) {
+            var link = $("<a>")
+                .addClass('list-group-item course_link')
+                .attr({
+                    'href': 'javascript:void(0);',
+                    'data-code': code
+                });
 
-      var inside = $("<div>")
-          .addClass('row course-list-row')
-          .appendTo(link);
+            var inside = $("<div>")
+                .addClass('row course-list-row')
+                .appendTo(link);
 
-      $("<div>")
-          .addClass("col-xs-6 course-list-text")
-          .text(code)
-          .appendTo(inside);
+            $("<div>")
+                .addClass("col-xs-6 course-list-text")
+                .text(code)
+                .appendTo(inside);
 
-      $("<div>")
-          .addClass("col-xs-6 course-list-text")
-          .text(selectedCourses[code][0]["ShortTitle"])
-          .appendTo(inside);
+            $("<div>")
+                .addClass("col-xs-6 course-list-text")
+                .text(selectedCourses[code][0]["ShortTitle"])
+                .appendTo(inside);
 
-      if (selectedCourses[code])
-          link.addClass("active");
+            if (selectedCourses[code])
+                link.addClass("active");
 
-      fragment.append(link);
-  }
+            fragment.append(link);
+        }
 
-  selectedTable.append(fragment);
+        selectedTable.append(fragment);
 
-  // click handler
+        // click handler
 
-  $(".course_link").click(function (event) {
-      var link = $(event.delegateTarget);
-      var code = link.attr("data-code");
-      if (selectedCourses[code]) {
-          // remove course
-          removeCourse(code);
-          link.removeClass("active");
-      } else {
-          // add course
-          addCourse(code);
-          link.addClass("active");
-      }
-  });
+        $(".course_link").click(function(event) {
+            var link = $(event.delegateTarget);
+            var code = link.attr("data-code");
+            if (selectedCourses[code]) {
+                // remove course
+                removeCourse(code);
+                link.removeClass("active");
+            } else {
+                // add course
+                addCourse(code);
+                link.addClass("active");
+            }
+        });
 
-  selectedTable.scrollTop(0);
+        selectedTable.scrollTop(0);
+    } else {
+        selectedTable.append("No Selected Courses...")
+            .addClass("noneMatching");
+    }
 }
 
 // code to execute on document ready
 // event listeners created here
-$(function () {
+$(function() {
     filteredCourses = allCourses;
     searchedCourses = filteredCourses;
 
@@ -382,27 +405,27 @@ $(function () {
         weekNumbers: false,
     });
 
-    $("#reset_button").click(function () {
+    $("#reset_button").click(function() {
         clearCourses();
         updateSelectedCourses();
     });
 
-    $("#searchfield").on("input", function (event) {
+    $("#searchfield").on("input", function(event) {
         searchCourses($("#searchfield").val());
     });
 
-    $("#course_codes_button").click(function () {
+    $("#course_codes_button").click(function() {
         printCourseCodes();
     });
 
     $(".filter-item").change(filterCourses);
 
-    $(".searchResultsTab").click(function(){
-      displaySearchResults();
+    $(".searchResultsTab").click(function() {
+        displaySearchResults();
     });
 
-    $(".selectedCoursesTab").click(function(){
-      updateSelectedCourses();
+    $(".selectedCoursesTab").click(function() {
+        updateSelectedCourses();
     });
 
 });
