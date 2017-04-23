@@ -10,26 +10,49 @@ var searchedCourses = {};
 // points to full calendar DOM element
 var calendar;
 
-// Tips
+// Tips Tour instantiation
 var tour = new Tour({
+  name: "tips",
+  template: "<div class='popover tour'>	<div class='arrow'></div>    <h3 class='popover-title'></h3>     <div class='popover-content'></div>    <div class='popover-navigation'>        <button class='btn btn-default' data-role='prev'>« Prev</button>    <button class='btn btn-default' data-role='next'>Next »</button>  <button class='btn btn-default' data-role='end'>Close tips</button>  </div>     </div>",
   steps: [
   {
 	element: "#tips_button",
+	placement: "top",
 	title: "Tip #1",
-	content: "Be sure to always use a wired ethernet connection when scheduling"
+	content: "Be sure to always use a wired ethernet connection when scheduling."
   },
   {
 	element: "#tips_button",
+	placement: "top",
 	title: "Tip #2",
-	content: "A full-time GCC student pays the same amount  in tution for any class "
-				+"load between 13 and 17 credits, so bear in mind that your 13 credit semester costs the same as a 16 credit one, "
-				+"but only one of those gives you lots of knowledge"
+	content: "A full-time GCC student pays the same amount of tuition for a 13 credit semester as they do a 17 credit one. Spend that money wisely!"
+  },
+  {
+	element: "#tips_button",
+	placement: "top",
+	title: "Tip #3",
+	content: "If you do have to use Wi-Fi, do so in an unpopulated area, like the crawspace beneath Harbison Chapel."
+  },
+  {
+	element: "#tips_button",
+	placement: "top",
+	title: "Tip #4",
+	content: "Make sure that you're on the course code tab on myGCC's academics page and NOT the referance code tab."
+  },
+  {
+	element: "#tips_button",
+	placement: "top",
+	title: "Tip #5",
+	content: "Don't let another person schedule for you; if you want something done right then use our software."
+  },
+  {
+	element: "#tips_button",
+	placement: "top",
+	title: "Tip #6",
+	content: "HTML element inspection."
   }
 ]});
 
-// Initialize the tour for the Tips
-tour.init();
-	
 
 // quick utility function to pad numbers with 0's on the left
 function pad(num, size) {
@@ -441,11 +464,7 @@ function updateSelectedCourses() {
     }
 }
 
-// Tour instance for scheduling tips
-function tips() {
-	// Start the tour
-	tour.start();
-}
+
 
 // code to execute on document ready
 // event listeners created here
@@ -497,8 +516,12 @@ $(function() {
     });
 	
 	$("#tips_button").click(function() {
-        tips();
+		// Initialize the tour for the Tips
+		tour.init();
+        // Start the tour
+		tour.start(true);
+		console.log("dickweed");
     });
-
+	
 });
 
