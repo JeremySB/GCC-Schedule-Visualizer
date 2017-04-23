@@ -91,6 +91,10 @@ h1.searchWord {
   vertical-align: text-top;
 }
 
+.message {
+  text-align: center;
+}
+
 .top-buffer { margin-top:12px; }
 
 .container-center {

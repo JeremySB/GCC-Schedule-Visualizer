@@ -7,6 +7,12 @@ var filteredCourses = {};
 // courses that match current search values
 var searchedCourses = {};
 
+// courses that overlap times
+var timeConflicts = {};
+
+// courses that have multiple sections added
+var sectionConflicts = {};
+
 // points to full calendar DOM element
 var calendar;
 
@@ -17,7 +23,6 @@ function pad(num, size) {
 
 // preset colors that courses can have
 var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo", "LightSeaGreen", "RoyalBlue", "Teal"]
-
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
@@ -93,7 +98,6 @@ function filterCourses() {
     searchCourses($("#searchfield").val());
 }
 
-
 // add course by course code to selected courses and calendar display
 // name parameter is in the form "ACCT 202 A"
 function addCourse(name) {
@@ -110,7 +114,6 @@ function addCourse(name) {
         console.log("Error adding '" + name + "' to selected courses");
     }
 }
-
 
 // refreshs all calendar events so they match selectedCourses
 function updateCalendar() {
@@ -168,7 +171,6 @@ function updateCalendar() {
     calendar.fullCalendar('renderEvents', events, true);
 }
 
-
 // remove course from selectedCourses and from calendar display
 // name parameter is in the form "ACCT 202 A"
 function removeCourse(name) {
@@ -177,14 +179,12 @@ function removeCourse(name) {
     calendar.fullCalendar('removeEvents', name);
 }
 
-
 // clear all selected courses
 function clearCourses() {
     selectedCourses = {};
     calendar.fullCalendar('removeEvents');
     displaySearchResults();
 }
-
 
 // print out course codes and copy buttons to the copy course codes modal
 function printCourseCodes() {
@@ -204,7 +204,9 @@ function printCourseCodes() {
         // The button itself
         var inside = $("<div>")
             .addClass('row top-buffer')
-            .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' + divtarget + '>' + code + '</div><button class="' + btn + ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
+            .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' +
+                divtarget + '>' + code + '</div><button id="copyButton" class="' + btn +
+                ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
             .appendTo(coursePopup);
 
         // The code to copy the buttons
@@ -224,6 +226,37 @@ function printCourseCodes() {
     }
 }
 
+function notifyMessage() {
+    $.notify({
+        // options
+        message: 'Course Code Copied Successfully!'
+    }, {
+        // settings
+        type: 'info',
+        element: 'body',
+        allow_dismiss: false,
+        placement: {
+            from: "bottom",
+            align: "center"
+        },
+        delay: 750,
+        z_index: 10031,
+        animate: {
+            enter: 'animated fadeInDown',
+            exit: 'animated fadeOutUp'
+        },
+        template: '<div data-notify="container" class="col-xs-11 col-sm-2 alert alert-{0}" role="alert">' +
+            '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+            '<span data-notify="icon"></span> ' +
+            '<span data-notify="title">{1}</span> ' +
+            '<span data-notify="message"><center>{2}</center></span>' +
+            '<div class="progress" data-notify="progressbar">' +
+            '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+            '</div>' +
+            '<a href="{3}" target="{4}" data-notify="url"></a>' +
+            '</div>'
+    });
+}
 
 // search list of filtered courses for query and add to searchedCourses
 function searchCourses(query) {
@@ -251,7 +284,7 @@ function searchCourses(query) {
     displaySearchResults();
 }
 
-
+// display the courses that match the search string
 function displaySearchResults() {
     var courseTable = $(".results-table");
     // Clear the table
@@ -294,6 +327,7 @@ function displaySearchResults() {
     }
 }
 
+// Convert the time from military time to standard time
 function getTime(code) {
     var BeginTime = searchedCourses[code][0]["BeginTime"];
     var EndTime = searchedCourses[code][0]["EndTime"];
@@ -318,6 +352,7 @@ function getTime(code) {
     }
 }
 
+// get the days of the week that the class meets on
 function getmeeting(code) {
     if (Object.keys(searchedCourses[code]).length > 1) {
         var days = searchedCourses[code][0]["Meets"] + searchedCourses[code][1]["Meets"];
@@ -327,9 +362,9 @@ function getmeeting(code) {
             return "MTWF";
         } else if (days == "MFTR" || days == "TRMF") {
             return "MTRF";
-        } else if(days == "RT" || days == "TR"){
+        } else if (days == "RT" || days == "TR") {
             return "TR";
-        }else{
+        } else {
             return searchedCourses[code][0]["Meets"];
         }
     } else {
@@ -341,44 +376,46 @@ function getmeeting(code) {
     }
 }
 
-function getResultLink(code){
-  var link = $("<a>")
-      .addClass('list-group-item course_link')
-      .attr({
-          'href': 'javascript:void(0);',
-          'data-code': code
-      });
+// formats the html for the course item in the left menu
+function getResultLink(code) {
+    var link = $("<a>")
+        .addClass('list-group-item course_link')
+        .attr({
+            'href': 'javascript:void(0);',
+            'data-code': code
+        });
 
-  var inside = $("<div>")
-      .addClass('row course-list-row')
-      .appendTo(link);
+    var inside = $("<div>")
+        .addClass('row course-list-row')
+        .appendTo(link);
 
-  $("<div>")
-      .addClass("col-xs-3 course-list-text")
-      .text(code)
-      .appendTo(inside);
+    $("<div>")
+        .addClass("col-xs-3 course-list-text")
+        .text(code)
+        .appendTo(inside);
 
-  $("<div>")
-      .addClass("col-xs-5 course-list-text-name")
-      .text(searchedCourses[code][0]["ShortTitle"])
-      .appendTo(inside);
+    $("<div>")
+        .addClass("col-xs-5 course-list-text-name")
+        .text(searchedCourses[code][0]["ShortTitle"])
+        .appendTo(inside);
 
-  $("<div>")
-      .addClass("col-xs-1 course-list-text")
-      .text(getmeeting(code))
-      .appendTo(inside);
+    $("<div>")
+        .addClass("col-xs-1 course-list-text")
+        .text(getmeeting(code))
+        .appendTo(inside);
 
-  $("<div>")
-      .addClass("col-xs-3 course-list-text-time")
-      .text(getTime(code))
-      .appendTo(inside);
+    $("<div>")
+        .addClass("col-xs-3 course-list-text-time")
+        .text(getTime(code))
+        .appendTo(inside);
 
-  if (selectedCourses[code])
-      link.addClass("active");
+    if (selectedCourses[code])
+        link.addClass("active");
 
-  return link;
+    return link;
 }
 
+// update the list of currently selected courses
 function updateSelectedCourses() {
     var selectedTable = $(".selected-table");
     // Clear the table
@@ -420,6 +457,33 @@ function updateSelectedCourses() {
     }
 }
 
+function detectConflicts() {
+    for (var code_current in selectedCourses) {
+        for (var code_other in selectedCourses) {
+            if (code_current != code_other) {
+                var code_current_trim = code_current.substring(0, 8);
+                var code_other_trim = code_other.substring(0, 8);
+                if (code_current_trim == code_other_trim) {
+                    sectionConflicts[code_current] = selectedCourses[code_current];
+                    sectionConflicts[code_other] = selectedCourses[code_other];
+                }
+
+                var course1Start = selectedCourses[code_current][0]["BeginTime"];
+                var course1End = selectedCourses[code_current][0]["EndTime"];
+                var course2Start = selectedCourses[code_other][0]["BeginTime"];
+                var course2End = selectedCourses[code_other][0]["EndTime"];
+
+
+
+                if ((course1Start >= course2Start && course1Start <= course2End) ||
+                    (course2Start >= course1Start && course2Start <= course1End)) {
+                    timeConflicts[code_current] = selectedCourses[code_current];
+                    timeConflicts[code_other] = selectedCourses[code_other];
+                }
+            }
+        }
+    }
+}
 // code to execute on document ready
 // event listeners created here
 $(function() {
@@ -456,6 +520,7 @@ $(function() {
     });
 
     $("#course_codes_button").click(function() {
+        detectConflicts();
         printCourseCodes();
     });
 
@@ -469,4 +534,7 @@ $(function() {
         updateSelectedCourses();
     });
 
+    $(document).on('click', '#copyButton', function() {
+        notifyMessage();
+    });
 });
