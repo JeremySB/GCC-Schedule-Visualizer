@@ -196,26 +196,46 @@ function printCourseCodes() {
 
     var count = 0;
 
-    // Add the HTML code for each course that is in the selected courses
-    for (var code in selectedCourses) {
-        var divtarget = "div-target" + count.toString();
-        var btn = "btn" + count.toString();
-
-        // The button itself
-        var inside = $("<div>")
-            .addClass('row top-buffer')
-            .html('<div class="col-xs-6 col-xs-offset-3 container-center"><div class="copy-boxes col-xs-6" id=' +
-                divtarget + '>' + code + '</div><button id="copyButton" class="' + btn +
-                ' btn btn-info col-xs-6" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button></div>')
+    if (Object.keys(sectionConflicts).length > 0) {
+        $("<div>")
+            .addClass('alert alert-danger')
+            .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have two sections of the same class in your schedule. Please review your schedule and pick only one section of each course.')
             .appendTo(coursePopup);
+    } else if (Object.keys(timeConflicts).length > 0) {
+        $("<div>")
+            .addClass('alert alert-danger')
+            .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have a timing conflict in your schedule. Please review your schedule and make sure no courses overlap.')
+            .appendTo(coursePopup);
+    } else {
+        // Add the HTML code for each course that is in the selected courses
+        for (var code in selectedCourses) {
+            var divtarget = "div-target" + count.toString();
+            var btn = "btn" + count.toString();
 
-        // The code to copy the buttons
-        var btnInside = $("<div>")
-            .addClass('copyScript')
-            .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
-            .appendTo(popupScript);
+            var prer = PrereqCourseCode[code.substring(0, 8)];
+            if(!prer){
+              prer = "";
+            }else{
+              prer = "Prereq: " + prer;
+            }
 
-        count++;
+            // The button itself
+            $("<div>")
+                .addClass('row top-buffer')
+                .html('<div class="col-xs-10 col-xs-offset-1 container-center">'+
+                        '<div class="copy-boxes col-xs-3 col-xs-offset-2" id=' + divtarget + '>' + code + '</div>' +
+                        '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-2" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
+                        '<div class="Prereq-boxes col-xs-4">' + prer + '</div></div>')
+                .appendTo(coursePopup);
+
+            // The code to copy the buttons
+            $("<div>")
+                .addClass('copyScript')
+                .html('<script class="copyScript">var clipboard = new Clipboard(".' + btn + '");</script>')
+                .appendTo(popupScript);
+
+            count++;
+        }
     }
 
     //if no selected courses
@@ -232,12 +252,13 @@ function notifyMessage() {
         message: 'Course Code Copied Successfully!'
     }, {
         // settings
-        type: 'info',
+        type: 'success',
         element: 'body',
         allow_dismiss: false,
+        newest_on_top: true,
         placement: {
             from: "bottom",
-            align: "center"
+            align: "left"
         },
         delay: 750,
         z_index: 10031,
@@ -458,6 +479,9 @@ function updateSelectedCourses() {
 }
 
 function detectConflicts() {
+    sectionConflicts = {};
+    timeConflicts = {};
+
     for (var code_current in selectedCourses) {
         for (var code_other in selectedCourses) {
             if (code_current != code_other) {
@@ -468,18 +492,7 @@ function detectConflicts() {
                     sectionConflicts[code_other] = selectedCourses[code_other];
                 }
 
-                var course1Start = selectedCourses[code_current][0]["BeginTime"];
-                var course1End = selectedCourses[code_current][0]["EndTime"];
-                var course2Start = selectedCourses[code_other][0]["BeginTime"];
-                var course2End = selectedCourses[code_other][0]["EndTime"];
-
-
-
-                if ((course1Start >= course2Start && course1Start <= course2End) ||
-                    (course2Start >= course1Start && course2Start <= course1End)) {
-                    timeConflicts[code_current] = selectedCourses[code_current];
-                    timeConflicts[code_other] = selectedCourses[code_other];
-                }
+                // TODO: add timing conflict checking
             }
         }
     }
