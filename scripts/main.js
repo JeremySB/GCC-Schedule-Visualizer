@@ -10,6 +10,27 @@ var searchedCourses = {};
 // points to full calendar DOM element
 var calendar;
 
+// Tips
+var tour = new Tour({
+  steps: [
+  {
+	element: "#tips_button",
+	title: "Tip #1",
+	content: "Be sure to always use a wired ethernet connection when scheduling"
+  },
+  {
+	element: "#tips_button",
+	title: "Tip #2",
+	content: "A full-time GCC student pays the same amount  in tution for any class "
+				+"load between 13 and 17 credits, so bear in mind that your 13 credit semester costs the same as a 16 credit one, "
+				+"but only one of those gives you lots of knowledge"
+  }
+]});
+
+// Initialize the tour for the Tips
+tour.init();
+	
+
 // quick utility function to pad numbers with 0's on the left
 function pad(num, size) {
     return ('000000000' + num).substr(-size);
@@ -420,6 +441,12 @@ function updateSelectedCourses() {
     }
 }
 
+// Tour instance for scheduling tips
+function tips() {
+	// Start the tour
+	tour.start();
+}
+
 // code to execute on document ready
 // event listeners created here
 $(function() {
@@ -468,5 +495,10 @@ $(function() {
     $(".selectedCoursesTab").click(function() {
         updateSelectedCourses();
     });
+	
+	$("#tips_button").click(function() {
+        tips();
+    });
 
 });
+

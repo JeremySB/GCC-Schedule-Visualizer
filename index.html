@@ -8,12 +8,14 @@
 
     <link href='lib/fullcalendar.css' rel='stylesheet' />
     <link href='lib/bootstrap.css' rel='stylesheet' />
+	<link href="lib/bootstrap-tour.min.css" rel="stylesheet">
     <link href='styles/main.css' rel='stylesheet' />
     <link href="styles/material-icons.css" rel="stylesheet">
 
     <script src='lib/moment.min.js'></script>
     <script src='lib/jquery.min.js'></script>
     <script src='lib/bootstrap.js'></script>
+	<script src="lib/bootstrap-tour.min.js"></script>
     <script src='lib/fullcalendar.js'></script>
     <script src='scripts/courses.js'></script>
     <script src='scripts/main.js'></script>
@@ -142,7 +144,7 @@
             <div id='calendar'></div>
             <div id="bottom-buttons">
                 <button type="button" disabled id="tutorial_button" class="btn btn-primary">Tutorial</button>
-                <button type="button" disabled id="tips_button" class="btn btn-primary">Scheduling Tips!</button>
+                <button type="button" id="tips_button" class="btn btn-primary">Scheduling Tips!</button>
                 <button type="button" id="reset_button" class="btn btn-warning">Reset</button>
                 <button type="button" id="course_codes_button" class="btn btn-primary" data-toggle="modal" data-target="#courseCodesModal">
                     Get Course Codes
