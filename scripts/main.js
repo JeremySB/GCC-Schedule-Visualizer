@@ -602,6 +602,5 @@ $(function() {
         tour.init();
         // Start the tour
         tour.start(true);
-        console.log("dickweed");
     });
 });
