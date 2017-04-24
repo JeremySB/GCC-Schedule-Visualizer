@@ -666,14 +666,23 @@ $(function() {
         weekNumbers: false,
         eventRender: function (event, element) {
             var code = event.id;
+            var placement;
+            if (allCourses[code][0]["BeginTime"]
+                && parseInt(allCourses[code][0]["BeginTime"].substr(0, allCourses[code][0]["BeginTime"].indexOf(":"))) > 10) {
+                placement = "top";
+            }
+            else {
+                placement = "bottom";
+            }
             $(element).popover({
                 title: allCourses[code][0]["LongTitle"],
                 content: "<b>Course Code:</b> " + code
                 + "<br /><b>Building:</b> " + allCourses[code][0]["Building"]
                 + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
                 + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
-                + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"],
-                placement: "bottom",
+                + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
+                + '<br /><br /><button type="button" data-code="' + code + '" class="btn btn-default" aria-label="Remove Course"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Remove Course</button>',
+                placement: placement,
                 trigger: "manual",
                 html: true,
                 container: "body"
