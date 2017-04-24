@@ -408,6 +408,11 @@ function searchCourses(query) {
         displaySearchResults();
         return;
     }
+	
+	// 
+	if (departmentNames[query]) {
+		query = departmentNames[query];
+	}
 
     // Go through the list of courses that match the filters and check for matches with the search query
     for (var courseCode in filteredCourses) {
