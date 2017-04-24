@@ -1343,19 +1343,7 @@ const allCourses = Object.freeze({
             "Room": "209",
             "Enrollment": "7",
             "Capacity": "8"
-        },
-        {
-            "ShortTitle": "FINANCIAL POLIC",
-            "LongTitle": "ADVANCED CORPORATE FINANCE",
-            "BeginTime": "8:00:00",
-            "EndTime": "9:15:00",
-            "Meets": "TR",
-            "Building": "HAL",
-            "Room": "209",
-            "Enrollment": "4",
-            "Capacity": "4"
-        }
-    ],
+    }],
     "BUSA 440 B": [{
             "ShortTitle": "ADV CORP FIN",
             "LongTitle": "ADVANCED CORPORATE FINANCE",
@@ -1366,19 +1354,7 @@ const allCourses = Object.freeze({
             "Room": "209",
             "Enrollment": "5",
             "Capacity": "6"
-        },
-        {
-            "ShortTitle": "FINANCIAL POLIC",
-            "LongTitle": "ADVANCED CORPORATE FINANCE",
-            "BeginTime": "11:30:00",
-            "EndTime": "12:45:00",
-            "Meets": "TR",
-            "Building": "HAL",
-            "Room": "209",
-            "Enrollment": "11",
-            "Capacity": "13"
-        }
-    ],
+    }],
     "BUSA 450 A": [{
         "ShortTitle": "QUALITY MGM",
         "LongTitle": "QUALITY MANAGEMENT",
