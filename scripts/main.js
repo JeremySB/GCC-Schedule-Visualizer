@@ -17,7 +17,7 @@ var sectionConflicts = {};
 var calendar;
 
 // Tips Tour instantiation
-var tour = new Tour({
+var tips = new Tour({
     name: "tips",
     template: "<div class='popover tour'>	<div class='arrow'></div>    <h3 class='popover-title'></h3>     <div class='popover-content'></div>    <div class='popover-navigation'>        <button class='btn btn-default' data-role='prev'>« Prev</button>    <button class='btn btn-default' data-role='next'>Next »</button>  <button class='btn btn-default' data-role='end'>Close tips</button>  </div>     </div>",
     steps: [{
@@ -54,7 +54,70 @@ var tour = new Tour({
             element: "#tips_button",
             placement: "top",
             title: "Tip #6",
-            content: "HTML element inspection."
+            content: "HTML element inspection... that's all."
+        }
+    ]
+});
+
+// Tutorial Tour instantiation
+var tutorial = new Tour({
+    name: "tutorial",
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>« Prev</button><button class='btn btn-default' data-role='next'>Next »</button><button class='btn btn-default' data-role='end'>Close tutorial</button></div></div>",
+    steps: [{
+            element: ".search-row",
+            placement: "auto right",
+			backdrop: "true",
+            title: "Step #1",
+            content: "Use this search bar to look for things like COMP 340, computer science, or operating systems."
+        },
+        {
+            element: ".form-group.row",
+            placement: "auto right",
+			backdrop: "true",
+            title: "Step #2",
+            content: "Filter your results even further with these awesome filters, provided free of charge!"
+        },
+        {
+            element: ".results-row",
+            placement: "auto top",
+			backdrop: "true",
+            title: "Step #3",
+            content: "Watch as all the courses matching your search criteria appear here on the results tab. "
+						+"You can add them to your schedule just by clicking on them! "
+						+"Flip over to the selected courses tab to see the courses you have added. You can also remove courses by clicking on them from there too."
+        },
+        {
+            element: "#calendar",
+            placement: "auto left",
+			backdrop: "true",
+            title: "Step #4",
+            content: "Here's were you can see all your selected courses on a real calendar. You can click on any of the courses to see some more info and to remove them from the calendar."
+        },
+        {
+            element: "#tutorial_button",
+            placement: "auto top",
+            title: "Step #5",
+            content: "You can easily add any of the on-campus dinning options to the calendar here to see how they line up with the schedule you're considering."
+        },
+        {
+            element: "#tips_button",
+            placement: "auto top",
+            title: "Step #6",
+            content: "Here's were you can view some sweet tips about scheduling, courtesy of your local tip chef Bobby Brown."
+        },
+        {
+            element: "#reset_button",
+            placement: "auto top",
+            title: "Step #7",
+            content: "If you feel the need to erase everything you have ever worked for then you came to the wrong place. "
+						+"But if you want to start your schedule over again, you can simply click this button."
+        },
+        {
+            element: "#course_codes_button",
+            placement: "auto top",
+            title: "Step #8",
+            content: "At the end of the day, you'll need to click this button to actually get the information you'll have to paste into myGCC's academic page to add the courses you've pick out. "
+						+"Good luck and see you next time, space cowboy."
         }
     ]
 });
@@ -599,8 +662,17 @@ $(function() {
 
     $("#tips_button").click(function() {
         // Initialize the tour for the Tips
-        tour.init();
-        // Start the tour
-        tour.start(true);
+        tips.init();
+        // Start the tips tour
+        tips.start(true);
+    });
+	
+	$("#tutorial_button").click(function() {
+        // Initialize the tour for the Tutorial
+        tutorial.init();
+		tutorial.setCurrentStep(0);
+        // Start the tutorial tour
+        tutorial.start(true);
     });
 });
+
