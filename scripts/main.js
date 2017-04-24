@@ -98,7 +98,12 @@ var tutorial = new Tour({
             element: "#tutorial_button",
             placement: "auto top",
             backdrop: "true",
-            backdropPadding: {top: 5, right: 355, bottom: 5, left: 5},
+            backdropPadding: {
+                top: 5,
+                right: 355,
+                bottom: 5,
+                left: 5
+            },
             title: "Step #5",
             content: "You can easily add any of the on-campus dinning options to the calendar here to see how they line up with the schedule you're considering."
         },
@@ -106,7 +111,12 @@ var tutorial = new Tour({
             element: "#tips_button",
             placement: "auto top",
             backdrop: "true",
-            backdropPadding: {top: 5, right: 220, bottom: 5, left: 81},
+            backdropPadding: {
+                top: 5,
+                right: 220,
+                bottom: 5,
+                left: 81
+            },
             title: "Step #6",
             content: "Here's were you can view some sweet tips about scheduling, courtesy of your local tip chef Bobby Brown."
         },
@@ -114,7 +124,12 @@ var tutorial = new Tour({
             element: "#reset_button",
             placement: "auto top",
             backdrop: "true",
-            backdropPadding: {top: 5, right: 150, bottom: 5, left: 215},
+            backdropPadding: {
+                top: 5,
+                right: 150,
+                bottom: 5,
+                left: 215
+            },
             title: "Step #7",
             content: "If you feel the need to erase everything you have ever worked for then you came to the wrong place. " +
                 "But if you want to start your schedule over again, you can simply click this button."
@@ -123,7 +138,12 @@ var tutorial = new Tour({
             element: "#course_codes_button",
             placement: "auto top",
             backdrop: "true",
-            backdropPadding: {top: 5, right: 5, bottom: 5, left: 280},
+            backdropPadding: {
+                top: 5,
+                right: 5,
+                bottom: 5,
+                left: 280
+            },
             title: "Step #8",
             content: "At the end of the day, you'll need to click this button to actually get the information you'll have to paste into myGCC's academic page to add the courses you've pick out. " +
                 "Good luck and see you next time, space cowboy."
@@ -363,7 +383,7 @@ function printCourseCodes() {
     }
 }
 
-function notifyMessage() {
+function copyMessage() {
     $.notify({
         // options
         message: 'Course Code Copied Successfully!'
@@ -673,7 +693,7 @@ $(function() {
 
 
     $(document).on('click', '#copyButton', function() {
-        notifyMessage();
+        copyMessage();
     });
 
     $("#tips_button").click(function() {
