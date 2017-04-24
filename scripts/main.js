@@ -664,12 +664,36 @@ $(function() {
         eventLimit: true, // allow "more" link when too many events
         weekends: false,
         weekNumbers: false,
-        eventClick: function(calEvent, jsEvent, view) {
-            var thing = $(this)[0]["firstChild"]["lastElementChild"]["innerHTML"];
-
-            // TODO: Call the function that will make the popup
-            console.log(thing);
+        eventRender: function (event, element) {
+            var code = event.id;
+            $(element).popover({
+                title: allCourses[code][0]["LongTitle"],
+                content: "<b>Course Code:</b> " + code
+                + "<br /><b>Building:</b> " + allCourses[code][0]["Building"]
+                + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
+                + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
+                + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"],
+                placement: "bottom",
+                trigger: "manual",
+                html: true,
+                container: "body"
+            }).click(function (e) {
+                $('.fc-event').not(this).popover("hide"); /* hide other popovers */
+                $(this).popover('toggle'); /* show popover now it's setup */
+                e.preventDefault();
+                e.stopPropagation();
+            });;
         }
+    });
+
+    // stop event propagation when clicking on popovers
+    $(document).on("click", ".popover", function (e) {
+        e.stopPropagation();
+    });
+
+    // hide popovers on general clicks
+    $(document).on("click", function (e) {
+        $('.popover').popover("hide");
     });
 
     $("#reset_button").click(function() {
