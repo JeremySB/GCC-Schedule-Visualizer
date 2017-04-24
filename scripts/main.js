@@ -203,8 +203,9 @@ function filterCourses() {
                     failed = true;
                     continue;
                 }
+                meets = meets.replace(week[i], '');
             }
-            if (failed) continue;
+            if (failed || meets.length != 0) continue;
         }
 
         filteredCourses[code] = allCourses[code];
