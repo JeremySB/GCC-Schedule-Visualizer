@@ -630,6 +630,12 @@ $(function() {
         eventLimit: true, // allow "more" link when too many events
         weekends: false,
         weekNumbers: false,
+        eventClick: function(calEvent, jsEvent, view) {
+            var thing = $(this)[0]["firstChild"]["lastElementChild"]["innerHTML"];
+
+            // TODO: Call the function that will make the popup
+            console.log(thing);
+        }
     });
 
     $("#reset_button").click(function() {
