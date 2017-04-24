@@ -681,7 +681,7 @@ $(function() {
                 + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
                 + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
                 + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
-                + '<br /><br /><button type="button" data-code="' + code + '" class="btn btn-default" aria-label="Remove Course"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Remove Course</button>',
+                + '<br /><br /><button type="button" data-code="' + code + '" class="btn btn-default" aria-label="Remove Course"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span> Remove Course</span></button>',
                 placement: placement,
                 trigger: "manual",
                 html: true,

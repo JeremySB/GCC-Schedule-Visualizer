@@ -23,11 +23,11 @@ body {
 }
 
 .results-table {
-  max-height: 340px;
-  height: 340px;
-  overflow-y: auto;
-  overflow-x: visible;
-  background-color: #FaFaFF;
+    max-height: 340px;
+    height: 306px;
+    overflow-y: auto;
+    overflow-x: visible;
+    background-color: #FaFaFF;
 }
 
 .selected-table {
