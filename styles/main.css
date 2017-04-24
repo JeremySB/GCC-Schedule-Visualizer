@@ -23,16 +23,16 @@ body {
 }
 
 .results-table {
-  max-height: 325px;
-  height: 325px;
+  max-height: 340px;
+  height: 340px;
   overflow-y: auto;
   overflow-x: visible;
   background-color: #FaFaFF;
 }
 
 .selected-table {
-  max-height: 325px;
-  height: 325px;
+  max-height: 340px;
+  height: 340px;
   overflow-y: auto;
   overflow-x: visible;
   background-color: #FaFaFF;
@@ -42,9 +42,9 @@ body {
   text-align: center;
   font-size: 1.75em;
   background-color: #FaFaFF;
-  height: 325px;
+  height: 340px;
   vertical-align: middle;
-  line-height: 325px;
+  line-height: 340px;
 }
 
 h1.searchWord {
@@ -104,4 +104,8 @@ h1.searchWord {
 .container-center {
     display: flex;
     align-items: center;
+}
+
+.pull-right {
+  text-align: right;
 }
