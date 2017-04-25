@@ -20,40 +20,45 @@ var calendar;
 var tips = new Tour({
     name: "tips",
     storage: false,
-    template: "<div class='popover tour'>	<div class='arrow'></div>    <h3 class='popover-title'></h3>     <div class='popover-content'></div>    <div class='popover-navigation'>        <button class='btn btn-default' data-role='prev'>« Prev</button>    <button class='btn btn-default' data-role='next'>Next »</button>  <button class='btn btn-default' data-role='end'>Close tips</button>  </div>     </div>",
     steps: [{
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #1",
             content: "Be sure to always use a wired ethernet connection when scheduling."
         },
         {
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #2",
             content: "A full-time GCC student pays the same amount of tuition for a 13 credit semester as they do a 17 credit one. Spend that money wisely!"
         },
         {
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #3",
             content: "If you do have to use Wi-Fi, do so in an unpopulated area, like the crawspace beneath Harbison Chapel."
         },
         {
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #4",
             content: "Make sure that you're on the course code tab on myGCC's academics page and NOT the referance code tab."
         },
         {
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #5",
             content: "Don't let another person schedule for you; if you want something done right then use our software."
         },
         {
             element: "#tips_button",
-            placement: "top",
+            animation: true,
+            placement: "bottom",
             title: "Tip #6",
             content: "HTML element inspection... that's all."
         }
@@ -429,7 +434,7 @@ function searchCourses(query) {
         return;
     }
 	
-	// 
+	
 	if (departmentNames[query]) {
 		query = departmentNames[query];
 	}
@@ -738,8 +743,10 @@ $(function() {
     $("#tutorial_button").click(function() {
         // Initialize the tour for the Tutorial
         tutorial.init();
-        tutorial.setCurrentStep(0);
+        
         // Start the tutorial tour
         tutorial.start(true);
+
+        //tutorial.setCurrentStep(0);
     });
 });
