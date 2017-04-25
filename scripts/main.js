@@ -157,6 +157,7 @@ var tutorial = new Tour({
 });
 
 
+
 // quick utility function to pad numbers with 0's on the left
 function pad(num, size) {
     return ('000000000' + num).substr(-size);
