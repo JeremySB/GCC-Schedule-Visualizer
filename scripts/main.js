@@ -465,24 +465,6 @@ function displaySearchResults() {
         }
 
         courseTable.append(fragment);
-
-        // click handler
-
-        $(".course_link").click(function(event) {
-            var link = $(event.delegateTarget);
-            var code = link.attr("data-code");
-            if (selectedCourses[code]) {
-                // remove course
-                removeCourse(code);
-                link.removeClass("active");
-            } else {
-                // add course
-                addCourse(code);
-                link.addClass("active");
-            }
-
-        });
-
         courseTable.scrollTop(0);
     } else {
         courseTable.append("No Matching Courses...")
@@ -516,7 +498,7 @@ function getTime(code) {
 }
 
 // get the days of the week that the class meets on
-function getmeeting(code) {
+function getMeeting(code) {
     if (Object.keys(searchedCourses[code]).length > 1) {
         var days = searchedCourses[code][0]["Meets"] + searchedCourses[code][1]["Meets"];
         if (days == "MWFR" || days == "RMWF") {
@@ -564,7 +546,7 @@ function getResultLink(code) {
 
     $("<div>")
         .addClass("col-xs-1 course-list-text")
-        .text(getmeeting(code))
+        .text(getMeeting(code))
         .appendTo(inside);
 
     $("<div>")
@@ -596,23 +578,6 @@ function updateSelectedCourses() {
         }
 
         selectedTable.append(fragment);
-
-        // click handler
-
-        $(".course_link").click(function(event) {
-            var link = $(event.delegateTarget);
-            var code = link.attr("data-code");
-            if (selectedCourses[code]) {
-                // remove course
-                removeCourse(code);
-                link.removeClass("active");
-            } else {
-                // add course
-                addCourse(code);
-                link.addClass("active");
-            }
-        });
-
         selectedTable.scrollTop(0);
     } else {
         selectedTable.append("No Selected Courses...")
@@ -667,8 +632,7 @@ $(function() {
         eventRender: function (event, element) {
             var code = event.id;
             var placement;
-            if (allCourses[code][0]["BeginTime"]
-                && parseInt(allCourses[code][0]["BeginTime"].substr(0, allCourses[code][0]["BeginTime"].indexOf(":"))) > 10) {
+            if (allCourses[code][0]["BeginTime"] && moment(event.start).hour() > 14) {
                 placement = "top";
             }
             else {
@@ -681,11 +645,12 @@ $(function() {
                 + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
                 + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
                 + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
-                + '<br /><br /><button type="button" data-code="' + code + '" class="btn btn-default" aria-label="Remove Course"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span> Remove Course</span></button>',
+                + '<br /><br /><div style="text-align:center;"><button type="button" data-code="' + code
+                + '" class="btn btn-default remove-course-btn" aria-label="Remove Course"><span class="glyphicon glyphicon-remove x-icon-in-button" aria-hidden="true"></span><span> Remove Course</span></button></div>',
                 placement: placement,
                 trigger: "manual",
                 html: true,
-                container: "body"
+                container: "#calendar"
             }).click(function (e) {
                 $('.fc-event').not(this).popover("hide"); /* hide other popovers */
                 $(this).popover('toggle'); /* show popover now it's setup */
@@ -727,6 +692,35 @@ $(function() {
 
     $(".selectedCoursesTab").click(function() {
         updateSelectedCourses();
+    });
+
+    // click handler for course result links
+    $(document.body).on("click", ".course_link, .remove-course-btn", function (event) {
+        var link = $(event.currentTarget);
+        var code = link.attr("data-code");
+        if (selectedCourses[code]) {
+            // remove course
+            removeCourse(code);
+            link.removeClass("active");
+        } else {
+            // add course
+            addCourse(code);
+            link.addClass("active");
+        }
+    });
+
+    // click handler for course remove button
+    $(document.body).on("click", ".remove-course-btn", function (event) {
+        var btn = $(event.currentTarget);
+        var code = btn.attr("data-code");
+        if (selectedCourses[code]) {
+            // remove course
+            removeCourse(code);
+            btn.removeClass("active");
+        }
+        $('.popover').popover("hide");
+        updateSelectedCourses();
+        displaySearchResults();
     });
 
 

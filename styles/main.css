@@ -109,3 +109,7 @@ h1.searchWord {
 .pull-right {
   text-align: right;
 }
+
+.x-icon-in-button {
+    vertical-align: text-top;
+}

@@ -166,7 +166,9 @@ const PrereqCourseCode = Object.freeze({
     "MECE 452":"MECE 451",
 });
 
-const allCourses = Object.freeze({
+var allCourses;
+
+allCourses = Object.freeze({
     "ABRD 300 A": [{
         "ShortTitle": "STUDY ABROAD",
         "LongTitle": "STUDY ABROAD",
