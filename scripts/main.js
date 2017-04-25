@@ -574,7 +574,7 @@ function getResultLink(code) {
 
     $("<div>")
         .addClass("col-xs-5 course-list-text-name")
-        .text(searchedCourses[code][0]["ShortTitle"])
+        .text(allCourses[code][0]["ShortTitle"])
         .appendTo(inside);
 
     $("<div>")
