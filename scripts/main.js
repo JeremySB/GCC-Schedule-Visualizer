@@ -481,7 +481,7 @@ function displaySearchResults(rebuild = false) {
     }
     else {
         // don't rebuild, just go thru results and hide/toggle active
-        $(".course_link").each(function (index) {
+        $("#results-table .course_link").each(function (index) {
             var $this = $(this);
             var code = $this.attr("data-code");
 
@@ -508,8 +508,8 @@ function displaySearchResults(rebuild = false) {
 
 // Convert the time from military time to standard time
 function getTime(code) {
-    var BeginTime = searchedCourses[code][0]["BeginTime"];
-    var EndTime = searchedCourses[code][0]["EndTime"];
+    var BeginTime = allCourses[code][0]["BeginTime"];
+    var EndTime = allCourses[code][0]["EndTime"];
 
     if (BeginTime != null && EndTime != null) {
         BeginHour = BeginTime.split(':')[0];
@@ -533,8 +533,8 @@ function getTime(code) {
 
 // get the days of the week that the class meets on
 function getMeeting(code) {
-    if (Object.keys(searchedCourses[code]).length > 1) {
-        var days = searchedCourses[code][0]["Meets"] + searchedCourses[code][1]["Meets"];
+    if (Object.keys(allCourses[code]).length > 1) {
+        var days = allCourses[code][0]["Meets"] + allCourses[code][1]["Meets"];
         if (days == "MWFR" || days == "RMWF") {
             return "MWRF";
         } else if (days == "MWFT" || days == "TMWF") {
@@ -544,13 +544,13 @@ function getMeeting(code) {
         } else if (days == "RT" || days == "TR") {
             return "TR";
         } else {
-            return searchedCourses[code][0]["Meets"];
+            return allCourses[code][0]["Meets"];
         }
     } else {
-        if (searchedCourses[code][0]["Meets"] == "") {
+        if (allCourses[code][0]["Meets"] == "") {
             return "N/A";
         } else {
-            return searchedCourses[code][0]["Meets"];
+            return allCourses[code][0]["Meets"];
         }
     }
 }
