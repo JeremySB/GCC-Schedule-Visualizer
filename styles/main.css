@@ -31,24 +31,24 @@ body {
 }
 
 .selected-table {
-  max-height: 340px;
-  height: 340px;
-  overflow-y: auto;
-  overflow-x: visible;
-  background-color: #FaFaFF;
+    max-height: 340px;
+    height: 306px;
+    overflow-y: auto;
+    overflow-x: visible;
+    background-color: #FaFaFF;
 }
 
 .noneMatching {
-  text-align: center;
-  font-size: 1.75em;
-  background-color: #FaFaFF;
-  height: 340px;
-  vertical-align: middle;
-  line-height: 340px;
+    text-align: center;
+    font-size: 1.75em;
+    background-color: #FaFaFF;
+    height: 306px;
+    vertical-align: middle;
+    line-height: 306px;
 }
 
 h1.searchWord {
-  text-align: left;
+    text-align: left;
 }
 
 #search_button {
@@ -71,8 +71,8 @@ h1.searchWord {
 }
 
 .course-list-text-time {
-  padding: 0px 0px 0px 15px;
-  font-size: .84em;
+    padding: 0px 0px 0px 15px;
+    font-size: .84em;
 }
 
 .course-list-row {
@@ -80,26 +80,27 @@ h1.searchWord {
 }
 
 .copy-entry {
-	display: inline-block;
+    display: inline-block;
     vertical-align: middle;
     float: none;
-
-	text-align: center;
+    text-align: center;
 }
 
 .copy-boxes {
-  vertical-align: text-top;
+    vertical-align: text-top;
 }
 
 .message {
-  text-align: center;
+    text-align: center;
 }
 
 .Prereq-boxes {
-  text-align: center;
+    text-align: center;
 }
 
-.top-buffer { margin-top:12px; }
+.top-buffer {
+    margin-top: 12px;
+}
 
 .container-center {
     display: flex;
@@ -107,7 +108,7 @@ h1.searchWord {
 }
 
 .pull-right {
-  text-align: right;
+    text-align: right;
 }
 
 .x-icon-in-button {

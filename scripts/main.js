@@ -21,47 +21,47 @@ var tips = new Tour({
     name: "tips",
     storage: false,
     steps: [{
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #1",
-            content: "Be sure to always use a wired ethernet connection when scheduling."
-        },
-        {
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #2",
-            content: "A full-time GCC student pays the same amount of tuition for a 13 credit semester as they do a 17 credit one. Spend that money wisely!"
-        },
-        {
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #3",
-            content: "If you do have to use Wi-Fi, do so in an unpopulated area, like the crawspace beneath Harbison Chapel."
-        },
-        {
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #4",
-            content: "Make sure that you're on the course code tab on myGCC's academics page and NOT the referance code tab."
-        },
-        {
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #5",
-            content: "Don't let another person schedule for you; if you want something done right then use our software."
-        },
-        {
-            element: "#tips_button",
-            animation: true,
-            placement: "bottom",
-            title: "Tip #6",
-            content: "HTML element inspection... that's all."
-        }
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #1",
+        content: "Be sure to always use a wired ethernet connection when scheduling."
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #2",
+        content: "A full-time GCC student pays the same amount of tuition for a 13 credit semester as they do a 17 credit one. Spend that money wisely!"
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #3",
+        content: "If you do have to use Wi-Fi, do so in an unpopulated area, like the crawspace beneath Harbison Chapel."
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #4",
+        content: "Make sure that you're on the course code tab on myGCC's academics page and NOT the referance code tab."
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #5",
+        content: "Don't let another person schedule for you; if you want something done right then use our software."
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #6",
+        content: "HTML element inspection... that's all."
+    }
     ]
 });
 
@@ -70,89 +70,89 @@ var tutorial = new Tour({
     name: "tutorial",
     template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>« Prev</button><button class='btn btn-default' data-role='next'>Next »</button><button class='btn btn-default' data-role='end'>Close tutorial</button></div></div>",
     steps: [{
-            element: ".search-row",
-            placement: "auto right",
-            backdrop: "true",
-            title: "Step #1",
-            content: "Use this search bar to look for things like COMP 340, computer science, or operating systems."
+        element: ".search-row",
+        placement: "auto right",
+        backdrop: "true",
+        title: "Step #1",
+        content: "Use this search bar to look for things like COMP 340, computer science, or operating systems."
+    },
+    {
+        element: ".form-group.row",
+        placement: "auto right",
+        backdrop: "true",
+        title: "Step #2",
+        content: "Filter your results even further with these awesome filters, provided free of charge!"
+    },
+    {
+        element: ".results-row",
+        placement: "auto top",
+        backdrop: "true",
+        title: "Step #3",
+        content: "Watch as all the courses matching your search criteria appear here on the results tab. " +
+        "You can add them to your schedule just by clicking on them! " +
+        "Flip over to the selected courses tab to see the courses you have added. You can also remove courses by clicking on them from there too."
+    },
+    {
+        element: "#calendar",
+        placement: "auto left",
+        backdrop: "true",
+        title: "Step #4",
+        content: "Here's were you can see all your selected courses on a real calendar. You can click on any of the courses to see some more info and to remove them from the calendar."
+    },
+    {
+        element: "#tutorial_button",
+        placement: "auto top",
+        backdrop: "true",
+        backdropPadding: {
+            top: 5,
+            right: 355,
+            bottom: 5,
+            left: 5
         },
-        {
-            element: ".form-group.row",
-            placement: "auto right",
-            backdrop: "true",
-            title: "Step #2",
-            content: "Filter your results even further with these awesome filters, provided free of charge!"
+        title: "Step #5",
+        content: "You can easily add any of the on-campus dinning options to the calendar here to see how they line up with the schedule you're considering."
+    },
+    {
+        element: "#tips_button",
+        placement: "auto top",
+        backdrop: "true",
+        backdropPadding: {
+            top: 5,
+            right: 220,
+            bottom: 5,
+            left: 81
         },
-        {
-            element: ".results-row",
-            placement: "auto top",
-            backdrop: "true",
-            title: "Step #3",
-            content: "Watch as all the courses matching your search criteria appear here on the results tab. " +
-                "You can add them to your schedule just by clicking on them! " +
-                "Flip over to the selected courses tab to see the courses you have added. You can also remove courses by clicking on them from there too."
+        title: "Step #6",
+        content: "Here's were you can view some sweet tips about scheduling, courtesy of your local tip chef Bobby Brown."
+    },
+    {
+        element: "#reset_button",
+        placement: "auto top",
+        backdrop: "true",
+        backdropPadding: {
+            top: 5,
+            right: 150,
+            bottom: 5,
+            left: 215
         },
-        {
-            element: "#calendar",
-            placement: "auto left",
-            backdrop: "true",
-            title: "Step #4",
-            content: "Here's were you can see all your selected courses on a real calendar. You can click on any of the courses to see some more info and to remove them from the calendar."
+        title: "Step #7",
+        content: "If you feel the need to erase everything you have ever worked for then you came to the wrong place. " +
+        "But if you want to start your schedule over again, you can simply click this button."
+    },
+    {
+        element: "#course_codes_button",
+        placement: "auto top",
+        backdrop: "true",
+        backdropPadding: {
+            top: 5,
+            right: 5,
+            bottom: 5,
+            left: 280
         },
-        {
-            element: "#tutorial_button",
-            placement: "auto top",
-            backdrop: "true",
-            backdropPadding: {
-                top: 5,
-                right: 355,
-                bottom: 5,
-                left: 5
-            },
-            title: "Step #5",
-            content: "You can easily add any of the on-campus dinning options to the calendar here to see how they line up with the schedule you're considering."
-        },
-        {
-            element: "#tips_button",
-            placement: "auto top",
-            backdrop: "true",
-            backdropPadding: {
-                top: 5,
-                right: 220,
-                bottom: 5,
-                left: 81
-            },
-            title: "Step #6",
-            content: "Here's were you can view some sweet tips about scheduling, courtesy of your local tip chef Bobby Brown."
-        },
-        {
-            element: "#reset_button",
-            placement: "auto top",
-            backdrop: "true",
-            backdropPadding: {
-                top: 5,
-                right: 150,
-                bottom: 5,
-                left: 215
-            },
-            title: "Step #7",
-            content: "If you feel the need to erase everything you have ever worked for then you came to the wrong place. " +
-                "But if you want to start your schedule over again, you can simply click this button."
-        },
-        {
-            element: "#course_codes_button",
-            placement: "auto top",
-            backdrop: "true",
-            backdropPadding: {
-                top: 5,
-                right: 5,
-                bottom: 5,
-                left: 280
-            },
-            title: "Step #8",
-            content: "At the end of the day, you'll need to click this button to actually get the information you'll have to paste into myGCC's academic page to add the courses you've pick out. " +
-                "Good luck and see you next time, space cowboy."
-        }
+        title: "Step #8",
+        content: "At the end of the day, you'll need to click this button to actually get the information you'll have to paste into myGCC's academic page to add the courses you've pick out. " +
+        "Good luck and see you next time, space cowboy."
+    }
     ]
 });
 
@@ -365,9 +365,9 @@ function printCourseCodes() {
             $("<div>")
                 .addClass('row top-buffer')
                 .html('<div class="col-xs-10 col-xs-offset-1 container-center">' +
-                    '<div class="copy-boxes col-xs-3 col-xs-offset-2" id=' + divtarget + '>' + code + '</div>' +
-                    '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-2" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
-                    '<div class="Prereq-boxes col-xs-4">' + prer + '</div></div>')
+                '<div class="copy-boxes col-xs-3 col-xs-offset-2" id=' + divtarget + '>' + code + '</div>' +
+                '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-2" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
+                '<div class="Prereq-boxes col-xs-4">' + prer + '</div></div>')
                 .appendTo(coursePopup);
 
             // The code to copy the buttons
@@ -393,22 +393,22 @@ function copyMessage() {
         // options
         message: 'Course Code Copied Successfully!'
     }, {
-        // settings
-        type: 'success',
-        element: 'body',
-        allow_dismiss: false,
-        newest_on_top: true,
-        placement: {
-            from: "bottom",
-            align: "left"
-        },
-        delay: 750,
-        z_index: 10031,
-        animate: {
-            enter: 'animated fadeInDown',
-            exit: 'animated fadeOutUp'
-        },
-        template: '<div data-notify="container" class="col-xs-11 col-sm-2 alert alert-{0}" role="alert">' +
+            // settings
+            type: 'success',
+            element: 'body',
+            allow_dismiss: false,
+            newest_on_top: true,
+            placement: {
+                from: "bottom",
+                align: "left"
+            },
+            delay: 750,
+            z_index: 10031,
+            animate: {
+                enter: 'animated fadeInDown',
+                exit: 'animated fadeOutUp'
+            },
+            template: '<div data-notify="container" class="col-xs-11 col-sm-2 alert alert-{0}" role="alert">' +
             '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
             '<span data-notify="icon"></span> ' +
             '<span data-notify="title">{1}</span> ' +
@@ -418,7 +418,7 @@ function copyMessage() {
             '</div>' +
             '<a href="{3}" target="{4}" data-notify="url"></a>' +
             '</div>'
-    });
+        });
 }
 
 // search list of filtered courses for query and add to searchedCourses
@@ -433,11 +433,11 @@ function searchCourses(query) {
         displaySearchResults();
         return;
     }
-	
-	
-	if (departmentNames[query]) {
-		query = departmentNames[query];
-	}
+
+
+    if (departmentNames[query]) {
+        query = departmentNames[query];
+    }
 
     // Go through the list of courses that match the filters and check for matches with the search query
     for (var courseCode in filteredCourses) {
@@ -453,27 +453,55 @@ function searchCourses(query) {
 }
 
 // display the courses that match the search string
-function displaySearchResults() {
+// setting rebuilt to false is much faster, but only works if course links are already populated
+function displaySearchResults(rebuild = false) {
     var courseTable = $(".results-table");
-    // Clear the table
-    $("#results-table").empty();
-    courseTable.removeClass("noneMatching");
+    $(".noneMatching").remove();
 
-    // use document fragment to avoid reflowing the page constantly
-    var fragment = $(document.createDocumentFragment());
+    if (rebuild) {
+        // Clear the table
+        $("#results-table").empty();
 
-    if (Object.keys(searchedCourses).length != 0) {
-        for (var code in searchedCourses) {
-            var link = getResultLink(code);
+        // use document fragment to avoid reflowing the page constantly
+        var fragment = $(document.createDocumentFragment());
 
-            fragment.append(link);
+        if (Object.keys(searchedCourses).length != 0) {
+            for (var code in searchedCourses) {
+                var link = getResultLink(code);
+
+                fragment.append(link);
+            }
+
+            courseTable.append(fragment);
+            courseTable.scrollTop(0);
+        } else {
+            $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
         }
+    }
+    else {
+        // don't rebuild, just go thru results and hide/toggle active
+        $(".course_link").each(function (index) {
+            var $this = $(this);
+            var code = $this.attr("data-code");
 
-        courseTable.append(fragment);
-        courseTable.scrollTop(0);
-    } else {
-        courseTable.append("No Matching Courses...")
-            .addClass("noneMatching");
+            if (searchedCourses[code]) {
+                $this.show();
+            } else {
+                $this.hide();
+            }
+
+            if (selectedCourses[code]) {
+                $this.addClass("active");
+            } else {
+                $this.removeClass("active");
+            }
+        });
+
+        if (Object.keys(searchedCourses).length != 0) {
+            $(".noneMatching").remove();
+        } else {
+            $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
+        }
     }
 }
 
@@ -570,7 +598,7 @@ function updateSelectedCourses() {
     var selectedTable = $(".selected-table");
     // Clear the table
     $("#selected-table").empty();
-    selectedTable.removeClass("noneMatching");
+    $(".noneMatching").remove();
 
     // use document fragment to avoid reflowing the page constantly
     var fragment = $(document.createDocumentFragment());
@@ -585,8 +613,7 @@ function updateSelectedCourses() {
         selectedTable.append(fragment);
         selectedTable.scrollTop(0);
     } else {
-        selectedTable.append("No Selected Courses...")
-            .addClass("noneMatching");
+        $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(selectedTable);
     }
 }
 
@@ -612,11 +639,11 @@ function detectConflicts() {
 
 // code to execute on document ready
 // event listeners created here
-$(function() {
+$(function () {
     filteredCourses = allCourses;
     searchedCourses = filteredCourses;
 
-    displaySearchResults();
+    displaySearchResults(true);
 
     calendar = $('#calendar');
 
@@ -675,27 +702,27 @@ $(function() {
         $('.popover').popover("hide");
     });
 
-    $("#reset_button").click(function() {
+    $("#reset_button").click(function () {
         clearCourses();
         updateSelectedCourses();
     });
 
-    $("#searchfield").on("input", function(event) {
+    $("#searchfield").on("input", function (event) {
         searchCourses($("#searchfield").val());
     });
 
-    $("#course_codes_button").click(function() {
+    $("#course_codes_button").click(function () {
         detectConflicts();
         printCourseCodes();
     });
 
     $(".filter-item").change(filterCourses);
 
-    $(".searchResultsTab").click(function() {
+    $(".searchResultsTab").click(function () {
         displaySearchResults();
     });
 
-    $(".selectedCoursesTab").click(function() {
+    $(".selectedCoursesTab").click(function () {
         updateSelectedCourses();
     });
 
@@ -729,21 +756,21 @@ $(function() {
     });
 
 
-    $(document).on('click', '#copyButton', function() {
+    $(document).on('click', '#copyButton', function () {
         copyMessage();
     });
 
-    $("#tips_button").click(function() {
+    $("#tips_button").click(function () {
         // Initialize the tour for the Tips
         tips.init();
         // Start the tips tour
         tips.start(true);
     });
 
-    $("#tutorial_button").click(function() {
+    $("#tutorial_button").click(function () {
         // Initialize the tour for the Tutorial
         tutorial.init();
-        
+
         // Start the tutorial tour
         tutorial.start(true);
 
