@@ -164,7 +164,51 @@ function pad(num, size) {
 }
 
 // preset colors that courses can have
-var colors = ["Blue", "BlueViolet", "CornflowerBlue", "DarkBlue", "DarkCyan", "DarkMagenta", "DodgerBlue", "Indigo", "LightSeaGreen", "RoyalBlue", "Teal"]
+var colors = {
+  "ABRD": "#7A8AF5",
+  "ACCT": "#5DBCBC",
+  "ART": "#61E8C4",
+  "ASTR": "#171A8D",
+  "BIOL": "#0A20C3",
+  "BUSA": "#4C9AF3",
+  "CHEM": "#3942DF",
+  "CHIN": "#3DADBF",
+  "COMM": "#7C41FE",
+  "COMP": "#3B34AD",
+  "ECON": "#7CDEFC",
+  "EDUC": "#3CD7A8",
+  "ELEE": "#8F61C1",
+  "ENGL": "#3250A9",
+  "ENGR": "#2E4B94",
+  "ENTR": "#60477B",
+  "EXER": "#364EA9",
+  "FREN": "#13C5CA",
+  "GEOL": "#200787",
+  "GERM": "#350C94",
+  "GOBL": "#9FA0ED",
+  "GREK": "#045FC5",
+  "HIST": "#4A34D9",
+  "HUMA": "#4DAB9E",
+  "LATN": "#06A0A0",
+  "LEGL": "#5108D4",
+  "MATH": "#2F7293",
+  "MECE": "#1261A8",
+  "MUSI": "#6DBEF5",
+  "PHIL": "#00A5D1",
+  "PHYE": "#57AB94",
+  "PHYS": "#15939C",
+  "POLS": "#73AAF4",
+  "PSYC": "#745BDC",
+  "RELI": "#093C98",
+  "SCIC": "#39B3A5",
+  "SEDU": "#45E2DF",
+  "SOCI": "#8C8F82",
+  "SOCW": "#68C9BF",
+  "SPAN": "#1A5790",
+  "SSFT": "#05B1E4",
+  "THEA": "#677ACE",
+  "WRIT": "#8868F6"
+};
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
 function filterCourses() {
@@ -265,7 +309,8 @@ function updateCalendar() {
 
     var events = [];
 
-    var colorSelector = 0;
+    // Not needed any more, remove later
+    //var colorSelector = 0;
 
     // go through every course and every meeting time within it
     for (var code in selectedCourses) {
@@ -296,7 +341,7 @@ function updateCalendar() {
                 var event = {
                     id: code,
                     title: code,
-                    color: colors[colorSelector],
+                    color: colors[code.substring(0, 4)],
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
@@ -304,10 +349,6 @@ function updateCalendar() {
                 events.push(event);
             }
         }
-
-        // Now increment the color for the next course
-        colorSelector++;
-        if (colorSelector >= colors.length) colorSelector = 0;
     }
 
     // push the list of events to the calendar module
@@ -650,7 +691,7 @@ $(function () {
 
     calendar.fullCalendar({
         header: false,
-        contentHeight: "auto",
+        contentHeight: 550,
         allDaySlot: false,
         minTime: "08:00:00",
         maxTime: "21:00:00",
