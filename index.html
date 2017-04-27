@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>GCC Class Schedule Visualizer</title>
-
 
     <link href='lib/fullcalendar.css' rel='stylesheet' />
     <link href='lib/bootstrap.css' rel='stylesheet' />
@@ -26,15 +26,7 @@
 <body>
     <div class="container">
         <div class="row">
-          <div id="bottom-buttons" class="col-md-8 pull-right">
-              <button type="button" id="tutorial_button" class="btn btn-info alert-info">Tutorial</button>
-              <button type="button" id="tips_button" class="btn btn-info alert-info">Scheduling Tips!</button>
-              <button type="button" id="reset_button" class="btn btn-warning alert-warning">Reset</button>
-              <button type="button" id="course_codes_button" class="btn alert-success btn-success" data-toggle="modal" data-target="#courseCodesModal">
-                  Get Course Codes
-              </button>
-          </div>
-          <div id='sidebar' class="col-md-4">
+            <div id='sidebar' class="col-md-4">
                 <div class="row search-row">
                     <h4 style="margin-top:0px;">Search</h4>
                     <div class="form-group">
@@ -147,11 +139,21 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div id="calendar-area" class="col-md-8">
-                <div id='calendar'></div>
+                <div class="row">
+                    <div id="bottom-buttons" class="col-md-12 pull-right">
+                        <button type="button" id="tutorial_button" class="btn btn-info alert-info">Tutorial</button>
+                        <button type="button" id="tips_button" class="btn btn-info alert-info">Scheduling Tips!</button>
+                        <button type="button" id="reset_button" class="btn btn-warning alert-warning">Reset</button>
+                        <button type="button" id="course_codes_button" class="btn alert-success btn-success" data-toggle="modal" data-target="#courseCodesModal">
+                        Get Course Codes
+                    </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id='calendar'></div>
+                </div>
             </div>
         </div>
 
@@ -166,8 +168,8 @@
                     <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
                     <p></p>
                     <p>
-                        <b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form for course codes, and not reference codes. One by one, click the copy button next to the courses below and paste
-                        them into the form on myGCC.
+                        <b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form for course codes, and not reference codes. One by one, click the copy button next to the courses below and
+                        paste them into the form on myGCC.
                     </p>
                 </div>
                 <div class="modal-body" id="coursePopup"></div>
