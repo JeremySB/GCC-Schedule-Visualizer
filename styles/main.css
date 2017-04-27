@@ -1,5 +1,5 @@
 body {
-    margin: 15px 10px;
+    margin: 5px 10px;
     padding: 0;
     font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
     font-size: 14px;
@@ -12,19 +12,30 @@ body {
 
 .filter-item {
     padding: 3px;
+    padding-top: 0px;
 }
 
 .search-row {
     padding: 3px;
+    padding-top: 19px;
+    padding-bottom: 0px;
 }
 
 .results-row {
     margin-top: 0px;
 }
 
+.form-group {
+  margin-bottom: 5px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
 .results-table {
     max-height: 340px;
-    height: 306px;
+    height: 340px;
     overflow-y: auto;
     overflow-x: visible;
     background-color: #FaFaFF;
@@ -32,7 +43,7 @@ body {
 
 .selected-table {
     max-height: 340px;
-    height: 306px;
+    height: 340px;
     overflow-y: auto;
     overflow-x: visible;
     background-color: #FaFaFF;
@@ -42,9 +53,9 @@ body {
     text-align: center;
     font-size: 1.75em;
     background-color: #FaFaFF;
-    height: 306px;
+    height: 340px;
     vertical-align: middle;
-    line-height: 306px;
+    line-height: 340px;
 }
 
 h1.searchWord {
