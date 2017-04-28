@@ -406,10 +406,10 @@ function printCourseCodes() {
             // The button itself
             $("<div>")
                 .addClass('row top-buffer')
-                .html('<div class="col-xs-10 col-xs-offset-1 container-center">' +
-                '<div class="copy-boxes col-xs-3 col-xs-offset-2" id=' + divtarget + '>' + code + '</div>' +
-                '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-2" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
-                '<div class="Prereq-boxes col-xs-4">' + prer + '</div></div>')
+                .html('<div class="col-xs-12 container-center">' +
+                '<div class="copy-boxes col-xs-4" id=' + divtarget + '>' + code + '</div>' +
+                '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-3" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
+                '<div class="Prereq-boxes col-xs-5">' + prer + '</div></div>')
                 .appendTo(coursePopup);
 
             // The code to copy the buttons

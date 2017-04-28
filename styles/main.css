@@ -66,9 +66,11 @@ h1.searchWord {
     margin: 5px 0px 5px 0px;
 }
 
-#bottom-buttons {
-    float: right;
-    margin: 10px 0px 5px 0px;
+.bottom-button {
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 3px;
+  padding-top: 2px;
 }
 
 .course-list-text {
