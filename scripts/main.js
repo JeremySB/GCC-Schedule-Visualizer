@@ -479,13 +479,22 @@ function searchCourses(query) {
 
     if (departmentNames[query]) {
         query = departmentNames[query];
-    }
 
-    // Go through the list of courses that match the filters and check for matches with the search query
-    for (var courseCode in filteredCourses) {
-        if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
-            if (!searchedCourses[courseCode]) {
-                searchedCourses[courseCode] = allCourses[courseCode];
+        // Go through the list of courses that match the filters and check for matches in the department
+        for (var courseCode in filteredCourses) {
+            if (courseCode.indexOf(query) !== -1) {
+                if (!searchedCourses[courseCode]) {
+                    searchedCourses[courseCode] = allCourses[courseCode];
+                }
+            }
+        }
+    }else{
+        // Go through the list of courses that match the filters and check for matches with the search query
+        for (var courseCode in filteredCourses) {
+            if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
+                if (!searchedCourses[courseCode]) {
+                    searchedCourses[courseCode] = allCourses[courseCode];
+                }
             }
         }
     }
@@ -517,7 +526,8 @@ function displaySearchResults(rebuild = false) {
             courseTable.append(fragment);
             courseTable.scrollTop(0);
         } else {
-            $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
+            // When does this happen?
+            $("<div>").text("No Courses Selected...").addClass("noneMatching").appendTo(courseTable);
         }
     }
     else {
@@ -541,7 +551,7 @@ function displaySearchResults(rebuild = false) {
 
         if (Object.keys(searchedCourses).length != 0) {
             $(".noneMatching").remove();
-        } else {
+        } else { // Does not match string
             $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
         }
     }
@@ -655,7 +665,7 @@ function updateSelectedCourses() {
         selectedTable.append(fragment);
         selectedTable.scrollTop(0);
     } else {
-        $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(selectedTable);
+        $("<div>").text("No Courses Selected...").addClass("noneMatching").appendTo(selectedTable);
     }
 }
 
@@ -817,5 +827,21 @@ $(function () {
         tutorial.start(true);
 
         //tutorial.setCurrentStep(0);
+    });
+
+    // Add the meal time display code here
+    $("div input:radio").change(function () {
+        if(document.getElementById("none").checked) {
+            console.log("None");
+        }
+        if(document.getElementById("hicks").checked) {
+            console.log("Hicks");
+        }
+        if(document.getElementById("map").checked) {
+            console.log("Map");
+        }
+        if(document.getElementById("sac").checked) {
+            console.log("Sac");
+        }
     });
 });

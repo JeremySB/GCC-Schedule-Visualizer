@@ -142,8 +142,23 @@
             <div id="calendar-area" class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-4">
-                            John will make the meal time and put it here  
+                        <div class="col-md-5 menu-button">
+                            <div class="btn-group col-md-12" data-toggle="buttons" id="buttons">
+                              <!-- <form class="buttons"> -->
+                                <label class="btn btn-sm btn-info alert-info col-md-3 active">
+                                    <input type="radio" name="options" id="none" checked> Cafe:
+                                </label>
+                                <label class="btn btn-sm btn-info alert-info col-md-3">
+                                    <input type="radio" name="options" id="hicks"> Hicks
+                                </label>
+                                <label class="btn btn-sm btn-info alert-info col-md-3">
+                                    <input type="radio" name="options" id="map"> Map
+                                </label>
+                                <label class="btn btn-sm btn-info alert-info col-md-3">
+                                    <input type="radio" name="options" id="sac"> Sac
+                                </label>
+                              <!-- </form> -->
+                            </div>
                         </div>
                         <div class="col-md-2 bottom-button">
                             <button type="button" id="tutorial_button" class="btn btn-block btn-sm btn-info alert-info">Tutorial</button>
@@ -151,7 +166,7 @@
                         <div class="col-md-2 bottom-button">
                             <button type="button" id="tips_button" class="btn btn-block btn-sm btn-info alert-info">Scheduling Tips!</button>
                         </div>
-                        <div class="col-md-2 bottom-button">
+                        <div class="col-md-1 bottom-button">
                             <button type="button" id="reset_button" class="btn btn-block btn-sm btn-warning alert-warning">Reset</button>
                         </div>
                         <div class="col-md-2 bottom-button">

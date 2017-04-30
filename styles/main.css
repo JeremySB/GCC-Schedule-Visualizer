@@ -17,7 +17,7 @@ body {
 
 .search-row {
     padding: 3px;
-    padding-top: 19px;
+    padding-top: 5px;
     padding-bottom: 0px;
 }
 
@@ -67,10 +67,18 @@ h1.searchWord {
 }
 
 .bottom-button {
-  padding-right: 2px;
-  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 0px;
   padding-bottom: 3px;
   padding-top: 2px;
+}
+
+.menu-button {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  text-align: center;
 }
 
 .course-list-text {
