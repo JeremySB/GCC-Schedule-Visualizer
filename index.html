@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,6 +18,7 @@
     <script src="lib/bootstrap-tour.min.js"></script>
     <script src='lib/fullcalendar.js'></script>
     <script src='scripts/courses.js'></script>
+    <script src='scripts/miscdata.js'></script>
     <script src='scripts/main.js'></script>
     <script src="lib/clipboard.js"></script>
 </head>
@@ -144,9 +145,9 @@
                     <div class="col-md-12">
                         <div class="col-md-5 menu-button">
                             <div class="btn-group col-md-12" data-toggle="buttons" id="buttons">
-                              <!-- <form class="buttons"> -->
+                                <!-- <form class="buttons"> -->
                                 <label class="btn btn-sm btn-info alert-info col-md-3 active">
-                                    <input type="radio" name="options" id="none" checked> Cafe:
+                                    <input type="radio" name="options" id="none" checked> None
                                 </label>
                                 <label class="btn btn-sm btn-info alert-info col-md-3">
                                     <input type="radio" name="options" id="hicks"> Hicks
@@ -157,20 +158,14 @@
                                 <label class="btn btn-sm btn-info alert-info col-md-3">
                                     <input type="radio" name="options" id="sac"> Sac
                                 </label>
-                              <!-- </form> -->
+                                <!-- </form> -->
                             </div>
                         </div>
-                        <div class="col-md-2 bottom-button">
-                            <button type="button" id="tutorial_button" class="btn btn-block btn-sm btn-info alert-info">Tutorial</button>
-                        </div>
-                        <div class="col-md-2 bottom-button">
-                            <button type="button" id="tips_button" class="btn btn-block btn-sm btn-info alert-info">Scheduling Tips!</button>
-                        </div>
-                        <div class="col-md-1 bottom-button">
-                            <button type="button" id="reset_button" class="btn btn-block btn-sm btn-warning alert-warning">Reset</button>
-                        </div>
-                        <div class="col-md-2 bottom-button">
-                            <button type="button" id="course_codes_button" class="btn btn-block btn-sm alert-success btn-success" data-toggle="modal" data-target="#courseCodesModal">
+                        <div class="col-md-7 btn-toolbar" role="toolbar">
+                            <button type="button" id="tutorial_button" class="btn btn-sm btn-info alert-info">Tutorial</button>
+                            <button type="button" id="tips_button" class="btn btn-sm btn-info alert-info">Scheduling Tips!</button>
+                            <button type="button" id="reset_button" class="btn btn-sm btn-warning alert-warning">Reset</button>
+                            <button type="button" id="course_codes_button" class="btn btn-sm alert-success btn-success" data-toggle="modal" data-target="#courseCodesModal">
                                 Get Course Codes
                             </button>
                         </div>
