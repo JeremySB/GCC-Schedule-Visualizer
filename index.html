@@ -143,65 +143,65 @@
             <div id="calendar-area" class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-5 menu-button">
-                            <div class="btn-group col-md-12" data-toggle="buttons" id="buttons">
+                        <div class="col-lg-5 menu-button pull-left">
+                            <div class="btn-group" data-toggle="buttons" id="buttons">
                                 <!-- <form class="buttons"> -->
-                                <label class="btn btn-sm btn-info alert-info col-md-3 active">
+                                <label class="btn btn-sm btn-info alert-info active">
                                     <input type="radio" name="options" id="none" checked> None
                                 </label>
-                                <label class="btn btn-sm btn-info alert-info col-md-3">
+                                <label class="btn btn-sm btn-info alert-info">
                                     <input type="radio" name="options" id="hicks"> Hicks
                                 </label>
-                                <label class="btn btn-sm btn-info alert-info col-md-3">
-                                    <input type="radio" name="options" id="map"> Map
+                                <label class="btn btn-sm btn-info alert-info">
+                                    <input type="radio" name="options" id="map"> MAP
                                 </label>
-                                <label class="btn btn-sm btn-info alert-info col-md-3">
-                                    <input type="radio" name="options" id="sac"> Sac
+                                <label class="btn btn-sm btn-info alert-info">
+                                    <input type="radio" name="options" id="sac"> SAC
                                 </label>
                                 <!-- </form> -->
                             </div>
                         </div>
-                        <div class="col-md-7 btn-toolbar" role="toolbar">
-                            <button type="button" id="tutorial_button" class="btn btn-sm btn-info alert-info">Tutorial</button>
-                            <button type="button" id="tips_button" class="btn btn-sm btn-info alert-info">Scheduling Tips!</button>
-                            <button type="button" id="reset_button" class="btn btn-sm btn-warning alert-warning">Reset</button>
-                            <button type="button" id="course_codes_button" class="btn btn-sm alert-success btn-success" data-toggle="modal" data-target="#courseCodesModal">
+                        <div class="col-lg-7 btn-toolbar pull-right" role="toolbar">
+                            <button type="button" id="tutorial_button" class="btn btn-sm btn-info alert-info pull-right">Tutorial</button>
+                            <button type="button" id="tips_button" class="btn btn-sm btn-info alert-info pull-right">Scheduling Tips!</button>
+                            <button type="button" id="reset_button" class="btn btn-sm btn-warning alert-warning pull-right">Reset</button>
+                            <button type="button" id="course_codes_button" class="btn btn-sm alert-success btn-success pull-right" data-toggle="modal" data-target="#courseCodesModal">
                                 Get Course Codes
                             </button>
                         </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div id='calendar'></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div id='calendar'></div>
+            </div>
+
+        </div>
+
+        <!-- Course Codes Modal -->
+        <div class="modal fade" id="courseCodesModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
+                        <p></p>
+                        <p>
+                            <b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form for course codes, and not reference codes. One by one, click the copy button next to the courses below and
+                            paste them into the form on myGCC.
+                        </p>
+                    </div>
+                    <div class="modal-body" id="coursePopup"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
-
-    <!-- Course Codes Modal -->
-    <div class="modal fade" id="courseCodesModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Copy Course Codes</h4>
-                    <p></p>
-                    <p>
-                        <b>Instructions:</b> Navigate to the academics page on myGCC and find the "add courses" form. Make sure you're on the form for course codes, and not reference codes. One by one, click the copy button next to the courses below and
-                        paste them into the form on myGCC.
-                    </p>
-                </div>
-                <div class="modal-body" id="coursePopup"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Script stuff for copying course codes -->
-    <div id="copyScriptDiv"></div>
+        <!-- Script stuff for copying course codes -->
+        <div id="copyScriptDiv"></div>
 
 
 </body>

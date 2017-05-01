@@ -291,6 +291,26 @@ function printCourseCodes() {
     }
 }
 
+function displayMealTime(cafeteria) {
+
+    calendar.fullCalendar('removeEvents', "hicks");
+    calendar.fullCalendar('removeEvents', "map");
+    calendar.fullCalendar('removeEvents', "sac");
+
+    switch (cafeteria) {
+        case "hicks":
+            calendar.fullCalendar('renderEvents', hicksTimes, true);
+            break;
+        case "map":
+            calendar.fullCalendar('renderEvents', mapTimes, true);
+            break;
+        case "sac":
+            calendar.fullCalendar('renderEvents', sacTimes, true);
+            break;
+    }
+
+}
+
 function copyMessage() {
     $.notify({
         // options
@@ -577,6 +597,7 @@ $(function () {
         eventRender: function (event, element) {
             var code = event.id;
             var placement;
+            if (!allCourses[code]) return;
             if (allCourses[code][0]["BeginTime"] && moment(event.start).hour() > 14) {
                 placement = "top";
             }
@@ -693,16 +714,16 @@ $(function () {
     // Add the meal time display code here
     $("div input:radio").change(function () {
         if(document.getElementById("none").checked) {
-            console.log("None");
+            displayMealTime("clear");
         }
         if(document.getElementById("hicks").checked) {
-            console.log("Hicks");
+            displayMealTime("hicks");
         }
         if(document.getElementById("map").checked) {
-            console.log("Map");
+            displayMealTime("map");
         }
         if(document.getElementById("sac").checked) {
-            console.log("Sac");
+            displayMealTime("sac");
         }
     });
 });
