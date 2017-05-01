@@ -230,6 +230,7 @@ function clearCourses() {
     selectedCourses = {};
     calendar.fullCalendar('removeEvents');
     displaySearchResults();
+    displayMealTime();
 }
 
 // print out course codes and copy buttons to the copy course codes modal
