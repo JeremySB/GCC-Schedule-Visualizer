@@ -16,7 +16,7 @@ var sectionConflicts = {};
 // points to full calendar DOM element
 var calendar;
 
-
+var currentMealTime = "none";
 
 
 // quick utility function to pad numbers with 0's on the left
@@ -214,6 +214,7 @@ function updateCalendar() {
 
     // push the list of events to the calendar module
     calendar.fullCalendar('renderEvents', events, true);
+    displayMealTime();
 }
 
 // remove course from selectedCourses and from calendar display
@@ -291,11 +292,13 @@ function printCourseCodes() {
     }
 }
 
-function displayMealTime(cafeteria) {
+function displayMealTime(cafeteria = currentMealTime) {
 
     calendar.fullCalendar('removeEvents', "hicks");
     calendar.fullCalendar('removeEvents', "map");
     calendar.fullCalendar('removeEvents', "sac");
+
+    currentMealTime = cafeteria;
 
     switch (cafeteria) {
         case "hicks":
