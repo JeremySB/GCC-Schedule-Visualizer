@@ -155,6 +155,9 @@ function addCourse(name) {
     } else if (!selectedCourses[name] && allCourses[name]) {
         // course seems good, so add it
         selectedCourses[name] = allCourses[name];
+
+        detectConflicts();
+
         // update all calendar objects
         updateCalendar();
     } else {
@@ -222,12 +225,14 @@ function updateCalendar() {
 function removeCourse(name) {
     // This shouldn't cause errors if course doesn't exist
     delete selectedCourses[name];
+    detectConflicts();
     calendar.fullCalendar('removeEvents', name);
 }
 
 // clear all selected courses
 function clearCourses() {
     selectedCourses = {};
+    detectConflicts();
     calendar.fullCalendar('removeEvents');
     displaySearchResults();
     displayMealTime();
@@ -248,12 +253,23 @@ function printCourseCodes() {
             .addClass('alert alert-danger')
             .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have two sections of the same class in your schedule. Please review your schedule and pick only one section of each course.')
             .appendTo(coursePopup);
-    } else if (Object.keys(timeConflicts).length > 0) {
+    }
+
+    if (Object.keys(timeConflicts).length > 0) {
         $("<div>")
             .addClass('alert alert-danger')
             .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have a timing conflict in your schedule. Please review your schedule and make sure no courses overlap.')
             .appendTo(coursePopup);
-    } else {
+    }
+
+
+    //if no selected courses
+    if (Object.keys(selectedCourses).length === 0) {
+        var inside = $("<div>")
+            .text('Select some courses first!')
+            .appendTo(coursePopup);
+    }
+    else {
         // Add the HTML code for each course that is in the selected courses
         for (var code in selectedCourses) {
             var divtarget = "div-target" + count.toString();
@@ -285,12 +301,7 @@ function printCourseCodes() {
         }
     }
 
-    //if no selected courses
-    if (Object.keys(selectedCourses).length === 0) {
-        var inside = $("<div>")
-            .text('Select some courses first!')
-            .appendTo(coursePopup);
-    }
+    
 }
 
 function displayMealTime(cafeteria = currentMealTime) {
@@ -559,16 +570,37 @@ function detectConflicts() {
     timeConflicts = {};
 
     for (var code_current in selectedCourses) {
-        for (var code_other in selectedCourses) {
-            if (code_current != code_other) {
-                var code_current_trim = code_current.substring(0, 8);
-                var code_other_trim = code_other.substring(0, 8);
-                if (code_current_trim == code_other_trim) {
-                    sectionConflicts[code_current] = selectedCourses[code_current];
-                    sectionConflicts[code_other] = selectedCourses[code_other];
-                }
+        for (var part_current = 0; part_current <= 1; part_current++) {
+            if (!selectedCourses[code_current][part_current] || !selectedCourses[code_current][part_current]["BeginTime"]) continue;
+            var start = parseInt(selectedCourses[code_current][part_current]["BeginTime"].replace(":", ""));
+            var end = parseInt(selectedCourses[code_current][part_current]["EndTime"].replace(":", ""));
+            for (var code_other in selectedCourses) {
+                if (timeConflicts[code_other] || sectionConflicts[code_other]) continue; //already covered this
+                if (code_current != code_other) {
+                    var code_current_trim = code_current.substring(0, 8);
+                    var code_other_trim = code_other.substring(0, 8);
+                    if (code_current_trim == code_other_trim) {
+                        sectionConflicts[code_current] = selectedCourses[code_current];
+                        sectionConflicts[code_other] = selectedCourses[code_other];
+                    }
 
-                // TODO: add timing conflict checking
+                    for (var part_other = 0; part_other <= 1; part_other++) {
+                        if (!selectedCourses[code_other][part_other] || !selectedCourses[code_other][part_other]["BeginTime"]) continue;
+                        var tstart = parseInt(selectedCourses[code_other][part_other]["BeginTime"].replace(":", ""));
+                        var tend = parseInt(selectedCourses[code_other][part_other]["EndTime"].replace(":", ""));
+
+                        if (tstart < end && tend > start) {
+                            var meets = selectedCourses[code_current][part_current]["Meets"];
+                            for (var c = 0; c < meets.length; c++) {
+                                if (selectedCourses[code_other][part_other]["Meets"].indexOf(meets[c]) !== -1) {
+                                    timeConflicts[code_current] = selectedCourses[code_current];
+                                    timeConflicts[code_other] = selectedCourses[code_other];
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -608,6 +640,13 @@ $(function () {
             else {
                 placement = "bottom";
             }
+            var warning = "";
+            if (timeConflicts[code]) {
+                warning += "<br /><span style='color:red;'><b>Warning:</b> Time conflict detected.</span>"
+            }
+            if (sectionConflicts[code]) {
+                warning += "<br /><span style='color:red;'><b>Warning:</b> Multiple sections of same course added.</span>"
+            }
             $(element).popover({
                 title: allCourses[code][0]["LongTitle"],
                 content: "<b>Course Code:</b> " + code
@@ -615,6 +654,7 @@ $(function () {
                 + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
                 + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
                 + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
+                + warning
                 + '<br /><br /><div style="text-align:center;"><button type="button" data-code="' + code
                 + '" class="btn btn-default remove-course-btn" aria-label="Remove Course"><span class="glyphicon glyphicon-remove x-icon-in-button" aria-hidden="true"></span><span> Remove Course</span></button></div>',
                 placement: placement,
