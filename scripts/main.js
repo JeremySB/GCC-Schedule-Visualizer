@@ -202,7 +202,7 @@ function updateCalendar() {
                 var event = {
                     id: code,
                     title: code,
-                    color: timeConflicts[code] ? "red" : colors[code.substring(0, 4)],
+                    color: timeConflicts[code] || sectionConflicts[code] ? "#da211e" : colors[code.substring(0, 4)],
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
