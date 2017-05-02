@@ -173,9 +173,6 @@ function updateCalendar() {
 
     var events = [];
 
-    // Not needed any more, remove later
-    //var colorSelector = 0;
-
     // go through every course and every meeting time within it
     for (var code in selectedCourses) {
         for (var part in selectedCourses[code]) {
@@ -205,7 +202,7 @@ function updateCalendar() {
                 var event = {
                     id: code,
                     title: code,
-                    color: colors[code.substring(0, 4)],
+                    color: timeConflicts[code] ? "red" : colors[code.substring(0, 4)],
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
                 }
@@ -226,7 +223,7 @@ function removeCourse(name) {
     // This shouldn't cause errors if course doesn't exist
     delete selectedCourses[name];
     detectConflicts();
-    calendar.fullCalendar('removeEvents', name);
+    updateCalendar();
 }
 
 // clear all selected courses
@@ -300,8 +297,6 @@ function printCourseCodes() {
             count++;
         }
     }
-
-    
 }
 
 function displayMealTime(cafeteria = currentMealTime) {
@@ -575,7 +570,7 @@ function detectConflicts() {
             var start = parseInt(selectedCourses[code_current][part_current]["BeginTime"].replace(":", ""));
             var end = parseInt(selectedCourses[code_current][part_current]["EndTime"].replace(":", ""));
             for (var code_other in selectedCourses) {
-                if (timeConflicts[code_other] || sectionConflicts[code_other]) continue; //already covered this
+                if (timeConflicts[code_other] && sectionConflicts[code_other]) continue; //already covered this
                 if (code_current != code_other) {
                     var code_current_trim = code_current.substring(0, 8);
                     var code_other_trim = code_other.substring(0, 8);
