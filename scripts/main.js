@@ -672,7 +672,7 @@ $(function () {
 
     // hide popovers on general clicks
     $(document).on("click", function (e) {
-        $('.popover').popover("hide");
+        $('#calendar .popover').popover("hide");
     });
 
     $("#reset_button").click(function () {

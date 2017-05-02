@@ -50,7 +50,7 @@ var tips = new Tour({
 // Tutorial Tour instantiation
 var tutorial = new Tour({
     name: "tutorial",
-    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>« Prev</button><button class='btn btn-default' data-role='next'>Next »</button><button class='btn btn-default' data-role='end'>Close tutorial</button></div></div>",
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>&laquo; Prev</button><button class='btn btn-default' data-role='next'>Next &#187;</button><button class='btn btn-default' data-role='end'>Close tutorial</button></div></div>",
     steps: [{
         element: ".search-row",
         placement: "auto right",
