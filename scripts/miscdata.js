@@ -227,8 +227,8 @@ var mapTimes = [{
 {
     title: 'FridayBreakfast',
     id: 'map',
-    start: '2016-08-04T07:15:00',
-    end: '2016-08-04T10:00:00',
+    start: '2016-08-05T07:15:00',
+    end: '2016-08-05T10:00:00',
     rendering: 'background'
 },
 {
