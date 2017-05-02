@@ -358,6 +358,7 @@ function copyMessage() {
 function searchCourses(query) {
     searchedCourses = {};
     var selector = 0;
+	var dept = "ChristianWuzHere";
     query = query.toUpperCase().trim();
 
     // return everything if there is no query
@@ -366,6 +367,16 @@ function searchCourses(query) {
         displaySearchResults();
         return;
     }
+	
+	// Add the proper department abbreviation to the query
+	for (var queryDepartment in departmentNames) {
+		//if (queryDepartment.indexOf(query) !== -1) {
+		if(queryDepartment.includes(query)){
+			dept = departmentNames[queryDepartment];
+			//query = query + " " + departmentNames[queryDepartment];
+			break;
+		}
+	}
 
 
     if (departmentNames[query]) {
@@ -382,7 +393,7 @@ function searchCourses(query) {
     }else{
         // Go through the list of courses that match the filters and check for matches with the search query
         for (var courseCode in filteredCourses) {
-            if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1) {
+            if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1 || courseCode.includes(dept)) {
                 if (!searchedCourses[courseCode]) {
                     searchedCourses[courseCode] = allCourses[courseCode];
                 }
