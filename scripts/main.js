@@ -202,9 +202,17 @@ function updateCalendar() {
                 var event = {
                     id: code,
                     title: code,
-                    color: timeConflicts[code] || sectionConflicts[code] ? "#da211e" : colors[code.substring(0, 4)],
                     start: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["BeginTime"], 8),
                     end: '2016-08-0' + day.toString() + 'T' + pad(selectedCourses[code][part]["EndTime"], 8)
+                }
+
+                if (timeConflicts[code] || sectionConflicts[code]) {
+                    event["backgroundColor"] = "white";
+                    event["borderColor"] = "#da211e";
+                    event["textColor"] = "black";
+                }
+                else {
+                    event["color"] = colors[code.substring(0, 4)];
                 }
                 // add Event Source Object to containing object
                 events.push(event);
