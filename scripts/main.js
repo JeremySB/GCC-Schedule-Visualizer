@@ -253,7 +253,10 @@ function printCourseCodes() {
 
     var count = 0;
 
+    var errors = false;
+
     if (Object.keys(sectionConflicts).length > 0) {
+        errors = true;
         $("<div>")
             .addClass('alert alert-danger')
             .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have two sections of the same class in your schedule. Please review your schedule and pick only one section of each course.')
@@ -261,12 +264,14 @@ function printCourseCodes() {
     }
 
     if (Object.keys(timeConflicts).length > 0) {
+        errors = true;
         $("<div>")
             .addClass('alert alert-danger')
             .html('<span class="glyphicon glyphicon-warning-sign"></span><strong> Warning!</strong> You have a timing conflict in your schedule. Please review your schedule and make sure no courses overlap.')
             .appendTo(coursePopup);
     }
 
+    if (errors) return;
 
     //if no selected courses
     if (Object.keys(selectedCourses).length === 0) {
@@ -425,45 +430,38 @@ function displaySearchResults(rebuild = false) {
 
         // use document fragment to avoid reflowing the page constantly
         var fragment = $(document.createDocumentFragment());
+        for (var code in allCourses) {
+            var link = getResultLink(code);
 
-        if (Object.keys(searchedCourses).length != 0) {
-            for (var code in searchedCourses) {
-                var link = getResultLink(code);
-
-                fragment.append(link);
-            }
-
-            courseTable.append(fragment);
-            courseTable.scrollTop(0);
-        } else {
-            // When does this happen?
-            $("<div>").text("No Courses Selected...").addClass("noneMatching").appendTo(courseTable);
+            fragment.append(link);
         }
+
+        courseTable.append(fragment);
+        courseTable.scrollTop(0);
     }
-    else {
-        // don't rebuild, just go thru results and hide/toggle active
-        $("#results-table .course_link").each(function (index) {
-            var $this = $(this);
-            var code = $this.attr("data-code");
+   
+        //  go thru results and hide/toggle active
+    $("#results-table .course_link").each(function (index) {
+        var $this = $(this);
+        var code = $this.attr("data-code");
 
-            if (searchedCourses[code]) {
-                $this.show();
-            } else {
-                $this.hide();
-            }
-
-            if (selectedCourses[code]) {
-                $this.addClass("active");
-            } else {
-                $this.removeClass("active");
-            }
-        });
-
-        if (Object.keys(searchedCourses).length != 0) {
-            $(".noneMatching").remove();
-        } else { // Does not match string
-            $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
+        if (searchedCourses[code]) {
+            $this.show();
+        } else {
+            $this.hide();
         }
+
+        if (selectedCourses[code]) {
+            $this.addClass("active");
+        } else {
+            $this.removeClass("active");
+        }
+    });
+
+    if (Object.keys(searchedCourses).length != 0) {
+        $(".noneMatching").remove();
+    } else { // Does not match string
+        $("<div>").text("No Matching Courses...").addClass("noneMatching").appendTo(courseTable);
     }
 }
 
@@ -719,7 +717,7 @@ $(function () {
     });
 
     // click handler for course result links
-    $(document.body).on("click", ".course_link, .remove-course-btn", function (event) {
+    $(document.body).on("click", ".course_link", function (event) {
         var link = $(event.currentTarget);
         var code = link.attr("data-code");
         if (selectedCourses[code]) {
