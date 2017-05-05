@@ -592,17 +592,17 @@ function testFilterDays(day, matching) {
     if (count != matching) {
         console.log("Testing-" + day + " failed -- Got:" + count + " should be: " + matching);
     } else {
-        console.log("Testing-" + day + " sucsess:");
+        console.log("Testing-" + day + " success");
     }
 }
 
 function filterTimes() {
     filterCoursesTest(null, "Morning", null, null);
-    testFilterNumbers("Morning", Object.keys(filteredCoursesTest).length);
+    testFilterTimes("Morning", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, "Afternoon", null, null);
-    testFilterNumbers("Afternoon", Object.keys(filteredCoursesTest).length);
+    testFilterTimes("Afternoon", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, "Evening", null, null);
-    testFilterNumbers("Evening", Object.keys(filteredCoursesTest).length);
+    testFilterTimes("Evening", Object.keys(filteredCoursesTest).length);
 }
 
 function testFilterTimes(time, matching) {
@@ -617,17 +617,19 @@ function testFilterTimes(time, matching) {
 
         // check if hour time matches filter and skip adding this course if so
         if (time === "Morning" && sectionHour >= 12)
-            count++;
+            continue;
         else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-            count++;
+            continue;
         else if (time === "Evening" && sectionHour < 18)
-            count++;
+            continue;
+
+        count++;
     }
 
     if (count != matching) {
         console.log("Testing-" + time + " failed -- Got:" + count + " should be: " + matching);
     } else {
-        console.log("Testing-" + time + " sucsess:");
+        console.log("Testing-" + time + " success");
     }
 }
 
@@ -735,7 +737,7 @@ function testFilterDepartment(department, matching) {
     if (count != matching) {
         console.log("Testing-" + department + " failed -- Got:" + count + " should be: " + matching);
     } else {
-        console.log("Testing-" + department + " sucsess:");
+        console.log("Testing-" + department + " success");
     }
 }
 
@@ -758,7 +760,7 @@ function testFilterNumbers(number, matching) {
         var code = code.substr(code.indexOf(" ") + 1, 1);
         var num = number.substr(0, 1);
 
-        if (code !== num) {
+        if (code === num) {
             count++;
         }
     }
@@ -766,7 +768,7 @@ function testFilterNumbers(number, matching) {
     if (count != matching) {
         console.log("Testing-" + number + " failed -- Got:" + count + " should be: " + matching);
     } else {
-        console.log("Testing-" + number + " sucsess:");
+        console.log("Testing-" + number + " success");
     }
 }
 // filter all courses by selected filters and store the resulting courses in filteredCoursesTest
