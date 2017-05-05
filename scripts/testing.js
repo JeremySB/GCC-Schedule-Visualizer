@@ -546,6 +546,7 @@ $(function() {
     filterNumbers();
     // Test Department
     // Test time of day
+    filterTimes();
 });
 
 function filterDays() {
@@ -594,7 +595,38 @@ function testFilterDays(day, matching) {
 }
 
 function filterTimes() {
+  filterCoursesTest(null, "Morning", null, null);
+  testFilterNumbers("Morning", 23);
+  filterCoursesTest(null, "Afternoon", null, null);
+  testFilterNumbers("Afternoon", 31);
+  filterCoursesTest(null, "Evening", null, null);
+  testFilterNumbers("Evening", 38);
+}
 
+function testFilterTimes(time,matching) {
+  var count = 0;
+  for (var code in testingCourses) {
+      var cur = testingCourses[code][0];
+
+      if (!cur["BeginTime"]) continue;
+
+      // get only the hour from the time string, and parse to int
+      var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
+
+      // check if hour time matches filter and skip adding this course if so
+      if (time === "Morning" && sectionHour >= 12)
+          count++;
+      else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
+          count++;
+      else if (time === "Evening" && sectionHour < 18)
+          count++;
+    }
+
+    if (count != matching) {
+        console.log("Testing-" + time + " failed -- Got:" + count + " should be: " + matching);
+    } else {
+        console.log("Testing-" + time + " sucsess:");
+    }
 }
 
 function filterDepartment() {
