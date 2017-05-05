@@ -706,6 +706,10 @@ $(function() {
     $("#reset_button").click(function() {
         clearCourses();
         updateSelectedCourses();
+        $("#week").val("");
+        $("#course").val("");
+        $("#time").val("");
+        $("#department").val("");
     });
 
     $("#searchfield").on("input", function(event) {
