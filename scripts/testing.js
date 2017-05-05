@@ -321,7 +321,7 @@ testingCourses = Object.freeze({
         "LongTitle": "CALCULUS I",
         "BeginTime": "13:00:00",
         "EndTime": "13:50:00",
-        "Meets": "MWRF",
+        "Meets": "MWFR",
         "Building": "HAL",
         "Room": "210",
         "Enrollment": "25",
@@ -537,6 +537,7 @@ testingCourses = Object.freeze({
     }]
 });
 
+var filteredCoursesTest = {};
 
 $(function() {
     // SSet up stuff
@@ -551,29 +552,29 @@ $(function() {
 
 function filterDays() {
     filterCoursesTest(null, null, null, "M");
-    testFilterDays("M", 3);
+    testFilterDays("M", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "T");
-    testFilterDays("T", 3);
+    testFilterDays("T", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "W");
-    testFilterDays("W");
+    testFilterDays("W", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "R");
-    testFilterDays("R");
+    testFilterDays("R", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "F");
-    testFilterDays("F");
+    testFilterDays("F", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "MWF");
-    testFilterDays("MWF");
+    testFilterDays("MWF", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "TR");
-    testFilterDays("TR");
-    filterCoursesTest(null, null, null, "MWRF");
-    testFilterDays("MWRF");
-    filterCoursesTest(null, null, null, "MTWF");
-    testFilterDays("MTWF");
-    filterCoursesTest(null, null, null, "MTRF");
-    testFilterDays("MTRF");
+    testFilterDays("TR", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, null, "MWFR");
+    testFilterDays("MWFR", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, null, "MWFT");
+    testFilterDays("MWFT", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, null, "MFTR");
+    testFilterDays("MFTR", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "MW");
-    testFilterDays("MW");
+    testFilterDays("MW", Object.keys(filteredCoursesTest).length);
     filterCoursesTest(null, null, null, "WF");
-    testFilterDays("WF");
+    testFilterDays("WF", Object.keys(filteredCoursesTest).length);
 }
 
 function testFilterDays(day, matching) {
@@ -588,19 +589,19 @@ function testFilterDays(day, matching) {
         }
     }
     if (count != matching) {
-        console.log("Testing: " + day + " failed");
+        console.log("Testing-" + day + " failed -- Got:" + count + " should be: " + matching);
     } else {
-        console.log("Testing: " + day + " sucsess");
+        console.log("Testing-" + day + " sucsess:");
     }
 }
 
 function filterTimes() {
   filterCoursesTest(null, "Morning", null, null);
-  testFilterNumbers("Morning", 23);
+  testFilterNumbers("Morning", Object.keys(filteredCoursesTest).length);
   filterCoursesTest(null, "Afternoon", null, null);
-  testFilterNumbers("Afternoon", 31);
+  testFilterNumbers("Afternoon", Object.keys(filteredCoursesTest).length);
   filterCoursesTest(null, "Evening", null, null);
-  testFilterNumbers("Evening", 38);
+  testFilterNumbers("Evening", Object.keys(filteredCoursesTest).length);
 }
 
 function testFilterTimes(time,matching) {
@@ -634,14 +635,14 @@ function filterDepartment() {
 }
 
 function filterNumbers() {
-    filterCoursesTest(null, null, 100, null);
-    testFilterNumbers("100", 23);
-    filterCoursesTest(null, null, 200, null);
-    testFilterNumbers("200", 31);
-    filterCoursesTest(null, null, 300, null);
-    testFilterNumbers("300", 38);
-    filterCoursesTest(null, null, 400, null);
-    testFilterNumbers("400", 43);
+    filterCoursesTest(null, null, "100", null);
+    testFilterNumbers("100", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, "200", null);
+    testFilterNumbers("200", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, "300", null);
+    testFilterNumbers("300", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, null, "400", null);
+    testFilterNumbers("400", Object.keys(filteredCoursesTest).length);
 }
 
 function testFilterNumbers(number, matching) {
@@ -664,8 +665,7 @@ function testFilterNumbers(number, matching) {
     }
 }
 // filter all courses by selected filters and store the resulting courses in filteredCoursesTest
-function filterCoursesTest(department, time, code, week) {
-    var course = toString(code);
+function filterCoursesTest(department, time, course, week) {
     filteredCoursesTest = {};
 
     for (var code in testingCourses) {
@@ -675,12 +675,12 @@ function filterCoursesTest(department, time, code, week) {
         // check if section doesn't match a filter, and if so, continue to next
 
         // department filtering
-        if (department && department !== code.substr(0, code.indexOf(" "))) {
+        if (department!==null && department !== code.substr(0, code.indexOf(" "))) {
             continue; // go to next section
         }
 
         // time of day filtering
-        if (time) {
+        if (time!==null) {
             // if course does not have a time (e.g. internship) don't show it
             if (!cur["BeginTime"]) continue;
 
@@ -697,7 +697,7 @@ function filterCoursesTest(department, time, code, week) {
         }
 
         // Filter by course number
-        if (course) {
+        if (course!==null) {
             var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
             var courseFilter = course.substr(0, 1);
 
@@ -705,7 +705,7 @@ function filterCoursesTest(department, time, code, week) {
         }
 
         // filter by which days the class meets
-        if (week) {
+        if (week!==null) {
             // don't add this course if it doesn't meet
             if (!cur["Meets"]) continue;
 
@@ -731,5 +731,5 @@ function filterCoursesTest(department, time, code, week) {
     }
 
     // now update the search results
-    searchCourses($("#searchfield").val());
+    //console.log(Object.keys(filteredCoursesTest).length);
 }
