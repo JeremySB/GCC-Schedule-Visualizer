@@ -544,8 +544,9 @@ $(function() {
     // Test days of week
     filterDays();
     // Test course numbers
-    filterNumbers();
+    filterDepartment();
     // Test Department
+    filterNumbers();
     // Test time of day
     filterTimes();
 });
@@ -596,31 +597,31 @@ function testFilterDays(day, matching) {
 }
 
 function filterTimes() {
-  filterCoursesTest(null, "Morning", null, null);
-  testFilterNumbers("Morning", Object.keys(filteredCoursesTest).length);
-  filterCoursesTest(null, "Afternoon", null, null);
-  testFilterNumbers("Afternoon", Object.keys(filteredCoursesTest).length);
-  filterCoursesTest(null, "Evening", null, null);
-  testFilterNumbers("Evening", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, "Morning", null, null);
+    testFilterNumbers("Morning", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, "Afternoon", null, null);
+    testFilterNumbers("Afternoon", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest(null, "Evening", null, null);
+    testFilterNumbers("Evening", Object.keys(filteredCoursesTest).length);
 }
 
-function testFilterTimes(time,matching) {
-  var count = 0;
-  for (var code in testingCourses) {
-      var cur = testingCourses[code][0];
+function testFilterTimes(time, matching) {
+    var count = 0;
+    for (var code in testingCourses) {
+        var cur = testingCourses[code][0];
 
-      if (!cur["BeginTime"]) continue;
+        if (!cur["BeginTime"]) continue;
 
-      // get only the hour from the time string, and parse to int
-      var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
+        // get only the hour from the time string, and parse to int
+        var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
 
-      // check if hour time matches filter and skip adding this course if so
-      if (time === "Morning" && sectionHour >= 12)
-          count++;
-      else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-          count++;
-      else if (time === "Evening" && sectionHour < 18)
-          count++;
+        // check if hour time matches filter and skip adding this course if so
+        if (time === "Morning" && sectionHour >= 12)
+            count++;
+        else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
+            count++;
+        else if (time === "Evening" && sectionHour < 18)
+            count++;
     }
 
     if (count != matching) {
@@ -631,7 +632,111 @@ function testFilterTimes(time,matching) {
 }
 
 function filterDepartment() {
+    filterCoursesTest("ABRD", null, null, null);
+    testFilterDepartment("ABRD", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ACCT", null, null, null);
+    testFilterDepartment("ACCT", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ART", null, null, null);
+    testFilterDepartment("ART", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ASTR", null, null, null);
+    testFilterDepartment("ASTR", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("BIOL", null, null, null);
+    testFilterDepartment("BIOL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("BUSA", null, null, null);
+    testFilterDepartment("BUSA", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("CHEM", null, null, null);
+    testFilterDepartment("CHEM", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("CHIN", null, null, null);
+    testFilterDepartment("CHIN", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("COMM", null, null, null);
+    testFilterDepartment("COMM", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("COMP", null, null, null);
+    testFilterDepartment("COMP", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ECON", null, null, null);
+    testFilterDepartment("ECON", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("EDUC", null, null, null);
+    testFilterDepartment("EDUC", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ELEE", null, null, null);
+    testFilterDepartment("ELEE", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ENGL", null, null, null);
+    testFilterDepartment("ENGL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ENGR", null, null, null);
+    testFilterDepartment("ENGR", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("ENTR", null, null, null);
+    testFilterDepartment("ENTR", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("EXER", null, null, null);
+    testFilterDepartment("EXER", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("FREN", null, null, null);
+    testFilterDepartment("FREN", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("GEOL", null, null, null);
+    testFilterDepartment("GEOL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("GERM", null, null, null);
+    testFilterDepartment("GERM", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("GOBL", null, null, null);
+    testFilterDepartment("GOBL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("GREK", null, null, null);
+    testFilterDepartment("GREK", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("HIST", null, null, null);
+    testFilterDepartment("HIST", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("HUMA", null, null, null);
+    testFilterDepartment("HUMA", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("LATN", null, null, null);
+    testFilterDepartment("LATN", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("LEGL", null, null, null);
+    testFilterDepartment("LEGL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("MATH", null, null, null);
+    testFilterDepartment("MATH", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("MECE", null, null, null);
+    testFilterDepartment("MECE", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("MUSI", null, null, null);
+    testFilterDepartment("MUSI", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("PHIL", null, null, null);
+    testFilterDepartment("PHIL", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("PHYE", null, null, null);
+    testFilterDepartment("PHYE", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("PHYS", null, null, null);
+    testFilterDepartment("PHYS", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("POLS", null, null, null);
+    testFilterDepartment("POLS", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("PSYC", null, null, null);
+    testFilterDepartment("PSYC", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("RELI", null, null, null);
+    testFilterDepartment("RELI", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SCIC", null, null, null);
+    testFilterDepartment("SCIC", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SEDU", null, null, null);
+    testFilterDepartment("SEDU", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SOCI", null, null, null);
+    testFilterDepartment("SOCI", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SOCW", null, null, null);
+    testFilterDepartment("SOCW", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SPAN", null, null, null);
+    testFilterDepartment("SPAN", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("SSFT", null, null, null);
+    testFilterDepartment("SSFT", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("THEA", null, null, null);
+    testFilterDepartment("THEA", Object.keys(filteredCoursesTest).length);
+    filterCoursesTest("WRIT", null, null, null);
+    testFilterDepartment("WRIT", Object.keys(filteredCoursesTest).length);
+}
 
+function testFilterDepartment(department, matching) {
+    var count = 0;
+    for (var code in testingCourses) {
+        var selector = 0; // usually the first item is the class, other ones might be labs
+        var cur = testingCourses[code][selector];
+
+        // department filtering
+        if (department !== null && department === code.substr(0, code.indexOf(" "))) {
+            count++; // go to next section
+        }
+    }
+
+    if (count != matching) {
+        console.log("Testing-" + department + " failed -- Got:" + count + " should be: " + matching);
+    } else {
+        console.log("Testing-" + department + " sucsess:");
+    }
 }
 
 function filterNumbers() {
@@ -675,12 +780,12 @@ function filterCoursesTest(department, time, course, week) {
         // check if section doesn't match a filter, and if so, continue to next
 
         // department filtering
-        if (department!==null && department !== code.substr(0, code.indexOf(" "))) {
+        if (department !== null && department !== code.substr(0, code.indexOf(" "))) {
             continue; // go to next section
         }
 
         // time of day filtering
-        if (time!==null) {
+        if (time !== null) {
             // if course does not have a time (e.g. internship) don't show it
             if (!cur["BeginTime"]) continue;
 
@@ -697,7 +802,7 @@ function filterCoursesTest(department, time, course, week) {
         }
 
         // Filter by course number
-        if (course!==null) {
+        if (course !== null) {
             var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
             var courseFilter = course.substr(0, 1);
 
@@ -705,7 +810,7 @@ function filterCoursesTest(department, time, course, week) {
         }
 
         // filter by which days the class meets
-        if (week!==null) {
+        if (week !== null) {
             // don't add this course if it doesn't meet
             if (!cur["Meets"]) continue;
 
