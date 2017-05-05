@@ -509,7 +509,9 @@ function getMeeting(code) {
             return "MTRF";
         } else if (days == "RT" || days == "TR") {
             return "TR";
-        } else {
+        } else if (days == "WF" || days == "FW") {
+            return "WF";
+        }else {
             return allCourses[code][0]["Meets"];
         }
     } else {

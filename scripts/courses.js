@@ -3383,6 +3383,17 @@ allCourses = Object.freeze({
         "Capacity": "17"
     }],
     "ENTR 467 A": [{
+          "ShortTitle": "CORP HEALTHCARE",
+          "LongTitle": "CORPORATE HEALTCHARE INNOVATION",
+          "BeginTime": "18:30:00",
+          "EndTime": "20:00:00",
+          "Meets": "W",
+          "Building": "HAL",
+          "Room": "304",
+          "Enrollment": "9",
+          "Capacity": "9"
+      },
+      {
         "ShortTitle": "CORP HEALTHCARE",
         "LongTitle": "CORPORATE HEALTCHARE INNOVATION",
         "BeginTime": "15:00:00",
@@ -3392,17 +3403,6 @@ allCourses = Object.freeze({
         "Room": "309",
         "Enrollment": "9",
         "Capacity": "10"
-    },
-    {
-        "ShortTitle": "CORP HEALTHCARE",
-        "LongTitle": "CORPORATE HEALTCHARE INNOVATION",
-        "BeginTime": "18:30:00",
-        "EndTime": "20:00:00",
-        "Meets": "W",
-        "Building": "HAL",
-        "Room": "304",
-        "Enrollment": "9",
-        "Capacity": "9"
     }
     ],
     "EXER 101 A": [{
