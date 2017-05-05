@@ -294,9 +294,9 @@ function printCourseCodes() {
             $("<div>")
                 .addClass('row top-buffer')
                 .html('<div class="col-xs-12 container-center">' +
-                    '<div class="copy-boxes col-xs-4" id=' + divtarget + '>' + code + '</div>' +
-                    '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-3" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
-                    '<div class="Prereq-boxes col-xs-5">' + prer + '</div></div>')
+                '<div class="copy-boxes col-xs-4" id=' + divtarget + '>' + code + '</div>' +
+                '<button data-code="' + code + '" class="' + btn + ' copyButton btn btn-info col-xs-3" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
+                '<div class="Prereq-boxes col-xs-5">' + prer + '</div></div>')
                 .appendTo(coursePopup);
 
             // The code to copy the buttons
@@ -332,10 +332,19 @@ function displayMealTime(cafeteria = currentMealTime) {
 
 }
 
-function copyMessage(course) {
+function copyMessage(code = "") {
+    var message;
+
+    if (code !== "") {
+        message = 'Course Code "'+code+'" Copied Successfully!';
+    }
+    else {
+        message = 'Course Code Copied Successfully!';
+    }
+
     $.notify({
         // options
-        message: 'Course Code ' + course + ' Copied Successfully!'
+        message: message
     }, {
         // settings
         type: 'success',
@@ -748,12 +757,10 @@ $(function() {
     });
 
 
-    $(document).on('click', '#copyButton', function() {
-        var id = $(this).attr("class");
-
-        id = id.substr(id.indexOf("btn") + 3, id.indexOf(" btn btn-info") - 3);
-        var temp = $("#div-target"+id).text();
-        copyMessage(temp);
+    $(document).on('click', '.copyButton', function (event) {
+        var btn = $(event.currentTarget);
+        var code = btn.attr("data-code");
+        copyMessage(code);
     });
 
     $("#tips_button").click(function() {
