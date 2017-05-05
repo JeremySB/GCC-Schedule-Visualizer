@@ -295,6 +295,17 @@ testingCourses = Object.freeze({
         "Enrollment": "4",
         "Capacity": "4"
     }],
+    "MATH 161 B": [{
+        "ShortTitle": "CALCULUS I",
+        "LongTitle": "CALCULUS I",
+        "BeginTime": "13:00:00",
+        "EndTime": "13:50:00",
+        "Meets": "MWFR",
+        "Building": "HAL",
+        "Room": "210",
+        "Enrollment": "25",
+        "Capacity": "30"
+    }],
     "MATH 162 A": [{
         "ShortTitle": "CALCULUS II",
         "LongTitle": "CALCULUS II",
@@ -315,17 +326,6 @@ testingCourses = Object.freeze({
         "Room": "112",
         "Enrollment": "23",
         "Capacity": "23"
-    }],
-    "MATH 161 B": [{
-        "ShortTitle": "CALCULUS I",
-        "LongTitle": "CALCULUS I",
-        "BeginTime": "13:00:00",
-        "EndTime": "13:50:00",
-        "Meets": "MWFR",
-        "Building": "HAL",
-        "Room": "210",
-        "Enrollment": "25",
-        "Capacity": "30"
     }],
     "MATH 162 C": [{
         "ShortTitle": "CALCULUS II",
