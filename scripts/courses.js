@@ -8513,7 +8513,7 @@ const departmentNames = Object.freeze({
     "ECONOMICS": "ECON",
     "EDUCATION": "EDUC",
     "SPECIAL EDUCATION": "SEDU",
-    "ENGINEERING CORE COURSES": "ENGR",
+    "ENGINEERING": "ENGR",
     "ELECTRICAL ENGINEERING": "ELEE",
     "ROBOTICS": "ROBO",
     "ENGLISH": "ENGL",
