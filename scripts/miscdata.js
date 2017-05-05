@@ -42,6 +42,13 @@ var tips = new Tour({
         animation: true,
         placement: "bottom",
         title: "Tip #6",
+        content: "Use a power cord to make sure your computer is running as fast as it can (don't schedule on power saving mode!)."
+    },
+    {
+        element: "#tips_button",
+        animation: true,
+        placement: "bottom",
+        title: "Tip #7",
         content: "HTML element inspection... that's all."
     }
     ]
