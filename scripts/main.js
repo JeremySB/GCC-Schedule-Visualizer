@@ -26,49 +26,49 @@ function pad(num, size) {
 
 // preset colors that courses can have
 var colors = {
-  "ABRD": "#7A8AF5",
-  "ACCT": "#5DBCBC",
-  "ART": "#61E8C4",
-  "ASTR": "#171A8D",
-  "BIOL": "#0A20C3",
-  "BUSA": "#4C9AF3",
-  "CHEM": "#3942DF",
-  "CHIN": "#3DADBF",
-  "COMM": "#7C41FE",
-  "COMP": "#3B34AD",
-  "ECON": "#7CDEFC",
-  "EDUC": "#3CD7A8",
-  "ELEE": "#8F61C1",
-  "ENGL": "#3250A9",
-  "ENGR": "#2E4B94",
-  "ENTR": "#60477B",
-  "EXER": "#364EA9",
-  "FREN": "#13C5CA",
-  "GEOL": "#200787",
-  "GERM": "#350C94",
-  "GOBL": "#9FA0ED",
-  "GREK": "#045FC5",
-  "HIST": "#4A34D9",
-  "HUMA": "#4DAB9E",
-  "LATN": "#06A0A0",
-  "LEGL": "#5108D4",
-  "MATH": "#2F7293",
-  "MECE": "#1261A8",
-  "MUSI": "#6DBEF5",
-  "PHIL": "#00A5D1",
-  "PHYE": "#57AB94",
-  "PHYS": "#15939C",
-  "POLS": "#73AAF4",
-  "PSYC": "#745BDC",
-  "RELI": "#093C98",
-  "SCIC": "#39B3A5",
-  "SEDU": "#45E2DF",
-  "SOCI": "#8C8F82",
-  "SOCW": "#68C9BF",
-  "SPAN": "#1A5790",
-  "SSFT": "#05B1E4",
-  "THEA": "#677ACE",
-  "WRIT": "#8868F6"
+    "ABRD": "#7A8AF5",
+    "ACCT": "#5DBCBC",
+    "ART": "#61E8C4",
+    "ASTR": "#171A8D",
+    "BIOL": "#0A20C3",
+    "BUSA": "#4C9AF3",
+    "CHEM": "#3942DF",
+    "CHIN": "#3DADBF",
+    "COMM": "#7C41FE",
+    "COMP": "#3B34AD",
+    "ECON": "#7CDEFC",
+    "EDUC": "#3CD7A8",
+    "ELEE": "#8F61C1",
+    "ENGL": "#3250A9",
+    "ENGR": "#2E4B94",
+    "ENTR": "#60477B",
+    "EXER": "#364EA9",
+    "FREN": "#13C5CA",
+    "GEOL": "#200787",
+    "GERM": "#350C94",
+    "GOBL": "#9FA0ED",
+    "GREK": "#045FC5",
+    "HIST": "#4A34D9",
+    "HUMA": "#4DAB9E",
+    "LATN": "#06A0A0",
+    "LEGL": "#5108D4",
+    "MATH": "#2F7293",
+    "MECE": "#1261A8",
+    "MUSI": "#6DBEF5",
+    "PHIL": "#00A5D1",
+    "PHYE": "#57AB94",
+    "PHYS": "#15939C",
+    "POLS": "#73AAF4",
+    "PSYC": "#745BDC",
+    "RELI": "#093C98",
+    "SCIC": "#39B3A5",
+    "SEDU": "#45E2DF",
+    "SOCI": "#8C8F82",
+    "SOCW": "#68C9BF",
+    "SPAN": "#1A5790",
+    "SSFT": "#05B1E4",
+    "THEA": "#677ACE",
+    "WRIT": "#8868F6"
 };
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
@@ -210,8 +210,7 @@ function updateCalendar() {
                     event["backgroundColor"] = "white";
                     event["borderColor"] = "#da211e";
                     event["textColor"] = "black";
-                }
-                else {
+                } else {
                     event["color"] = colors[code.substring(0, 4)];
                 }
                 // add Event Source Object to containing object
@@ -278,8 +277,7 @@ function printCourseCodes() {
         var inside = $("<div>")
             .text('Select some courses first!')
             .appendTo(coursePopup);
-    }
-    else {
+    } else {
         // Add the HTML code for each course that is in the selected courses
         for (var code in selectedCourses) {
             var divtarget = "div-target" + count.toString();
@@ -296,9 +294,9 @@ function printCourseCodes() {
             $("<div>")
                 .addClass('row top-buffer')
                 .html('<div class="col-xs-12 container-center">' +
-                '<div class="copy-boxes col-xs-4" id=' + divtarget + '>' + code + '</div>' +
-                '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-3" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
-                '<div class="Prereq-boxes col-xs-5">' + prer + '</div></div>')
+                    '<div class="copy-boxes col-xs-4" id=' + divtarget + '>' + code + '</div>' +
+                    '<button id="copyButton" class="' + btn + ' btn btn-info col-xs-3" data-clipboard-action="copy" data-clipboard-target="#' + divtarget + '"> Copy </button>' +
+                    '<div class="Prereq-boxes col-xs-5">' + prer + '</div></div>')
                 .appendTo(coursePopup);
 
             // The code to copy the buttons
@@ -334,27 +332,27 @@ function displayMealTime(cafeteria = currentMealTime) {
 
 }
 
-function copyMessage() {
+function copyMessage(course) {
     $.notify({
         // options
-        message: 'Course Code Copied Successfully!'
+        message: 'Course Code ' + course + ' Copied Successfully!'
     }, {
-            // settings
-            type: 'success',
-            element: 'body',
-            allow_dismiss: false,
-            newest_on_top: true,
-            placement: {
-                from: "bottom",
-                align: "left"
-            },
-            delay: 750,
-            z_index: 10031,
-            animate: {
-                enter: 'animated fadeInDown',
-                exit: 'animated fadeOutUp'
-            },
-            template: '<div data-notify="container" class="col-xs-11 col-sm-2 alert alert-{0}" role="alert">' +
+        // settings
+        type: 'success',
+        element: 'body',
+        allow_dismiss: false,
+        newest_on_top: true,
+        placement: {
+            from: "bottom",
+            align: "left"
+        },
+        delay: 750,
+        z_index: 10031,
+        animate: {
+            enter: 'animated fadeInDown',
+            exit: 'animated fadeOutUp'
+        },
+        template: '<div data-notify="container" class="col-xs-11 col-sm-2 alert alert-{0}" role="alert">' +
             '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
             '<span data-notify="icon"></span> ' +
             '<span data-notify="title">{1}</span> ' +
@@ -364,14 +362,14 @@ function copyMessage() {
             '</div>' +
             '<a href="{3}" target="{4}" data-notify="url"></a>' +
             '</div>'
-        });
+    });
 }
 
 // search list of filtered courses for query and add to searchedCourses
 function searchCourses(query) {
     searchedCourses = {};
     var selector = 0;
-	var dept = "ChristianWuzHere";
+    var dept = "ChristianWuzHere";
     query = query.toUpperCase().trim();
 
     // return everything if there is no query
@@ -381,15 +379,15 @@ function searchCourses(query) {
         return;
     }
 
-	// Add the proper department abbreviation to the query
-	for (var queryDepartment in departmentNames) {
-		//if (queryDepartment.indexOf(query) !== -1) {
-		if(queryDepartment.includes(query)){
-			dept = departmentNames[queryDepartment];
-			//query = query + " " + departmentNames[queryDepartment];
-			break;
-		}
-	}
+    // Add the proper department abbreviation to the query
+    for (var queryDepartment in departmentNames) {
+        //if (queryDepartment.indexOf(query) !== -1) {
+        if (queryDepartment.includes(query)) {
+            dept = departmentNames[queryDepartment];
+            //query = query + " " + departmentNames[queryDepartment];
+            break;
+        }
+    }
 
 
     if (departmentNames[query]) {
@@ -403,7 +401,7 @@ function searchCourses(query) {
                 }
             }
         }
-    }else{
+    } else {
         // Go through the list of courses that match the filters and check for matches with the search query
         for (var courseCode in filteredCourses) {
             if (courseCode.indexOf(query) !== -1 || filteredCourses[courseCode][selector]["ShortTitle"].indexOf(query) !== -1 || filteredCourses[courseCode][selector]["LongTitle"].indexOf(query) !== -1 || courseCode.includes(dept)) {
@@ -440,8 +438,8 @@ function displaySearchResults(rebuild = false) {
         courseTable.scrollTop(0);
     }
 
-        //  go thru results and hide/toggle active
-    $("#results-table .course_link").each(function (index) {
+    //  go thru results and hide/toggle active
+    $("#results-table .course_link").each(function(index) {
         var $this = $(this);
         var code = $this.attr("data-code");
 
@@ -620,7 +618,7 @@ function detectConflicts() {
 
 // code to execute on document ready
 // event listeners created here
-$(function () {
+$(function() {
     filteredCourses = allCourses;
     searchedCourses = filteredCourses;
 
@@ -642,14 +640,13 @@ $(function () {
         eventLimit: true, // allow "more" link when too many events
         weekends: false,
         weekNumbers: false,
-        eventRender: function (event, element) {
+        eventRender: function(event, element) {
             var code = event.id;
             var placement;
             if (!allCourses[code]) return;
             if (allCourses[code][0]["BeginTime"] && moment(event.start).hour() > 14) {
                 placement = "top";
-            }
-            else {
+            } else {
                 placement = "bottom";
             }
             var warning = "";
@@ -665,20 +662,20 @@ $(function () {
             }
             $(element).popover({
                 title: allCourses[code][0]["LongTitle"],
-                content: "<b>Course Code:</b> " + code
-                + "<br /><b>Building:</b> " + allCourses[code][0]["Building"]
-                + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
-                + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
-                + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
-                + "<br /><b>Prereqs: </b> " + prer
-                + warning
-                + '<br /><br /><div style="text-align:center;"><button type="button" data-code="' + code
-                + '" class="btn btn-default remove-course-btn" aria-label="Remove Course"><span class="glyphicon glyphicon-remove x-icon-in-button" aria-hidden="true"></span><span> Remove Course</span></button></div>',
+                content: "<b>Course Code:</b> " + code +
+                    "<br /><b>Building:</b> " + allCourses[code][0]["Building"] +
+                    "<br /><b>Room:</b> " + allCourses[code][0]["Room"] +
+                    "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"] +
+                    "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"] +
+                    "<br /><b>Prereqs: </b> " + prer +
+                    warning +
+                    '<br /><br /><div style="text-align:center;"><button type="button" data-code="' + code +
+                    '" class="btn btn-default remove-course-btn" aria-label="Remove Course"><span class="glyphicon glyphicon-remove x-icon-in-button" aria-hidden="true"></span><span> Remove Course</span></button></div>',
                 placement: placement,
                 trigger: "manual",
                 html: true,
                 container: "#calendar"
-            }).click(function (e) {
+            }).click(function(e) {
                 $('.fc-event').not(this).popover("hide"); /* hide other popovers */
                 $(this).popover('toggle'); /* show popover now it's setup */
                 e.preventDefault();
@@ -688,41 +685,41 @@ $(function () {
     });
 
     // stop event propagation when clicking on popovers
-    $(document).on("click", ".popover", function (e) {
+    $(document).on("click", ".popover", function(e) {
         e.stopPropagation();
     });
 
     // hide popovers on general clicks
-    $(document).on("click", function (e) {
+    $(document).on("click", function(e) {
         $('#calendar .popover').popover("hide");
     });
 
-    $("#reset_button").click(function () {
+    $("#reset_button").click(function() {
         clearCourses();
         updateSelectedCourses();
     });
 
-    $("#searchfield").on("input", function (event) {
+    $("#searchfield").on("input", function(event) {
         searchCourses($("#searchfield").val());
     });
 
-    $("#course_codes_button").click(function () {
+    $("#course_codes_button").click(function() {
         detectConflicts();
         printCourseCodes();
     });
 
     $(".filter-item").change(filterCourses);
 
-    $(".searchResultsTab").click(function () {
+    $(".searchResultsTab").click(function() {
         displaySearchResults();
     });
 
-    $(".selectedCoursesTab").click(function () {
+    $(".selectedCoursesTab").click(function() {
         updateSelectedCourses();
     });
 
     // click handler for course result links
-    $(document.body).on("click", ".course_link", function (event) {
+    $(document.body).on("click", ".course_link", function(event) {
         var link = $(event.currentTarget);
         var code = link.attr("data-code");
         if (selectedCourses[code]) {
@@ -737,7 +734,7 @@ $(function () {
     });
 
     // click handler for course remove button
-    $(document.body).on("click", ".remove-course-btn", function (event) {
+    $(document.body).on("click", ".remove-course-btn", function(event) {
         var btn = $(event.currentTarget);
         var code = btn.attr("data-code");
         if (selectedCourses[code]) {
@@ -751,18 +748,22 @@ $(function () {
     });
 
 
-    $(document).on('click', '#copyButton', function () {
-        copyMessage();
+    $(document).on('click', '#copyButton', function() {
+        var id = $(this).attr("class");
+
+        id = id.substr(id.indexOf("btn") + 3, id.indexOf(" btn btn-info") - 3);
+        var temp = $("#div-target"+id).text();
+        copyMessage(temp);
     });
 
-    $("#tips_button").click(function () {
+    $("#tips_button").click(function() {
         // Initialize the tour for the Tips
         tips.init();
         // Start the tips tour
         tips.start(true);
     });
 
-    $("#tutorial_button").click(function () {
+    $("#tutorial_button").click(function() {
         // Initialize the tour for the Tutorial
         tutorial.init();
 
@@ -773,17 +774,17 @@ $(function () {
     });
 
     // Add the meal time display code here
-    $("div input:radio").change(function () {
-        if(document.getElementById("none").checked) {
+    $("div input:radio").change(function() {
+        if (document.getElementById("none").checked) {
             displayMealTime("clear");
         }
-        if(document.getElementById("hicks").checked) {
+        if (document.getElementById("hicks").checked) {
             displayMealTime("hicks");
         }
-        if(document.getElementById("map").checked) {
+        if (document.getElementById("map").checked) {
             displayMealTime("map");
         }
-        if(document.getElementById("sac").checked) {
+        if (document.getElementById("sac").checked) {
             displayMealTime("sac");
         }
     });
