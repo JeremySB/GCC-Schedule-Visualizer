@@ -1,6 +1,7 @@
 // Tips Tour instantiation
 var tips = new Tour({
     name: "tips",
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>&laquo; Prev</button><button class='btn btn-default' data-role='next'>Next &#187;</button><button class='btn btn-default' data-role='end'>Close tips</button></div></div>",
     storage: false,
     steps: [{
         element: "#tips_button",
@@ -89,12 +90,12 @@ var tutorial = new Tour({
         content: "Here's were you can see all your selected courses on a real calendar. You can click on any of the courses to see some more info and to remove them from the calendar."
     },
     {
-        element: "#tutorial_button",
+        element: "#buttons",
         placement: "auto top",
         backdrop: "true",
         backdropPadding: {
             top: 5,
-            right: 355,
+            right: 5,
             bottom: 5,
             left: 5
         },
@@ -107,10 +108,10 @@ var tutorial = new Tour({
         backdrop: "true",
         backdropPadding: {
             top: 5,
-            right: 220,
+            right: 5,
             bottom: 5,
-            left: 81
-        },
+            left: 5
+    },
         title: "Step #6",
         content: "Here's were you can view some sweet tips about scheduling, courtesy of your local tip chef Bobby Brown."
     },
@@ -120,9 +121,9 @@ var tutorial = new Tour({
         backdrop: "true",
         backdropPadding: {
             top: 5,
-            right: 150,
+            right: 5,
             bottom: 5,
-            left: 215
+            left: 5
         },
         title: "Step #7",
         content: "If you feel the need to erase everything you have ever worked for then you came to the wrong place. " +
@@ -136,7 +137,7 @@ var tutorial = new Tour({
             top: 5,
             right: 5,
             bottom: 5,
-            left: 280
+            left: 5
         },
         title: "Step #8",
         content: "At the end of the day, you'll need to click this button to actually get the information you'll have to paste into myGCC's academic page to add the courses you've pick out. " +
@@ -314,7 +315,7 @@ var hicksTimes = [{
     title: 'FridayDinner',
     id: 'hicks',
     start: '2016-08-05T16:00:00',
-    end: '2016-08-05T19:15:00',
+    end: '2016-08-05T19:30:00',
     rendering: 'background'
 }
 ];
@@ -329,7 +330,7 @@ var sacTimes = [{
 {
     title: 'MondayLunch',
     id: 'sac',
-    start: '2016-08-01T12:35:00',
+    start: '2016-08-01T12:45:00',
     end: '2016-08-01T15:45:00',
     rendering: 'background'
 },
@@ -350,7 +351,7 @@ var sacTimes = [{
 {
     title: 'TuesdayLunch',
     id: 'sac',
-    start: '2016-08-02T12:35:00',
+    start: '2016-08-02T12:45:00',
     end: '2016-08-02T15:45:00',
     rendering: 'background'
 },
@@ -371,7 +372,7 @@ var sacTimes = [{
 {
     title: 'WednesdayLunch',
     id: 'sac',
-    start: '2016-08-03T12:35:00',
+    start: '2016-08-03T12:45:00',
     end: '2016-08-03T15:45:00',
     rendering: 'background'
 },
@@ -392,7 +393,7 @@ var sacTimes = [{
 {
     title: 'ThursdayLunch',
     id: 'sac',
-    start: '2016-08-04T12:35:00',
+    start: '2016-08-04T12:45:00',
     end: '2016-08-04T15:45:00',
     rendering: 'background'
 },
@@ -413,7 +414,7 @@ var sacTimes = [{
 {
     title: 'FridayLunch',
     id: 'sac',
-    start: '2016-08-05T12:35:00',
+    start: '2016-08-05T12:45:00',
     end: '2016-08-05T15:45:00',
     rendering: 'background'
 },

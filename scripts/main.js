@@ -380,7 +380,7 @@ function searchCourses(query) {
         displaySearchResults();
         return;
     }
-	
+
 	// Add the proper department abbreviation to the query
 	for (var queryDepartment in departmentNames) {
 		//if (queryDepartment.indexOf(query) !== -1) {
@@ -439,7 +439,7 @@ function displaySearchResults(rebuild = false) {
         courseTable.append(fragment);
         courseTable.scrollTop(0);
     }
-   
+
         //  go thru results and hide/toggle active
     $("#results-table .course_link").each(function (index) {
         var $this = $(this);
@@ -659,6 +659,10 @@ $(function () {
             if (sectionConflicts[code]) {
                 warning += "<br /><span style='color:red;'><b>Warning:</b> Multiple sections of same course added.</span>"
             }
+            var prer = PrereqCourseCode[code.substring(0, 8)];
+            if (!prer) {
+                prer = "none";
+            }
             $(element).popover({
                 title: allCourses[code][0]["LongTitle"],
                 content: "<b>Course Code:</b> " + code
@@ -666,6 +670,7 @@ $(function () {
                 + "<br /><b>Room:</b> " + allCourses[code][0]["Room"]
                 + "<br /><b>Capacity:</b> " + allCourses[code][0]["Capacity"]
                 + "<br /><b>Enrollment:</b> " + allCourses[code][0]["Enrollment"]
+                + "<br /><b>Prereqs: </b> " + prer
                 + warning
                 + '<br /><br /><div style="text-align:center;"><button type="button" data-code="' + code
                 + '" class="btn btn-default remove-course-btn" aria-label="Remove Course"><span class="glyphicon glyphicon-remove x-icon-in-button" aria-hidden="true"></span><span> Remove Course</span></button></div>',
