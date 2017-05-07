@@ -712,6 +712,7 @@ $(function() {
         $("#course").val("");
         $("#time").val("");
         $("#department").val("");
+        $("#searchfield").val("").trigger("input");
     });
 
     $("#searchfield").on("input", function(event) {
