@@ -311,13 +311,14 @@ function printCourseCodes() {
 }
 
 function displayMealTime(cafeteria = currentMealTime) {
-
+    // Remove meal times if they are displaying
     calendar.fullCalendar('removeEvents', "hicks");
     calendar.fullCalendar('removeEvents', "map");
     calendar.fullCalendar('removeEvents', "sac");
 
     currentMealTime = cafeteria;
 
+    // Display new meal times if there is an option selected
     switch (cafeteria) {
         case "hicks":
             calendar.fullCalendar('renderEvents', hicksTimes, true);
@@ -329,12 +330,11 @@ function displayMealTime(cafeteria = currentMealTime) {
             calendar.fullCalendar('renderEvents', sacTimes, true);
             break;
     }
-
 }
 
 function copyMessage(code = "") {
     var message;
-
+    // code !== "" if one was passed in
     if (code !== "") {
         message = 'Course Code "'+code+'" Copied Successfully!';
     }
@@ -342,6 +342,7 @@ function copyMessage(code = "") {
         message = 'Course Code Copied Successfully!';
     }
 
+    // Genreate the notification message to display
     $.notify({
         // options
         message: message
@@ -708,6 +709,7 @@ $(function() {
     $("#reset_button").click(function() {
         clearCourses();
         updateSelectedCourses();
+        // Reset all input values
         $("#week").val("");
         $("#course").val("");
         $("#time").val("");
