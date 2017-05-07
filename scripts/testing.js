@@ -552,30 +552,30 @@ $(function() {
 });
 
 function filterDays() {
-    filterCoursesTest(null, null, null, "M");
-    testFilterDays("M", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "T");
-    testFilterDays("T", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "W");
-    testFilterDays("W", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "R");
-    testFilterDays("R", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "F");
-    testFilterDays("F", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "MWF");
-    testFilterDays("MWF", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "TR");
-    testFilterDays("TR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "MWFR");
-    testFilterDays("MWFR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "MWFT");
-    testFilterDays("MWFT", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "MFTR");
-    testFilterDays("MFTR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "MW");
-    testFilterDays("MW", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, null, "WF");
-    testFilterDays("WF", Object.keys(filteredCoursesTest).length);
+    filterCourses(null, null, null, "M");
+    testFilterDays("M", 3);
+    filterCourses(null, null, null, "T");
+    testFilterDays("T", 3);
+    filterCourses(null, null, null, "W");
+    testFilterDays("W", 1);
+    filterCourses(null, null, null, "R");
+    testFilterDays("R", 1);
+    filterCourses(null, null, null, "F");
+    testFilterDays("F", 1);
+    filterCourses(null, null, null, "MWF");
+    testFilterDays("MWF", 18);
+    filterCourses(null, null, null, "TR");
+    testFilterDays("TR", 9);
+    filterCourses(null, null, null, "MWFR");
+    testFilterDays("MWFR", 3);
+    filterCourses(null, null, null, "MWFT");
+    testFilterDays("MWFT", 1);
+    filterCourses(null, null, null, "MFTR");
+    testFilterDays("MFTR", 1);
+    filterCourses(null, null, null, "MW");
+    testFilterDays("MW", 1);
+    filterCourses(null, null, null, "WF");
+    testFilterDays("WF", 1);
 }
 
 function testFilterDays(day, matching) {
@@ -597,12 +597,12 @@ function testFilterDays(day, matching) {
 }
 
 function filterTimes() {
-    filterCoursesTest(null, "Morning", null, null);
-    testFilterTimes("Morning", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, "Afternoon", null, null);
-    testFilterTimes("Afternoon", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, "Evening", null, null);
-    testFilterTimes("Evening", Object.keys(filteredCoursesTest).length);
+    filterCourses(null, "Morning", null, null);
+    testFilterTimes("Morning", 20);
+    filterCourses(null, "Afternoon", null, null);
+    testFilterTimes("Afternoon", 21);
+    filterCourses(null, "Evening", null, null);
+    testFilterTimes("Evening", 3);
 }
 
 function testFilterTimes(time, matching) {
@@ -634,92 +634,92 @@ function testFilterTimes(time, matching) {
 }
 
 function filterDepartment() {
-    filterCoursesTest("ABRD", null, null, null);
-    testFilterDepartment("ABRD", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ACCT", null, null, null);
-    testFilterDepartment("ACCT", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ART", null, null, null);
-    testFilterDepartment("ART", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ASTR", null, null, null);
-    testFilterDepartment("ASTR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("BIOL", null, null, null);
-    testFilterDepartment("BIOL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("BUSA", null, null, null);
-    testFilterDepartment("BUSA", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("CHEM", null, null, null);
-    testFilterDepartment("CHEM", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("CHIN", null, null, null);
-    testFilterDepartment("CHIN", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("COMM", null, null, null);
-    testFilterDepartment("COMM", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("COMP", null, null, null);
-    testFilterDepartment("COMP", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ECON", null, null, null);
-    testFilterDepartment("ECON", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("EDUC", null, null, null);
-    testFilterDepartment("EDUC", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ELEE", null, null, null);
-    testFilterDepartment("ELEE", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ENGL", null, null, null);
-    testFilterDepartment("ENGL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ENGR", null, null, null);
-    testFilterDepartment("ENGR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("ENTR", null, null, null);
-    testFilterDepartment("ENTR", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("EXER", null, null, null);
-    testFilterDepartment("EXER", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("FREN", null, null, null);
-    testFilterDepartment("FREN", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("GEOL", null, null, null);
-    testFilterDepartment("GEOL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("GERM", null, null, null);
-    testFilterDepartment("GERM", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("GOBL", null, null, null);
-    testFilterDepartment("GOBL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("GREK", null, null, null);
-    testFilterDepartment("GREK", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("HIST", null, null, null);
-    testFilterDepartment("HIST", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("HUMA", null, null, null);
-    testFilterDepartment("HUMA", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("LATN", null, null, null);
-    testFilterDepartment("LATN", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("LEGL", null, null, null);
-    testFilterDepartment("LEGL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("MATH", null, null, null);
-    testFilterDepartment("MATH", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("MECE", null, null, null);
-    testFilterDepartment("MECE", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("MUSI", null, null, null);
-    testFilterDepartment("MUSI", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("PHIL", null, null, null);
-    testFilterDepartment("PHIL", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("PHYE", null, null, null);
-    testFilterDepartment("PHYE", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("PHYS", null, null, null);
-    testFilterDepartment("PHYS", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("POLS", null, null, null);
-    testFilterDepartment("POLS", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("PSYC", null, null, null);
-    testFilterDepartment("PSYC", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("RELI", null, null, null);
-    testFilterDepartment("RELI", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SCIC", null, null, null);
-    testFilterDepartment("SCIC", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SEDU", null, null, null);
-    testFilterDepartment("SEDU", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SOCI", null, null, null);
-    testFilterDepartment("SOCI", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SOCW", null, null, null);
-    testFilterDepartment("SOCW", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SPAN", null, null, null);
-    testFilterDepartment("SPAN", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("SSFT", null, null, null);
-    testFilterDepartment("SSFT", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("THEA", null, null, null);
-    testFilterDepartment("THEA", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest("WRIT", null, null, null);
-    testFilterDepartment("WRIT", Object.keys(filteredCoursesTest).length);
+    filterCourses("ABRD", null, null, null);
+    testFilterDepartment("ABRD", 1);
+    filterCourses("ACCT", null, null, null);
+    testFilterDepartment("ACCT", 1);
+    filterCourses("ART", null, null, null);
+    testFilterDepartment("ART", 1);
+    filterCourses("ASTR", null, null, null);
+    testFilterDepartment("ASTR", 1);
+    filterCourses("BIOL", null, null, null);
+    testFilterDepartment("BIOL", 1);
+    filterCourses("BUSA", null, null, null);
+    testFilterDepartment("BUSA", 1);
+    filterCourses("CHEM", null, null, null);
+    testFilterDepartment("CHEM", 1);
+    filterCourses("CHIN", null, null, null);
+    testFilterDepartment("CHIN", 1);
+    filterCourses("COMM", null, null, null);
+    testFilterDepartment("COMM", 1);
+    filterCourses("COMP", null, null, null);
+    testFilterDepartment("COMP", 1);
+    filterCourses("ECON", null, null, null);
+    testFilterDepartment("ECON", 1);
+    filterCourses("EDUC", null, null, null);
+    testFilterDepartment("EDUC", 1);
+    filterCourses("ELEE", null, null, null);
+    testFilterDepartment("ELEE", 1);
+    filterCourses("ENGL", null, null, null);
+    testFilterDepartment("ENGL", 1);
+    filterCourses("ENGR", null, null, null);
+    testFilterDepartment("ENGR", 1);
+    filterCourses("ENTR", null, null, null);
+    testFilterDepartment("ENTR", 1);
+    filterCourses("EXER", null, null, null);
+    testFilterDepartment("EXER", 1);
+    filterCourses("FREN", null, null, null);
+    testFilterDepartment("FREN", 1);
+    filterCourses("GEOL", null, null, null);
+    testFilterDepartment("GEOL", 1);
+    filterCourses("GERM", null, null, null);
+    testFilterDepartment("GERM", 1);
+    filterCourses("GOBL", null, null, null);
+    testFilterDepartment("GOBL", 1);
+    filterCourses("GREK", null, null, null);
+    testFilterDepartment("GREK", 1);
+    filterCourses("HIST", null, null, null);
+    testFilterDepartment("HIST", 1);
+    filterCourses("HUMA", null, null, null);
+    testFilterDepartment("HUMA", 1);
+    filterCourses("LATN", null, null, null);
+    testFilterDepartment("LATN", 1);
+    filterCourses("LEGL", null, null, null);
+    testFilterDepartment("LEGL", 1);
+    filterCourses("MATH", null, null, null);
+    testFilterDepartment("MATH", 3);
+    filterCourses("MECE", null, null, null);
+    testFilterDepartment("MECE", 1);
+    filterCourses("MUSI", null, null, null);
+    testFilterDepartment("MUSI", 1);
+    filterCourses("PHIL", null, null, null);
+    testFilterDepartment("PHIL", 1);
+    filterCourses("PHYE", null, null, null);
+    testFilterDepartment("PHYE", 1);
+    filterCourses("PHYS", null, null, null);
+    testFilterDepartment("PHYS", 1);
+    filterCourses("POLS", null, null, null);
+    testFilterDepartment("POLS", 1);
+    filterCourses("PSYC", null, null, null);
+    testFilterDepartment("PSYC", 1);
+    filterCourses("RELI", null, null, null);
+    testFilterDepartment("RELI", 1);
+    filterCourses("SCIC", null, null, null);
+    testFilterDepartment("SCIC", 1);
+    filterCourses("SEDU", null, null, null);
+    testFilterDepartment("SEDU", 1);
+    filterCourses("SOCI", null, null, null);
+    testFilterDepartment("SOCI", 1);
+    filterCourses("SOCW", null, null, null);
+    testFilterDepartment("SOCW", 1);
+    filterCourses("SPAN", null, null, null);
+    testFilterDepartment("SPAN", 1);
+    filterCourses("SSFT", null, null, null);
+    testFilterDepartment("SSFT", 1);
+    filterCourses("THEA", null, null, null);
+    testFilterDepartment("THEA", 1);
+    filterCourses("WRIT", null, null, null);
+    testFilterDepartment("WRIT", 1);
 }
 
 function testFilterDepartment(department, matching) {
@@ -742,14 +742,14 @@ function testFilterDepartment(department, matching) {
 }
 
 function filterNumbers() {
-    filterCoursesTest(null, null, "100", null);
-    testFilterNumbers("100", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, "200", null);
-    testFilterNumbers("200", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, "300", null);
-    testFilterNumbers("300", Object.keys(filteredCoursesTest).length);
-    filterCoursesTest(null, null, "400", null);
-    testFilterNumbers("400", Object.keys(filteredCoursesTest).length);
+    filterCourses(null, null, "100", null);
+    testFilterNumbers("100", 22);
+    filterCourses(null, null, "200", null);
+    testFilterNumbers("200", 14);
+    filterCourses(null, null, "300", null);
+    testFilterNumbers("300", 7);
+    filterCourses(null, null, "400", null);
+    testFilterNumbers("400", 2);
 }
 
 function testFilterNumbers(number, matching) {
@@ -770,73 +770,4 @@ function testFilterNumbers(number, matching) {
     } else {
         console.log("Testing-" + number + " success");
     }
-}
-// filter all courses by selected filters and store the resulting courses in filteredCoursesTest
-function filterCoursesTest(department, time, course, week) {
-    filteredCoursesTest = {};
-
-    for (var code in testingCourses) {
-        var selector = 0; // usually the first item is the class, other ones might be labs
-        var cur = testingCourses[code][selector];
-
-        // check if section doesn't match a filter, and if so, continue to next
-
-        // department filtering
-        if (department !== null && department !== code.substr(0, code.indexOf(" "))) {
-            continue; // go to next section
-        }
-
-        // time of day filtering
-        if (time !== null) {
-            // if course does not have a time (e.g. internship) don't show it
-            if (!cur["BeginTime"]) continue;
-
-            // get only the hour from the time string, and parse to int
-            var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
-
-            // check if hour time matches filter and skip adding this course if so
-            if (time === "Morning" && sectionHour >= 12)
-                continue;
-            else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-                continue;
-            else if (time === "Evening" && sectionHour < 18)
-                continue;
-        }
-
-        // Filter by course number
-        if (course !== null) {
-            var courseNumber = code.substr(code.indexOf(" ") + 1, 1);
-            var courseFilter = course.substr(0, 1);
-
-            if (courseFilter !== courseNumber) continue;
-        }
-
-        // filter by which days the class meets
-        if (week !== null) {
-            // don't add this course if it doesn't meet
-            if (!cur["Meets"]) continue;
-
-            var meets = cur["Meets"];
-
-            // get extra letters from other meeting times in this section
-            if (testingCourses[code][1]) meets = meets + testingCourses[code][1]["Meets"];
-
-            // check if every MTWTF letter is in the Meets string
-
-            var failed = false;
-            for (var i in week) {
-                if (meets.indexOf(week[i]) === -1) {
-                    failed = true;
-                    continue;
-                }
-                meets = meets.replace(week[i], '');
-            }
-            if (failed || meets.length != 0) continue;
-        }
-
-        filteredCoursesTest[code] = testingCourses[code];
-    }
-
-    // now update the search results
-    //console.log(Object.keys(filteredCoursesTest).length);
 }

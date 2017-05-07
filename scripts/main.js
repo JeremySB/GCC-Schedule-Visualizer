@@ -72,7 +72,7 @@ var colors = {
 };
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
-function filterCourses() {
+function filterCourses(department, time, course, week) {
     filteredCourses = {};
 
     var department = $("#department").val();
