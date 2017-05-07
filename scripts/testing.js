@@ -1,3 +1,4 @@
+//Courses used in test file
 allCourses = Object.freeze({
     "ABRD 300 A": [{
         "ShortTitle": "STUDY ABROAD",
@@ -399,8 +400,8 @@ allCourses = Object.freeze({
         "Meets": "WF",
         "Building": "HAL",
         "Room": "108",
-
         "Enrollment": "63",
+		
         "Capacity": "75"
     }],
     "PHYS 102 B": [{
@@ -540,7 +541,7 @@ allCourses = Object.freeze({
 var filteredCoursesTest = {};
 
 $(function() {
-    // SSet up stuff
+    // Set up stuff
     // Test days of week
     filterDays();
     // Test course numbers
@@ -551,6 +552,7 @@ $(function() {
     filterTimes();
 });
 
+//Apply different day of the week filter options
 function filterDays() {
     filterCoursesTest(null, null, null, "M");
     testFilterDays("M", 3);
@@ -578,6 +580,7 @@ function filterDays() {
     testFilterDays("WF", 1);
 }
 
+//Test those day of the week filter results
 function testFilterDays(day, matching) {
     var count = Object.keys(filteredCourses).length;
 
@@ -588,6 +591,7 @@ function testFilterDays(day, matching) {
     }
 }
 
+//Apply different time of day filter options
 function filterTimes() {
     filterCoursesTest(null, "Morning", null, null);
     testFilterTimes("Morning", 20);
@@ -597,6 +601,7 @@ function filterTimes() {
     testFilterTimes("Evening", 3);
 }
 
+//Test those time of day filter results
 function testFilterTimes(time, matching) {
     var count = Object.keys(filteredCourses).length;
 
@@ -607,6 +612,7 @@ function testFilterTimes(time, matching) {
     }
 }
 
+//Apply different department filter options
 function filterDepartment() {
     filterCoursesTest("ABRD", null, null, null);
     testFilterDepartment("ABRD", 1);
@@ -696,6 +702,7 @@ function filterDepartment() {
     testFilterDepartment("WRIT", 1);
 }
 
+//Test those department filter results
 function testFilterDepartment(department, matching) {
     var count = Object.keys(filteredCourses).length;
 
@@ -706,6 +713,7 @@ function testFilterDepartment(department, matching) {
     }
 }
 
+//Apply different course range filter options
 function filterNumbers() {
     filterCoursesTest(null, null, "100", null);
     testFilterNumbers("100", 22);
@@ -717,6 +725,7 @@ function filterNumbers() {
     testFilterNumbers("400", 2);
 }
 
+//Test those course range filter results
 function testFilterNumbers(number, matching) {
     var count = Object.keys(filteredCourses).length;
 
