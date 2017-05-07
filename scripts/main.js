@@ -240,6 +240,7 @@ function clearCourses() {
     detectConflicts();
     calendar.fullCalendar('removeEvents');
     displaySearchResults();
+    displayMealTime();
 }
 
 // print out course codes and copy buttons to the copy course codes modal
@@ -587,18 +588,29 @@ function updateSelectedCourses() {
     }
 }
 
+// Detect courses in selectedCourses that overlap, and add them to timeConflicts object
 function detectConflicts() {
     sectionConflicts = {};
     timeConflicts = {};
 
+    // loop through every course in selected courses
     for (var code_current in selectedCourses) {
+        // loop through all times in the course
         for (var part_current = 0; part_current <= 1; part_current++) {
+            // go to next course if doesn't have needed data
             if (!selectedCourses[code_current][part_current] || !selectedCourses[code_current][part_current]["BeginTime"]) continue;
+
+            // grab int versions of the time
             var start = parseInt(selectedCourses[code_current][part_current]["BeginTime"].replace(":", ""));
             var end = parseInt(selectedCourses[code_current][part_current]["EndTime"].replace(":", ""));
+
+            // now loop though every other selected course
             for (var code_other in selectedCourses) {
                 if (timeConflicts[code_other] && sectionConflicts[code_other]) continue; //already covered this
+
                 if (code_current != code_other) {
+
+                    // detect if they have the same course number
                     var code_current_trim = code_current.substring(0, 8);
                     var code_other_trim = code_other.substring(0, 8);
                     if (code_current_trim == code_other_trim) {
@@ -606,14 +618,17 @@ function detectConflicts() {
                         sectionConflicts[code_other] = selectedCourses[code_other];
                     }
 
+                    // detect if the times overlap
                     for (var part_other = 0; part_other <= 1; part_other++) {
                         if (!selectedCourses[code_other][part_other] || !selectedCourses[code_other][part_other]["BeginTime"]) continue;
                         var tstart = parseInt(selectedCourses[code_other][part_other]["BeginTime"].replace(":", ""));
                         var tend = parseInt(selectedCourses[code_other][part_other]["EndTime"].replace(":", ""));
 
+                        // see if events overlap
                         if (tstart < end && tend > start) {
                             var meets = selectedCourses[code_current][part_current]["Meets"];
                             for (var c = 0; c < meets.length; c++) {
+                                // make sure the times match
                                 if (selectedCourses[code_other][part_other]["Meets"].indexOf(meets[c]) !== -1) {
                                     timeConflicts[code_current] = selectedCourses[code_current];
                                     timeConflicts[code_other] = selectedCourses[code_other];
