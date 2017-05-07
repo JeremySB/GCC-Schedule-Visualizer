@@ -1,7 +1,7 @@
 // Tips Tour instantiation
 var tips = new Tour({
     name: "tips",
-    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>&laquo; Prev</button><button class='btn btn-default' data-role='next'>Next &#187;</button><button class='btn btn-default' data-role='end'>Close tips</button></div></div>",
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>&laquo; Prev</button><button class='btn btn-default' data-role='next'>Next &#187;</button><button class='btn btn-default' data-role='end'>Close Tips</button></div></div>",
     storage: false,
     steps: [{
         element: "#tips_button",

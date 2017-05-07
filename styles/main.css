@@ -132,6 +132,11 @@ h1.searchWord {
     text-align: right;
 }
 
+.pull-left {
+  text-align: left;
+  margin-left: 5px;
+}
+
 .x-icon-in-button {
     vertical-align: text-top;
 }
