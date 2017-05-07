@@ -311,6 +311,7 @@ function printCourseCodes() {
     }
 }
 
+// Display the meal times for the currently selected cafe
 function displayMealTime(cafeteria = currentMealTime) {
     // Remove meal times if they are displaying
     calendar.fullCalendar('removeEvents', "hicks");
@@ -333,6 +334,7 @@ function displayMealTime(cafeteria = currentMealTime) {
     }
 }
 
+// Displays a message confirming that the user copied a course code
 function copyMessage(code = "") {
     var message;
     // code !== "" if one was passed in
