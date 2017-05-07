@@ -236,10 +236,10 @@ function removeCourse(name) {
 // clear all selected courses
 function clearCourses() {
     selectedCourses = {};
+    filteredCourses = allCourses;
     detectConflicts();
     calendar.fullCalendar('removeEvents');
     displaySearchResults();
-    displayMealTime();
 }
 
 // print out course codes and copy buttons to the copy course codes modal
@@ -713,6 +713,7 @@ $(function() {
         $("#time").val("");
         $("#department").val("");
         $("#searchfield").val("").trigger("input");
+        displaySearchResults();
     });
 
     $("#searchfield").on("input", function(event) {

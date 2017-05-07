@@ -422,7 +422,7 @@ var sacTimes = [{
     title: 'FridayDinner',
     id: 'sac',
     start: '2016-08-05T16:00:00',
-    end: '2016-08-05T17:30:00',
+    end: '2016-08-05T19:30:00',
     rendering: 'background'
 }
 ];
