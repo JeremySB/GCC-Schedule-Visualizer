@@ -80,8 +80,6 @@ function filterCourses() {
     var course = $("#course").val();
     var week = $("#week").val();
 
-    var dkj = 3;
-
     for (var code in allCourses) {
         var selector = 0; // usually the first item is the class, other ones might be labs
         var cur = allCourses[code][selector];
