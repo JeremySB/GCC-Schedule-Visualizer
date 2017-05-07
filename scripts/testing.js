@@ -1,4 +1,4 @@
-testingCourses = Object.freeze({
+allCourses = Object.freeze({
     "ABRD 300 A": [{
         "ShortTitle": "STUDY ABROAD",
         "LongTitle": "STUDY ABROAD",
@@ -552,43 +552,35 @@ $(function() {
 });
 
 function filterDays() {
-    filterCourses(null, null, null, "M");
+    filterCoursesTest(null, null, null, "M");
     testFilterDays("M", 3);
-    filterCourses(null, null, null, "T");
+    filterCoursesTest(null, null, null, "T");
     testFilterDays("T", 3);
-    filterCourses(null, null, null, "W");
+    filterCoursesTest(null, null, null, "W");
     testFilterDays("W", 1);
-    filterCourses(null, null, null, "R");
+    filterCoursesTest(null, null, null, "R");
     testFilterDays("R", 1);
-    filterCourses(null, null, null, "F");
+    filterCoursesTest(null, null, null, "F");
     testFilterDays("F", 1);
-    filterCourses(null, null, null, "MWF");
+    filterCoursesTest(null, null, null, "MWF");
     testFilterDays("MWF", 18);
-    filterCourses(null, null, null, "TR");
+    filterCoursesTest(null, null, null, "TR");
     testFilterDays("TR", 9);
-    filterCourses(null, null, null, "MWFR");
-    testFilterDays("MWFR", 3);
-    filterCourses(null, null, null, "MWFT");
-    testFilterDays("MWFT", 1);
-    filterCourses(null, null, null, "MFTR");
-    testFilterDays("MFTR", 1);
-    filterCourses(null, null, null, "MW");
+    filterCoursesTest(null, null, null, "MWRF");
+    testFilterDays("MWRF", 3);
+    filterCoursesTest(null, null, null, "MTWF");
+    testFilterDays("MTWF", 1);
+    filterCoursesTest(null, null, null, "MTRF");
+    testFilterDays("MTRF", 1);
+    filterCoursesTest(null, null, null, "MW");
     testFilterDays("MW", 1);
-    filterCourses(null, null, null, "WF");
+    filterCoursesTest(null, null, null, "WF");
     testFilterDays("WF", 1);
 }
 
 function testFilterDays(day, matching) {
-    var count = 0;
-    for (var code in testingCourses) {
-        var cur = testingCourses[code][0];
-        var meets = cur["Meets"];
-        if (testingCourses[code][1]) meets = meets + testingCourses[code][1]["Meets"];
+    var count = Object.keys(filteredCourses).length;
 
-        if (meets == day) {
-            count++;
-        }
-    }
     if (count != matching) {
         console.log("Testing-" + day + " failed -- Got:" + count + " should be: " + matching);
     } else {
@@ -597,34 +589,16 @@ function testFilterDays(day, matching) {
 }
 
 function filterTimes() {
-    filterCourses(null, "Morning", null, null);
+    filterCoursesTest(null, "Morning", null, null);
     testFilterTimes("Morning", 20);
-    filterCourses(null, "Afternoon", null, null);
+    filterCoursesTest(null, "Afternoon", null, null);
     testFilterTimes("Afternoon", 21);
-    filterCourses(null, "Evening", null, null);
+    filterCoursesTest(null, "Evening", null, null);
     testFilterTimes("Evening", 3);
 }
 
 function testFilterTimes(time, matching) {
-    var count = 0;
-    for (var code in testingCourses) {
-        var cur = testingCourses[code][0];
-
-        if (!cur["BeginTime"]) continue;
-
-        // get only the hour from the time string, and parse to int
-        var sectionHour = parseInt(cur["BeginTime"].substr(0, cur["BeginTime"].indexOf(":")));
-
-        // check if hour time matches filter and skip adding this course if so
-        if (time === "Morning" && sectionHour >= 12)
-            continue;
-        else if (time === "Afternoon" && (sectionHour < 12 || sectionHour >= 18))
-            continue;
-        else if (time === "Evening" && sectionHour < 18)
-            continue;
-
-        count++;
-    }
+    var count = Object.keys(filteredCourses).length;
 
     if (count != matching) {
         console.log("Testing-" + time + " failed -- Got:" + count + " should be: " + matching);
@@ -634,105 +608,96 @@ function testFilterTimes(time, matching) {
 }
 
 function filterDepartment() {
-    filterCourses("ABRD", null, null, null);
+    filterCoursesTest("ABRD", null, null, null);
     testFilterDepartment("ABRD", 1);
-    filterCourses("ACCT", null, null, null);
+    filterCoursesTest("ACCT", null, null, null);
     testFilterDepartment("ACCT", 1);
-    filterCourses("ART", null, null, null);
+    filterCoursesTest("ART", null, null, null);
     testFilterDepartment("ART", 1);
-    filterCourses("ASTR", null, null, null);
+    filterCoursesTest("ASTR", null, null, null);
     testFilterDepartment("ASTR", 1);
-    filterCourses("BIOL", null, null, null);
+    filterCoursesTest("BIOL", null, null, null);
     testFilterDepartment("BIOL", 1);
-    filterCourses("BUSA", null, null, null);
+    filterCoursesTest("BUSA", null, null, null);
     testFilterDepartment("BUSA", 1);
-    filterCourses("CHEM", null, null, null);
+    filterCoursesTest("CHEM", null, null, null);
     testFilterDepartment("CHEM", 1);
-    filterCourses("CHIN", null, null, null);
+    filterCoursesTest("CHIN", null, null, null);
     testFilterDepartment("CHIN", 1);
-    filterCourses("COMM", null, null, null);
+    filterCoursesTest("COMM", null, null, null);
     testFilterDepartment("COMM", 1);
-    filterCourses("COMP", null, null, null);
+    filterCoursesTest("COMP", null, null, null);
     testFilterDepartment("COMP", 1);
-    filterCourses("ECON", null, null, null);
+    filterCoursesTest("ECON", null, null, null);
     testFilterDepartment("ECON", 1);
-    filterCourses("EDUC", null, null, null);
+    filterCoursesTest("EDUC", null, null, null);
     testFilterDepartment("EDUC", 1);
-    filterCourses("ELEE", null, null, null);
+    filterCoursesTest("ELEE", null, null, null);
     testFilterDepartment("ELEE", 1);
-    filterCourses("ENGL", null, null, null);
+    filterCoursesTest("ENGL", null, null, null);
     testFilterDepartment("ENGL", 1);
-    filterCourses("ENGR", null, null, null);
+    filterCoursesTest("ENGR", null, null, null);
     testFilterDepartment("ENGR", 1);
-    filterCourses("ENTR", null, null, null);
+    filterCoursesTest("ENTR", null, null, null);
     testFilterDepartment("ENTR", 1);
-    filterCourses("EXER", null, null, null);
+    filterCoursesTest("EXER", null, null, null);
     testFilterDepartment("EXER", 1);
-    filterCourses("FREN", null, null, null);
+    filterCoursesTest("FREN", null, null, null);
     testFilterDepartment("FREN", 1);
-    filterCourses("GEOL", null, null, null);
+    filterCoursesTest("GEOL", null, null, null);
     testFilterDepartment("GEOL", 1);
-    filterCourses("GERM", null, null, null);
+    filterCoursesTest("GERM", null, null, null);
     testFilterDepartment("GERM", 1);
-    filterCourses("GOBL", null, null, null);
+    filterCoursesTest("GOBL", null, null, null);
     testFilterDepartment("GOBL", 1);
-    filterCourses("GREK", null, null, null);
+    filterCoursesTest("GREK", null, null, null);
     testFilterDepartment("GREK", 1);
-    filterCourses("HIST", null, null, null);
+    filterCoursesTest("HIST", null, null, null);
     testFilterDepartment("HIST", 1);
-    filterCourses("HUMA", null, null, null);
+    filterCoursesTest("HUMA", null, null, null);
     testFilterDepartment("HUMA", 1);
-    filterCourses("LATN", null, null, null);
+    filterCoursesTest("LATN", null, null, null);
     testFilterDepartment("LATN", 1);
-    filterCourses("LEGL", null, null, null);
+    filterCoursesTest("LEGL", null, null, null);
     testFilterDepartment("LEGL", 1);
-    filterCourses("MATH", null, null, null);
+    filterCoursesTest("MATH", null, null, null);
     testFilterDepartment("MATH", 3);
-    filterCourses("MECE", null, null, null);
+    filterCoursesTest("MECE", null, null, null);
     testFilterDepartment("MECE", 1);
-    filterCourses("MUSI", null, null, null);
+    filterCoursesTest("MUSI", null, null, null);
     testFilterDepartment("MUSI", 1);
-    filterCourses("PHIL", null, null, null);
+    filterCoursesTest("PHIL", null, null, null);
     testFilterDepartment("PHIL", 1);
-    filterCourses("PHYE", null, null, null);
+    filterCoursesTest("PHYE", null, null, null);
     testFilterDepartment("PHYE", 1);
-    filterCourses("PHYS", null, null, null);
+    filterCoursesTest("PHYS", null, null, null);
     testFilterDepartment("PHYS", 1);
-    filterCourses("POLS", null, null, null);
+    filterCoursesTest("POLS", null, null, null);
     testFilterDepartment("POLS", 1);
-    filterCourses("PSYC", null, null, null);
+    filterCoursesTest("PSYC", null, null, null);
     testFilterDepartment("PSYC", 1);
-    filterCourses("RELI", null, null, null);
+    filterCoursesTest("RELI", null, null, null);
     testFilterDepartment("RELI", 1);
-    filterCourses("SCIC", null, null, null);
+    filterCoursesTest("SCIC", null, null, null);
     testFilterDepartment("SCIC", 1);
-    filterCourses("SEDU", null, null, null);
+    filterCoursesTest("SEDU", null, null, null);
     testFilterDepartment("SEDU", 1);
-    filterCourses("SOCI", null, null, null);
+    filterCoursesTest("SOCI", null, null, null);
     testFilterDepartment("SOCI", 1);
-    filterCourses("SOCW", null, null, null);
+    filterCoursesTest("SOCW", null, null, null);
     testFilterDepartment("SOCW", 1);
-    filterCourses("SPAN", null, null, null);
+    filterCoursesTest("SPAN", null, null, null);
     testFilterDepartment("SPAN", 1);
-    filterCourses("SSFT", null, null, null);
+    filterCoursesTest("SSFT", null, null, null);
     testFilterDepartment("SSFT", 1);
-    filterCourses("THEA", null, null, null);
+    filterCoursesTest("THEA", null, null, null);
     testFilterDepartment("THEA", 1);
-    filterCourses("WRIT", null, null, null);
+    filterCoursesTest("WRIT", null, null, null);
     testFilterDepartment("WRIT", 1);
 }
 
 function testFilterDepartment(department, matching) {
-    var count = 0;
-    for (var code in testingCourses) {
-        var selector = 0; // usually the first item is the class, other ones might be labs
-        var cur = testingCourses[code][selector];
-
-        // department filtering
-        if (department !== null && department === code.substr(0, code.indexOf(" "))) {
-            count++; // go to next section
-        }
-    }
+    var count = Object.keys(filteredCourses).length;
 
     if (count != matching) {
         console.log("Testing-" + department + " failed -- Got:" + count + " should be: " + matching);
@@ -742,32 +707,33 @@ function testFilterDepartment(department, matching) {
 }
 
 function filterNumbers() {
-    filterCourses(null, null, "100", null);
+    filterCoursesTest(null, null, "100", null);
     testFilterNumbers("100", 22);
-    filterCourses(null, null, "200", null);
+    filterCoursesTest(null, null, "200", null);
     testFilterNumbers("200", 14);
-    filterCourses(null, null, "300", null);
+    filterCoursesTest(null, null, "300", null);
     testFilterNumbers("300", 7);
-    filterCourses(null, null, "400", null);
+    filterCoursesTest(null, null, "400", null);
     testFilterNumbers("400", 2);
 }
 
 function testFilterNumbers(number, matching) {
-    var count = 0;
-    for (var code in testingCourses) {
-        var cur = testingCourses[code][0];
-
-        var code = code.substr(code.indexOf(" ") + 1, 1);
-        var num = number.substr(0, 1);
-
-        if (code === num) {
-            count++;
-        }
-    }
+    var count = Object.keys(filteredCourses).length;
 
     if (count != matching) {
         console.log("Testing-" + number + " failed -- Got:" + count + " should be: " + matching);
     } else {
         console.log("Testing-" + number + " success");
     }
+}
+
+// filter all courses by selected filters and store the resulting courses in filteredCoursesTest
+function filterCoursesTest(department, time, course, week) {
+
+    $("#department").val(department);
+    $("#time").val(time);
+    $("#course").val(course);
+    $("#week").val(week);
+
+    filterCourses();
 }

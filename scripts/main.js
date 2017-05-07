@@ -72,13 +72,15 @@ var colors = {
 };
 
 // filter all courses by selected filters and store the resulting courses in filteredCourses
-function filterCourses(department, time, course, week) {
+function filterCourses() {
     filteredCourses = {};
 
     var department = $("#department").val();
     var time = $("#time").val();
     var course = $("#course").val();
     var week = $("#week").val();
+
+    var dkj = 3;
 
     for (var code in allCourses) {
         var selector = 0; // usually the first item is the class, other ones might be labs

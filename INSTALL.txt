@@ -4,4 +4,5 @@ Installation instructions:
 
 All necessary libraries are included locally in the lib folder.
 
-All backlog items are completed, aside from the "Sort results based on number of matching queries" task which we decided not to implement.
+
+To run unit tests, open tests.html in a browser. The results are printed to the console. The tests check various inputs into the filterCourses() function against expected results.
