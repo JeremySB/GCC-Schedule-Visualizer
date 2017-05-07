@@ -1,3 +1,4 @@
+//Prereq info
 const PrereqCourseCode = Object.freeze({
     "ACCT 202": "ACCT 201",
     "ACCT 300": "ACCT 202",
@@ -110,6 +111,7 @@ const PrereqCourseCode = Object.freeze({
 
 var allCourses;
 
+//Course info
 allCourses = Object.freeze({
     "ABRD 300 A": [{
         "ShortTitle": "STUDY ABROAD",
@@ -8496,6 +8498,7 @@ allCourses = Object.freeze({
     }]
 });
 
+//Department info
 const departmentNames = Object.freeze({
     "ACCOUNTING": "ACCT",
     "BIBLICAL AND RELIGEOUS STUDIES": "RELI",
